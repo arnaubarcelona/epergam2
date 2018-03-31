@@ -54,15 +54,21 @@
                 'class' => 'single_autocomplete',
                 'options' => $formattedCdus
             ]);
-            echo $this->Form->control('format_id', ['options' => $formats, 'empty' => true]);
-            echo $this->Form->control('collection_id', ['options' => $collections, 'empty' => true]);
+            echo $this->Form->control('collection_id', [
+                'type' => 'select',
+                'class' => 'single_autocomplete',
+                'options' => $collections,
+                'emtpy' => false
+            ]);
             echo $this->Form->control('collection_item');
-            echo $this->Form->control('publication_place_id', ['options' => $publicationPlaces, 'empty' => true]);
+            echo $this->Form->control('publication_place_id', [
+                'type' => 'select',
+                'class' => 'single_autocomplete',
+                'options' => $publicationPlaces,
+                'emtpy' => false
+            ]);
             echo $this->Form->control('edition_date');
-            echo $this->Form->control('photo');
-            echo $this->Form->control('photo_dir');
-            echo $this->Form->control('photo_size');
-            echo $this->Form->control('photo_type');
+            echo $this->Form->input('photo', ['type' => 'file']);
             echo $this->Form->control('abstract');
             echo $this->Form->control('notes');
             echo $this->Form->control('url');
@@ -71,9 +77,24 @@
             echo $this->Form->control('volume');
             echo $this->Form->control('pagecount');
             echo $this->Form->control('length');
-            echo $this->Form->control('location_id', ['options' => $locations, 'empty' => true]);
-            echo $this->Form->control('catalogue_state_id', ['options' => $catalogueStates, 'empty' => true]);
-            echo $this->Form->control('conservation_state_id', ['options' => $conservationStates, 'empty' => true]);
+            echo $this->Form->control('location_id', [
+                'type' => 'select',
+                'class' => 'single_autocomplete',
+                'options' => $locations,
+                'emtpy' => false
+            ]);
+            echo $this->Form->control('catalogue_state_id', [
+                'type' => 'select',
+                'class' => 'single_autocomplete',
+                'options' => $catalogueStates,
+                'emtpy' => false
+            ]);
+            echo $this->Form->control('conservation_state_id', [
+                'type' => 'select',
+                'class' => 'single_autocomplete',
+                'options' => $conservationStates,
+                'emtpy' => false
+            ]);
             echo $this->Form->control('languages._ids', ['options' => $languages]);
             echo $this->Form->control('levels._ids', ['options' => $levels]);
             echo $this->Form->control('publishers._ids', ['options' => $publishers]);

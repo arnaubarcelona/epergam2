@@ -21,7 +21,12 @@
     <fieldset>
         <legend><?= __('Add Lending') ?></legend>
         <?php
-            echo $this->Form->control('user_id', ['options' => $users, 'empty' => false]);
+            echo $this->Form->control('user_id', [
+                'type' => 'select',
+                'class' => 'single_autocomplete',
+                'options' => $users,
+                'emtpy' => false
+            ]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
