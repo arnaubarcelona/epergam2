@@ -43,13 +43,16 @@ use Cake\Routing\Route\DashedRoute;
  */
 Router::defaultRouteClass(DashedRoute::class);
 
-Router::scope('', function ($routes) {
-    $routes->addExtensions('pdf');
-    $routes->connect('/view/*', ['controller' => 'Languages', 'action' => 'view']);
+/*Router::scope('', function ($routes) {
+    
     $routes->fallbacks('InflectedRoute');
-});
+});*/
 
 Router::scope('/', function (RouteBuilder $routes) {
+	
+	$routes->addExtensions('pdf');
+    $routes->connect('/view/*', ['controller' => 'Languages', 'action' => 'view']);
+    
     /**
      * Here, we are connecting '/' (base path) to a controller called 'Pages',
      * its action called 'display', and we pass a param to select the view file
@@ -61,6 +64,7 @@ Router::scope('/', function (RouteBuilder $routes) {
      * ...and connect the rest of 'Pages' controller's URLs.
      */
     $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
+    
 
     /**
      * Connect catchall routes for all controllers.

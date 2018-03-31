@@ -5,6 +5,7 @@ if (location.hostname == 'localhost') {
 }
 
 $(document).ready(function () {
+    console.log(app_path);
     $('.multiple_autocomplete').select2({
         tags: true,
         tokenSeparators: [';'],

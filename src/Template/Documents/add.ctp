@@ -58,14 +58,14 @@
                 'type' => 'select',
                 'class' => 'single_autocomplete',
                 'options' => $collections,
-                'emtpy' => false
+                'empty' => true
             ]);
             echo $this->Form->control('collection_item');
             echo $this->Form->control('publication_place_id', [
                 'type' => 'select',
                 'class' => 'single_autocomplete',
                 'options' => $publicationPlaces,
-                'emtpy' => false
+                'empty' => false
             ]);
             echo $this->Form->control('edition_date');
             echo $this->Form->input('photo', ['type' => 'file']);
