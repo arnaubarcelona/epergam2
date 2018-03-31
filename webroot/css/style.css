@@ -1,0 +1,42 @@
+table {
+page-break-inside:avoid;
+width: 1000px;
+margin-bottom: 20px;
+background-color: whitesmoke;
+border-collapse:collapse;
+}
+thead {
+background-color: khaki;
+text-align: left;
+}
+
+tr, th {
+page-break-inside:avoid;
+font-family: "Arial";
+font-size: 10pt;
+border-collapse:collapse;
+}
+tr:nth-of-type(even) {
+background-color: #e6e6e6;
+border-collapse:collapse;
+}
+table th, td {
+padding: 5px;
+display:float;
+border:none;
+outline:none;
+text-align: justify;
+}
+h3 {
+font-size: 20pt;
+text-align: left;
+color: maroon;
+}
+a {
+color: black;
+text-decoration: none;
+font-weight: normal;
+}
+img {
+vertical-align: middle;
+}

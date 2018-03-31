@@ -1,0 +1,3045 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CakePHP: the rapid development php framework:
+        Languages    </title>
+    <link href="/epergam2/favicon.ico" type="image/x-icon" rel="icon"/><link href="/epergam2/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+    <link rel="stylesheet" href="/epergam2/css/base.css"/>    <link rel="stylesheet" href="/epergam2/css/cake.css"/>
+            </head>
+<body>
+    <nav class="top-bar expanded" data-topbar role="navigation">
+        <ul class="title-area large-3 medium-4 columns">
+            <li class="name">
+                <h1><a href="">Languages</a></h1>
+            </li>
+        </ul>
+        <div class="top-bar-section">
+            <ul class="right">
+                <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
+                <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
+            </ul>
+        </div>
+    </nav>
+        <div class="container clearfix">
+        <div class="languages view large-12 medium-8 columns content">
+    <h3><img src="/epergam2/webroot/img/Languages/photo/thumbnail-catalan.png" alt="" width="32"/> Documents en català</h3>
+	<div class="paginator">
+		<table class="responsive-table">
+		<tr>
+		<td colspan="2" style="height: 42px">
+		<a href="../view/14"><b>Llista detallada</b></a> | <b>Ordena per:</b> <a class="asc" href="/epergam2/languages/compactview/14.pdf?sort=name&amp;direction=desc">Títol</a> | <a href="/epergam2/languages/compactview/14.pdf?sort=format_id&amp;direction=asc">Format</a> | <a href="/epergam2/languages/compactview/14.pdf?sort=cdu_id&amp;direction=asc">CDU</a> | <a href="/epergam2/languages/compactview/14.pdf?sort=location_id&amp;direction=asc">Ubicació</a> | <a href="/epergam2/languages/compactview/14.pdf?sort=id&amp;direction=asc">Núm. registre</a> | <a href="/epergam2/languages/compactview/14.pdf?sort=created&amp;direction=asc">Data de registre</a>		</td>
+				<td colspan="2">
+				<center><ul class="pagination">
+						<li class="prev disabled"><a href="" onclick="return false;">&lt; anterior</a></li>			<li class="active"><a href="">1</a></li><li><a href="/epergam2/languages/compactview/14.pdf?page=2">2</a></li><li><a href="/epergam2/languages/compactview/14.pdf?page=3">3</a></li><li><a href="/epergam2/languages/compactview/14.pdf?page=4">4</a></li><li><a href="/epergam2/languages/compactview/14.pdf?page=5">5</a></li><li><a href="/epergam2/languages/compactview/14.pdf?page=6">6</a></li><li><a href="/epergam2/languages/compactview/14.pdf?page=7">7</a></li><li><a href="/epergam2/languages/compactview/14.pdf?page=8">8</a></li><li><a href="/epergam2/languages/compactview/14.pdf?page=9">9</a></li>			<li class="next"><a rel="next" href="/epergam2/languages/compactview/14.pdf?page=2">següent &gt;</a></li>						<li class="last"><a href="/epergam2/languages/compactview/14.pdf?page=41">última pàgina (41) &gt;&gt;</a></li>		</ul>
+		</center>
+				</td>		
+		</tr>
+		</table>
+			</div>
+
+<div class="related">
+<table class="responsive-table">
+            
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/1728">1 / 4061</a></b> &emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/1728"> 1728</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/OLVQlKmYZG/lent.png"> 
+			  			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  													<a href="../../lendings/return/1728/193/ºepergam2ºlanguagesºcompactviewº14.pdf"><img height="24" width="24" src="/epergam2/webroot/img/icons/return.png"></a>
+											  									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/1728'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/INBqo75LPU/superior.png" alt="A partir dels 10 anys" /></a>
+			   
+			  			  &quot;Blanca Rosita Barcelona&quot;			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/1220">Gallardo, Miquel																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/1204">2 / 4061</a></b> &emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/1204"> 1204</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/1204/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/1204'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/abPd6gfw20/adults.png" alt="Adults" /></a>
+			   
+			  			  &quot;Eduquem més enllà de l&#039;horari lectiu&quot;			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/3163">Torrúbia, Rafel																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/5618">3 / 4061</a></b> &emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/5618"> 5618</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/5618/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/5618'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/INBqo75LPU/superior.png" alt="A partir dels 10 anys" /></a>
+			   
+			  			  &quot;La Caixa&quot; a favor del mar: La ruta del Vell Marí			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/3615">Desconegut																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/494">4 / 4061</a></b> &emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/494"> 494</a> &emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/494/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/494'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/c0JkjTZ2xb/inicial.png" alt="A partir dels 6 anys" /></a>
+			   
+			  			  (No) hi ha fantasmes sota el meu llit			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/3222">Van Genechten, Guido																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/6073">5 / 4061</a></b> &emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/6073"> 6073</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/6073/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/6073'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/Zyg0hB6Yxj/mitja.png" alt="A partir dels 8 anys" /></a>
+			   
+			  			  ...Però no ho diguis a ningú			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/2355>Ollé, M. Àngels</a>; <a href=../../authors/view/3016>Solé Vendrell, Carme [il·lustració]</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/1289">6 / 4061</a></b> &emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/1289"> 1289</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/1289/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/1289'">
+			   
+			  			  <a target="_blank" href="http://http://www.editorialjuventud.es/4477.html">1...2...3...Ja!</a>
+			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/1060>Falière, Amélie [il·lustració]</a>; <a href=../../authors/view/3521>Tornero, Susana [traducció]</a>; <a href=../../authors/view/1463>Hédelin, Pascale</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/4246">7 / 4061</a></b> &emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/4246"> 4246</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/4246/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/4246'">
+			   
+			  			  10 coses que puc fer per ajudar el meu món			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/3336">Walsh, Melanie																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/2793">8 / 4061</a></b> &emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/2793"> 2793</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/2793/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/2793'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/INBqo75LPU/superior.png" alt="A partir dels 10 anys" /></a>
+			   
+			  			  10 exploradors que van canviar el món			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/789>Cousens, David [il·lustració]</a>; <a href=../../authors/view/1279>Gifford, Clive</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/2201">9 / 4061</a></b> &emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/2201"> 2201</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/2201/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/2201'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/jRaiWvGYyD/infantil.png" alt="A partir dels 3 anys" /></a>
+			   
+			  			  10 granotes			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/351>Blake, Quentin</a>; <a href=../../authors/view/351>Blake, Quentin [il·lustració]</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3650">10 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3650"> 3650</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3650/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3650'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/jRaiWvGYyD/infantil.png" alt="A partir dels 3 anys" /></a>
+			   
+			  			  10 granotes			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/351">Blake, Quentin																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/1358">11 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/1358"> 1358</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/1358/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/1358'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/INBqo75LPU/superior.png" alt="A partir dels 10 anys" /></a>
+			   
+			  			  10 inventors que van canviar el món			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/789>Cousens, David [il·lustració]</a>; <a href=../../authors/view/1279>Gifford, Clive</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/1385">12 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/1385"> 1385</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/1385/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/1385'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/INBqo75LPU/superior.png" alt="A partir dels 10 anys" /></a>
+			   
+			  			  10 líders que van canviar el món			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/789>Cousens, David [il·lustració]</a>; <a href=../../authors/view/1279>Gifford, Clive</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/5673">13 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/5673"> 5673</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/5673/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/5673'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/jRaiWvGYyD/infantil.png" alt="A partir dels 3 anys" /></a>
+			   
+			  			  10+2			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/2594">Pujol, Miquel																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/248">14 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/248"> 248</a> &emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/248/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/248'">
+			   
+			  			  100 anys d&#039;en Massagran			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/3615">Desconegut																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/4875">15 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/4875"> 4875</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/4875/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/4875'">
+			   
+			  			  100 preguntes que ens fem els pares			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/623">Casals, Ramon																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3837">16 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3837"> 3837</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3837/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3837'">
+			   
+			  			  100 tires d&#039;Ot, el bruixot.			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/2031">Martínez i Picañol (Picanyol), Josep Lluís																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/2721">17 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/2721"> 2721</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/2721/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/2721'">
+			   
+			  			  125 Ocells de Catalunya que cal conèixer			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/754>Copete, José Luis</a>; <a href=../../authors/view/1880>Llobet, Toni</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/2821">18 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/2821"> 2821</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/2821/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/2821'">
+			   
+			  			  15 són quinze			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/2267">Navarro, Àngels																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/2390">19 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/2390"> 2390</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/2390/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/2390'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/INBqo75LPU/superior.png" alt="A partir dels 10 anys" /></a>
+			   
+			  			  1714			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/2972>Sierra i Fabra, Jordi</a>; <a href=../../authors/view/357>Blanch, Ignasi [il·lustració]</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/2870">20 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/2870"> 2870</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/2870/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/2870'">
+			   
+			  			  20 anys			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/2031">Martínez i Picañol (Picanyol), Josep Lluís																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/2191">21 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/2191"> 2191</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/2191/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/2191'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/INBqo75LPU/superior.png" alt="A partir dels 10 anys" /></a>
+			   
+			  			  22 Tècniques per al laboratori escolar			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/819>Cuello, Josep</a>; <a href=../../authors/view/3267>Vidal, Antònia M.</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/2548">22 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/2548"> 2548</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/2548/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/2548'">
+			   
+			  			  25 anys d&#039;Orlandai, 42 anys d&#039;escola.			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/3615">Desconegut																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/6342">23 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/6342"> 6342</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/6342/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/6342'">
+			   
+			  			  25 peixos de mar			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/1761">Lambert, Guy																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/633">24 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/633"> 633</a> &emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/633/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/633'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/abPd6gfw20/adults.png" alt="Adults" /></a>
+			   
+			  			  <a target="_blank" href="http://www.guix.com">28 màscares: caretes, carotes i antifaços.</a>
+			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/1337>González, Josep M.</a>; <a href=../../authors/view/2445>Passans, Jaume</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/975">25 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/975"> 975</a> &emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/975/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/975'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/Zyg0hB6Yxj/mitja.png" alt="A partir dels 8 anys" /></a>
+			   
+			  			  29 contes bojos			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/3401">Wölfel, Ursula																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/4726">26 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/4726"> 4726</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/4726/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/4726'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/Zyg0hB6Yxj/mitja.png" alt="A partir dels 8 anys" /></a>
+			   
+			  			  3 bruixes			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/3029">Solotareff, Grégoire																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/4671">27 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/4671"> 4671</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/4671/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/4671'">
+			   
+			  			  3 i a dins			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/3184">TVC																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3676">28 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3676"> 3676</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3676/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3676'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/jRaiWvGYyD/infantil.png" alt="A partir dels 3 anys" /></a>
+			   
+			  			  365 petons			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/1686">Kimiko																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/2523">29 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/2523"> 2523</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/2523/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/2523'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/abPd6gfw20/adults.png" alt="Adults" /></a>
+			   
+			  			  40 anys fent escola: Records d&#039;escola			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/3615">Desconegut																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/1469">30 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/1469"> 1469</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/1469/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/1469'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/INBqo75LPU/superior.png" alt="A partir dels 10 anys" /></a>
+			   
+			  			  50 coses que els nens poden fer per salvar la Terra			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/989">Earth Works Group																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/1657">31 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/1657"> 1657</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/1657/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/1657'">
+			   
+			  			  50 poemes de Nadal per dir dalt de la cadira			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/3674">Subirana, Jaume																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/591">32 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/591"> 591</a> &emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/591/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/591'">
+			   
+			  			  60 ocells: comuns i rars i de noms singulars			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/1144">Fonoll, Celdoni																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/338">33 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/338"> 338</a> &emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/338/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/338'">
+			   
+			  			  600 punts negres: un llibre ple de sorpreses per a petits i grans			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/616">Carter, David A.																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/431">34 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/431"> 431</a> &emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/431/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/431'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/INBqo75LPU/superior.png" alt="A partir dels 10 anys" /></a>
+			   
+			  			  650 puntades			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/2444">Pasqual i Escrivà, Gemma																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3459">35 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3459"> 3459</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3459/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3459'">
+			   
+			  			  77 Histèries			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/2338">Obiols, Miquel																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3664">36 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3664"> 3664</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3664/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3664'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/INBqo75LPU/superior.png" alt="A partir dels 10 anys" /></a>
+			   
+			  			  8 contes de Nadal			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/537">Calders, Pere																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/1593">37 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/1593"> 1593</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/1593/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/1593'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/abPd6gfw20/adults.png" alt="Adults" /></a>
+			   
+			  			  90 anys d&#039;educació especial			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/2046">Masanés, Cristina																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/330">38 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/330"> 330</a> &emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/330/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/330'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/jRaiWvGYyD/infantil.png" alt="A partir dels 3 anys" /></a>
+			   
+			  			  A cal metge			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/2389">Oxenbury, Helen																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/1771">39 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/1771"> 1771</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/1771/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/1771'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/c0JkjTZ2xb/inicial.png" alt="A partir dels 6 anys" /></a>
+			   
+			  			  A casa abans no es faci fosc			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/268>Beck, Ian</a>; <a href=../../authors/view/1596>Jané, Jordi [traducció]</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3147">40 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3147"> 3147</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3147/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3147'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/INBqo75LPU/superior.png" alt="A partir dels 10 anys" /></a>
+			   
+			  			  A cavall d&#039;un poni			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/2491">Pestum, Jo																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3307">41 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3307"> 3307</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3307/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3307'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/c0JkjTZ2xb/inicial.png" alt="A partir dels 6 anys" /></a>
+			   
+			  			  A dormir i a somiar			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/1023">Escoda, Martina																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/5544">42 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/5544"> 5544</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/5544/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/5544'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/jRaiWvGYyD/infantil.png" alt="A partir dels 3 anys" /></a>
+			   
+			  			  A dormir!			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/934">Dolto-Tolitch, Catherine																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3495">43 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3495"> 3495</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3495/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3495'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/Zyg0hB6Yxj/mitja.png" alt="A partir dels 8 anys" /></a>
+			   
+			  			  A en Fabià no li interessa la guerra			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/3234">Vaugelade, Anaïs																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/4664">44 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/4664"> 4664</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/4664/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/4664'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/Zyg0hB6Yxj/mitja.png" alt="A partir dels 8 anys" /></a>
+			   
+			  			  A en Max no li agrada llegir			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/2812>Saint Mars, Dominique de</a>; <a href=../../authors/view/370>Bloch, Serge [il·lustració]</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/6526">45 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/6526"> 6526</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/6526/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/6526'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/INBqo75LPU/superior.png" alt="A partir dels 10 anys" /></a>
+			   
+			  			  A hores petites. Domini màgic. Passeig d&#039;aniversari			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/3301">Vinyoli, Joan																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3667">46 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3667"> 3667</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3667/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3667'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/jRaiWvGYyD/infantil.png" alt="A partir dels 3 anys" /></a>
+			   
+			  			  A l&#039;aigua			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/2521>Pittau, Francesco</a>; <a href=../../authors/view/1275>Gervais (Gervais), Bernadette</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/4790">47 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/4790"> 4790</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/4790/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/4790'">
+			   
+			  			  A l&#039;Edat de pedra			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/1699">Kitamura, Satoshi																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/1737">48 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/1737"> 1737</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/1737/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/1737'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/jRaiWvGYyD/infantil.png" alt="A partir dels 3 anys" /></a>
+			   
+			  			  A l&#039;Eli li encanta donar			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/349">Blackwood, Freya																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/6182">49 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/6182"> 6182</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/6182/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/6182'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/c0JkjTZ2xb/inicial.png" alt="A partir dels 6 anys" /></a>
+			   
+			  			  A l&#039;escola			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/2562>Prats-Sobrepere, Pere [il·lustració]</a>; <a href=../../authors/view/2355>Ollé, M. Àngels</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/1156">50 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/1156"> 1156</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/1156/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/1156'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/INBqo75LPU/superior.png" alt="A partir dels 10 anys" /></a>
+			   
+			  			  A l&#039;oest falta gent			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/1595">Jané, Albert																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/2276">51 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/2276"> 2276</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/2276/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/2276'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/INBqo75LPU/superior.png" alt="A partir dels 10 anys" /></a>
+			   
+			  			  A l&#039;ombra dels pirates			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/3447>Adam, Benjamin [il·lustració]</a>; <a href=../../authors/view/1801>Le Roy, Boris</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/232">52 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/232"> 232</a> &emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/232/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/232'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/jRaiWvGYyD/infantil.png" alt="A partir dels 3 anys" /></a>
+			   
+			  			  A la consulta del metge			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/178">Baldó, Estel																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/580">53 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/580"> 580</a> &emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/580/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/580'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/c0JkjTZ2xb/inicial.png" alt="A partir dels 6 anys" /></a>
+			   
+			  			  A la cua!			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/2344">Ohmura, Tomoko																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/2617">54 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/2617"> 2617</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/2617/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/2617'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/jRaiWvGYyD/infantil.png" alt="A partir dels 3 anys" /></a>
+			   
+			  			  A la cuina, de nit.			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/2933>Sendak, Maurice</a>; <a href=../../authors/view/906>Desclot, Miquel [traducció]</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3">55 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3"> 3</a> &emsp;&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/Zyg0hB6Yxj/mitja.png" alt="A partir dels 8 anys" /></a>
+			   
+			  			  A la garjola!			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/689>Choux, Nathalie</a>; <a href=../../authors/view/2122>Meunier, Henri</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/40">56 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/40"> 40</a>&emsp;&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/40/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/40'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/jRaiWvGYyD/infantil.png" alt="A partir dels 3 anys" /></a>
+			   
+			  			  A la gran ciutat			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/829">Curato, Mike																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/2159">57 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/2159"> 2159</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/2159/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/2159'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/INBqo75LPU/superior.png" alt="A partir dels 10 anys" /></a>
+			   
+			  			  A la punta de la llengua			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/906">Desclot, Miquel																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/2160">58 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/2160"> 2160</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/2160/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/2160'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/INBqo75LPU/superior.png" alt="A partir dels 10 anys" /></a>
+			   
+			  			  A la punta de la llengua			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/2186>Montserrat, Pep [il·lustració]</a>; <a href=../../authors/view/906>Desclot, Miquel</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3750">59 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3750"> 3750</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3750/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3750'">
+			   
+			  			  A la recerca de la Ciutat d&#039;or			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/418>Bos, Samone</a>; <a href=../../authors/view/330>Biesty, Stephen [il·lustració]</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/4424">60 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/4424"> 4424</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/4424/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/4424'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/Zyg0hB6Yxj/mitja.png" alt="A partir dels 8 anys" /></a>
+			   
+			  			  A la recerca de tresors			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/1561">Ichikawa, Satomi																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/851">61 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/851"> 851</a> &emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/851/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/851'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/INBqo75LPU/superior.png" alt="A partir dels 10 anys" /></a>
+			   
+			  			  A la recerca del tresor del museu			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/3039">Speirs, John																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/764">62 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/764"> 764</a> &emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/764/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/764'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/jRaiWvGYyD/infantil.png" alt="A partir dels 3 anys" /></a>
+			   
+			  			  A la sabana			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/135">Asensio, Albert																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/2248">63 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/2248"> 2248</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/2248/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/2248'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/jRaiWvGYyD/infantil.png" alt="A partir dels 3 anys" /></a>
+			   
+			  			  A la selva			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/135">Asensio, Albert																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/1153">64 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/1153"> 1153</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/1153/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/1153'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/INBqo75LPU/superior.png" alt="A partir dels 10 anys" /></a>
+			   
+			  			  A la teva pell			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/436>Bourdier, Emmanuel</a>; <a href=../../authors/view/2371>Orhun, Emre [il·lustració]</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/4930">65 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/4930"> 4930</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/4930/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/4930'">
+			   
+			  			  A les minúscules avellanes			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/1866">Liost, Guerau de																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3923">66 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3923"> 3923</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3923/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3923'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/abPd6gfw20/adults.png" alt="Adults" /></a>
+			   
+			  			  A mar obert: 50 anys aprenent a fer escola			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/3615">Desconegut																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/6230">67 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/6230"> 6230</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/6230/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/6230'">
+			   
+			  			  A menjar confitura!			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/176>Balanyà, Ismael [il·lustració]</a>; <a href=../../authors/view/3219>Vallverdú, Josep</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3695">68 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3695"> 3695</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3695/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3695'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/Zyg0hB6Yxj/mitja.png" alt="A partir dels 8 anys" /></a>
+			   
+			  			  A mi em patina la egga, i què?			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/1829>Lertxundi, Anjel</a>; <a href=../../authors/view/2156>Mitxelena, Jokin [il·lustració]</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/2687">69 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/2687"> 2687</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/2687/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/2687'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/c0JkjTZ2xb/inicial.png" alt="A partir dels 6 anys" /></a>
+			   
+			  			  <a target="_blank" href="http://http://www.animallibres.cat/index02.html">A mi no m&#039;agraden els llibres!!</a>
+			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/1486>Hernández, Oriol [il·lustració]</a>; <a href=../../authors/view/2552>Portell, Joan [il·lustració]</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3572">70 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3572"> 3572</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3572/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3572'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/c0JkjTZ2xb/inicial.png" alt="A partir dels 6 anys" /></a>
+			   
+			  			  A on es troba el pastís?			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/3140">Tjong-Khing, Thé																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3604">71 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3604"> 3604</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3604/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3604'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/Zyg0hB6Yxj/mitja.png" alt="A partir dels 8 anys" /></a>
+			   
+			  			  A pas de gegant. Guia il·lustrada dels gegants de Barcelona.			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/762">Cordomí, X.																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/4776">72 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/4776"> 4776</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/4776/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/4776'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/abPd6gfw20/adults.png" alt="Adults" /></a>
+			   
+			  			  <a target="_blank" href="http://www.rosasensat.org">A peu d&#039;obra: Reflexions i vivències a partir de l&#039;escola.</a>
+			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/651">Cela, Jaume																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3537">73 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3537"> 3537</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3537/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3537'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/c0JkjTZ2xb/inicial.png" alt="A partir dels 6 anys" /></a>
+			   
+			  			  A prop			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/728">Colombo, Natalia																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/932">74 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/932"> 932</a> &emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/932/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/932'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/abPd6gfw20/adults.png" alt="Adults" /></a>
+			   
+			  			  A taula! Manual per a la introducció d&#039;aliments ecològics i de proximitat a les escoles			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																						  							  															  						  						  <br>
+						  						  													    <a href=../../authors/view/3646>Gros, Alba</a> [et al.]						    									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3222">75 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3222"> 3222</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3222/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3222'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/c0JkjTZ2xb/inicial.png" alt="A partir dels 6 anys" /></a>
+			   
+			  			  A tota vela!			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/3305">Virgili, Mar																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/1719">76 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/1719"> 1719</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/1719/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/1719'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/Zyg0hB6Yxj/mitja.png" alt="A partir dels 8 anys" /></a>
+			   
+			  			  A tots els monstres els fa por la foscor			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/1277>Giacomo, Kris di [il·lustració]</a>; <a href=../../authors/view/1024>Escoffier, Michaël</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/4511">77 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/4511"> 4511</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/4511/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/4511'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/Zyg0hB6Yxj/mitja.png" alt="A partir dels 8 anys" /></a>
+			   
+			  			  Abans de la tele			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/2541">Pommaux, Yvan																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/4958">78 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/4958"> 4958</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/4958/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/4958'">
+			   
+			  			  Abans i ara			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/75">Amery, Heather																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/6222">79 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/6222"> 6222</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/6222/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/6222'">
+			   
+			  			  Abans que el sol no creme			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/1205>Fuster, Joan</a>; <a href=../../authors/view/176>Balanyà, Ismael [il·lustració]</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3522">80 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3522"> 3522</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3522/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3522'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/jRaiWvGYyD/infantil.png" alt="A partir dels 3 anys" /></a>
+			   
+			  			  Abecedari			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/175">Balaguer, Marta																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/210">81 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/210"> 210</a> &emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/210/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/210'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/jRaiWvGYyD/infantil.png" alt="A partir dels 3 anys" /></a>
+			   
+			  			  Abecedari català per a nens			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/2307">Nogués, Xavier																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/1273">82 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/1273"> 1273</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/1273/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/1273'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/jRaiWvGYyD/infantil.png" alt="A partir dels 3 anys" /></a>
+			   
+			  			  Abecedari Gaudí			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/2212>Morón, Mar</a>; <a href=../../authors/view/2423>Paris, Gemma [il·lustració]</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/1705">83 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/1705"> 1705</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/1705/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/1705'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/jRaiWvGYyD/infantil.png" alt="A partir dels 3 anys" /></a>
+			   
+			  			  Abecedari Miró			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/2212>Morón, Mar</a>; <a href=../../authors/view/2423>Paris, Gemma [il·lustració]</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3780">84 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3780"> 3780</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3780/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3780'">
+			   
+			  			  Abecedari pictòric amb els quadres del Museu de Montserrat			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/3615">Desconegut																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/736">85 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/736"> 736</a> &emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/736/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/736'">
+			   
+			  			  Abecedari poètic			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/737">Comelles, Salvador																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/1022">86 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/1022"> 1022</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/1022/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/1022'">
+			   
+			  			  Abella: un petit miracle de la natura			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/3110">Teckentrup, Britta																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/659">87 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/659"> 659</a> &emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/659/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/659'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/jRaiWvGYyD/infantil.png" alt="A partir dels 3 anys" /></a>
+			   
+			  			  Abril: Aquest mes faig anys			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/3165>Tort, Elisabeth</a>; <a href=../../authors/view/1035>Espot, Laura</a>; <a href=../../authors/view/533>Calafell, Roser [il·lustració]</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/4874">88 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/4874"> 4874</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/4874/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/4874'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/abPd6gfw20/adults.png" alt="Adults" /></a>
+			   
+			  			  Acabar bé: com afrontar la separació i el divorci			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/1090">Feliu, Maria Helena																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/793">89 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/793"> 793</a> &emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/793/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/793'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/abPd6gfw20/adults.png" alt="Adults" /></a>
+			   
+			  			  Activitats per al desenvolupament de la intel·ligència emocional en els nens			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  																						  							  															  						  						  <br>
+						  						  													    <a href=../../authors/view/3624>Bisquerra, Rafael</a>; <a href=../../authors/view/3443>Zurita, Ana [il·lustració]</a> [et al.]						    									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/388">90 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/388"> 388</a> &emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/388/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/388'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/INBqo75LPU/superior.png" alt="A partir dels 10 anys" /></a>
+			   
+			  			  Adam i Thomas			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/105">Appelfeld, Aron																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/2616">91 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/2616"> 2616</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/2616/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/2616'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/Zyg0hB6Yxj/mitja.png" alt="A partir dels 8 anys" /></a>
+			   
+			  			  Adaptar-se o morir			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/217">Barres, Josep M.																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/6071">92 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/6071"> 6071</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/6071/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/6071'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/Zyg0hB6Yxj/mitja.png" alt="A partir dels 8 anys" /></a>
+			   
+			  			  Adéu			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/2355>Ollé, M. Àngels</a>; <a href=../../authors/view/3016>Solé Vendrell, Carme [il·lustració]</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/1391">93 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/1391"> 1391</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/1391/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/1391'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/abPd6gfw20/adults.png" alt="Adults" /></a>
+			   
+			  			  Admirant el món: manual d&#039;instruccions per acompanyar el Kio i Gus			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/2957>Sharp, Ann M.</a>; <a href=../../authors/view/3508>Terricabras, Josep M. [adaptació]</a>; <a href=../../authors/view/1867>Lipman, Matthew</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/877">94 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/877"> 877</a> &emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/877/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/877'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/c0JkjTZ2xb/inicial.png" alt="A partir dels 6 anys" /></a>
+			   
+			  			  Advertència. No obris aquest llibre.			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/1159>Forsythe, Mattew [il·lustració]</a>; <a href=../../authors/view/1815>Lehrhaup, Adam</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3990">95 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3990"> 3990</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3990/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3990'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/c0JkjTZ2xb/inicial.png" alt="A partir dels 6 anys" /></a>
+			   
+			  			  Afortunadament			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/672">Charlip, Remy																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/3446">96 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/3446"> 3446</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/3446/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/3446'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/c0JkjTZ2xb/inicial.png" alt="A partir dels 6 anys" /></a>
+			   
+			  			  Agost. Aquest mes faig anys.			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/3165>Tort, Elisabeth</a>; <a href=../../authors/view/1035>Espot, Laura</a>; <a href=../../authors/view/533>Calafell, Roser [il·lustració]</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/2542">97 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/2542"> 2542</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/2542/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/2542'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/Zyg0hB6Yxj/mitja.png" alt="A partir dels 8 anys" /></a>
+			   
+			  			  Agu trot			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/838">Dahl, Roald																							  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/2165">98 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/2165"> 2165</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/2165/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/2165'">
+			   
+			  			  Ai, Filomena, Filomena! i altres contes.			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/2115>Mestres, Lluís [il·lustració]</a>; <a href=../../authors/view/2338>Obiols, Miquel</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/2166">99 / 4061</a></b>&emsp;&emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/2166"> 2166</a>&emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/2166/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/2166'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/Zyg0hB6Yxj/mitja.png" alt="A partir dels 8 anys" /></a>
+			   
+			  			  Ai, Filomena, Filomena! i altres contes.			  			  <font style="font-size: 1em">
+			  																		  						  						  						  																														  							  															  						  						  																														  							  															  						  						  <br>
+						  						  													  <a href=../../authors/view/2115>Mestres, Lluís [il·lustració]</a>; <a href=../../authors/view/2338>Obiols, Miquel</a>						 									  			  </font></td>
+		  </tr>
+                
+		  <tr>  
+			  <td colspan="1" style="text-align:center;">
+				  			  <b><a href="../../documents/view/299">100 / 4061</a></b> &emsp;
+			  			  &emsp;
+			  			  <img height="24" width="24" src="/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/299"> 299</a> &emsp;
+			  			  &emsp;
+			  
+			  
+			  
+			  
+			  <img height="24" width="24" src="/epergam2/webroot/img/LendingStates/I3O0jXPKnv/available.png"> 
+			  			  			  			  <a href="/epergam2/lendings/add/299/%C2%BAepergam2%C2%BAlanguages%C2%BAcompactview%C2%BA14.pdf"><img src="/epergam2/webroot/img/icons/loan.png" height="24" width="24" alt=""/></a>			  			  
+			  		  
+		  
+														<!--#quan és 1#-->
+										  
+									<!--#quan és 1#-->
+							  
+			  
+			  
+			  
+			  </td>  
+		  <td colspan=5 style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/299'">
+			  			  <img height="12" width="12" src="/epergam2/webroot/img/Levels/c0JkjTZ2xb/inicial.png" alt="A partir dels 6 anys" /></a>
+			   
+			  			  Ai, m&#039;ha caigut una dent!			  			  <font style="font-size: 1em">
+			  																										<br>
+							<a href="../../authors/view/3450">Aguilar Latorre, Sandra																							  			  </font></td>
+		  </tr>
+           </table>
+    </div>
+    
+        	<div class="paginator">
+		<table class="responsive-table">
+		<tr>
+		<td colspan="2"  style="height: 42px">
+		<a href="../view/14"><b>Llista detallada</b></a> | <b>Ordena per:</b> <a class="asc" href="/epergam2/languages/compactview/14.pdf?sort=name&amp;direction=desc">Títol</a> | <a href="/epergam2/languages/compactview/14.pdf?sort=format_id&amp;direction=asc">Format</a> | <a href="/epergam2/languages/compactview/14.pdf?sort=cdu_id&amp;direction=asc">CDU</a> | <a href="/epergam2/languages/compactview/14.pdf?sort=location_id&amp;direction=asc">Ubicació</a> | <a href="/epergam2/languages/compactview/14.pdf?sort=id&amp;direction=asc">Núm. registre</a> | <a href="/epergam2/languages/compactview/14.pdf?sort=created&amp;direction=asc">Data de registre</a>		</td>
+				<td colspan="2">
+				<center><ul class="pagination">
+						<li class="prev disabled"><a href="" onclick="return false;">&lt; anterior</a></li>			<li class="active"><a href="">1</a></li><li><a href="/epergam2/languages/compactview/14.pdf?page=2">2</a></li><li><a href="/epergam2/languages/compactview/14.pdf?page=3">3</a></li><li><a href="/epergam2/languages/compactview/14.pdf?page=4">4</a></li><li><a href="/epergam2/languages/compactview/14.pdf?page=5">5</a></li><li><a href="/epergam2/languages/compactview/14.pdf?page=6">6</a></li><li><a href="/epergam2/languages/compactview/14.pdf?page=7">7</a></li><li><a href="/epergam2/languages/compactview/14.pdf?page=8">8</a></li><li><a href="/epergam2/languages/compactview/14.pdf?page=9">9</a></li>			<li class="next"><a rel="next" href="/epergam2/languages/compactview/14.pdf?page=2">següent &gt;</a></li>						<li class="last"><a href="/epergam2/languages/compactview/14.pdf?page=41">última pàgina (41) &gt;&gt;</a></li>		</ul>
+		</center>
+				</td>		
+		</tr>
+		</table>
+			</div>
+
+</div>
+    </div>
+    <footer>
+    </footer>
+</body>
+</html>

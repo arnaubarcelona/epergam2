@@ -1,0 +1,3041 @@
+
+#: Controller/AuthorTypesController.php:55;79
+msgid "The author type has been saved."
+msgstr "L'autor/a s'ha desat."
+
+#: Controller/AuthorTypesController.php:59;83
+msgid "The author type could not be saved. Please, try again."
+msgstr "L'autor/a no s'ha desat. Si us plau, torneu-ho a intentar."
+
+#: Controller/AuthorTypesController.php:100
+msgid "The author type has been deleted."
+msgstr "L'autor/a s'ha suprimit."
+
+#: Controller/AuthorTypesController.php:102
+msgid "The author type could not be deleted. Please, try again."
+msgstr "L'autor/a no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/AuthoritiesDocumentsController.php:58;84
+msgid "The authorities document has been saved."
+msgstr "L'autoria s'ha associat a aquest document."
+
+#: Controller/AuthoritiesDocumentsController.php:62;88
+msgid "The authorities document could not be saved. Please, try again."
+msgstr "L'autoria no s'ha associat a aquest document. Si us plau, torneu-ho a intentar."
+
+#: Controller/AuthoritiesDocumentsController.php:107
+msgid "The authorities document has been deleted."
+msgstr "L'autoria s'ha desassociat d'aquest document. "
+
+#: Controller/AuthoritiesDocumentsController.php:109
+msgid "The authorities document could not be deleted. Please, try again."
+msgstr "L'autoria no s'ha pogut desassociar d'aquest document. Si us plau, torneu-ho a intentar."
+
+#: Controller/AuthoritiesController.php:58;85
+msgid "The authority has been saved."
+msgstr "L'autoria s'ha desat."
+
+#: Controller/AuthoritiesController.php:62;89
+msgid "The authority could not be saved. Please, try again."
+msgstr "L'autoria s'ha desat. Si us plau, torneu-ho a intentar."
+
+#: Controller/AuthoritiesController.php:109
+msgid "The authority has been deleted."
+msgstr "L'autoria s'ha suprimit."
+
+#: Controller/AuthoritiesController.php:111
+msgid "The authority could not be deleted. Please, try again."
+msgstr "L'autoria no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/AuthorsController.php:55;79
+msgid "The author has been saved."
+msgstr "L'autor/a s'ha desat."
+
+#: Controller/AuthorsController.php:59;83
+msgid "The author could not be saved. Please, try again."
+msgstr "L'autor/a no s'ha desat. Si us plau, torneu-ho a intentar."
+
+#: Controller/AuthorsController.php:100
+msgid "The author has been deleted."
+msgstr "L'autor/a s'ha suprimit."
+
+#: Controller/AuthorsController.php:102
+msgid "The author could not be deleted. Please, try again."
+msgstr "L'autor/a no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/DocumentsController.php:63;136
+msgid "The document has been saved."
+msgstr "El llibre s'ha desat."
+
+#: Controller/DocumentsController.php:67;140
+msgid "The document could not be saved. Please, try again."
+msgstr "El llibre no s'ha desat. Si us plau, torneu-ho a intentar."
+
+#: Controller/DocumentsController.php:169
+msgid "The document has been deleted."
+msgstr "El llibre s'ha suprimit."
+
+#: Controller/DocumentsController.php:171
+msgid "The document could not be deleted. Please, try again."
+msgstr "El llibre no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/DocumentsLanguagesController.php:58;84
+msgid "The documents language has been saved."
+msgstr "La llengua s'ha associat a aquest document."
+
+#: Controller/DocumentsLanguagesController.php:62;88
+msgid "The documents language could not be saved. Please, try again."
+msgstr "La llengua no s'ha associat a aquest document. Si us plau, torneu-ho a intentar."
+
+#: Controller/DocumentsLanguagesController.php:107
+msgid "The documents language has been deleted."
+msgstr "La llengua s'ha desassociat d'aquest document."
+
+#: Controller/DocumentsLanguagesController.php:109
+msgid "The documents language could not be deleted. Please, try again."
+msgstr "La llengua no s'ha pogut desassociar d'aquest document. Si us plau, torneu-ho a intentar."
+
+#: Controller/DocumentsLevelsController.php:58;84
+msgid "The documents level has been saved."
+msgstr "El nivell s'ha associat a aquest document."
+
+#: Controller/DocumentsLevelsController.php:62;88
+msgid "The documents level could not be saved. Please, try again."
+msgstr "El nivell no s'ha pogut associar a aquest document. Si us plau, torneu-ho a intentar."
+
+#: Controller/DocumentsLevelsController.php:107
+msgid "The documents level has been deleted."
+msgstr "El nivell s'ha desassociat d'aquest document."
+
+#: Controller/DocumentsLevelsController.php:109
+msgid "The documents level could not be deleted. Please, try again."
+msgstr "El nivell no s'ha pogut desassociar d'aquest document. Si us plau, torneu-ho a intentar."
+
+#: Controller/DocumentsSubjectsController.php:58;84
+msgid "The documents subject has been saved."
+msgstr "La matèria s'ha associat a aquest document."
+
+#: Controller/DocumentsSubjectsController.php:62;88
+msgid "The documents subject could not be saved. Please, try again."
+msgstr "La matèria no s'ha pogut associar a aquest document."
+
+#: Controller/DocumentsSubjectsController.php:107
+msgid "The documents subject has been deleted."
+msgstr "La matèria s'ha desassociat d'aquest document."
+
+#: Controller/DocumentsSubjectsController.php:109
+msgid "The documents subject could not be deleted. Please, try again."
+msgstr "La matèria no s'ha pogut desassociar d'aquest document. Si us plau, torneu-ho a intentar."
+
+#: Controller/CatalogueStatesController.php:55;79
+msgid "The catalogue state has been saved."
+msgstr "L'estat de catalogació s'ha desat."
+
+#: Controller/CatalogueStatesController.php:59;83
+msgid "The catalogue state could not be saved. Please, try again."
+msgstr "L'estat de catalogació no s'ha pogut desar. Si us plau, torneu-ho a intentar."
+
+#: Controller/CatalogueStatesController.php:100
+msgid "The catalogue state has been deleted."
+msgstr "L'estat de catalogació s'ha suprimit."
+
+#: Controller/CatalogueStatesController.php:102
+msgid "The catalogue state could not be deleted. Please, try again."
+msgstr "L'estat de catalogació no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/CdusController.php:55;79
+msgid "The cdus has been saved."
+msgstr "La CDU s'ha desat."
+
+#: Controller/CdusController.php:59;83
+msgid "The cdus could not be saved. Please, try again."
+msgstr "La CDU no s'ha pogut desar. Si us plau, torneu-ho a intentar."
+
+#: Controller/CdusController.php:100
+msgid "The cdus has been deleted."
+msgstr "La CDU s'ha suprimit."
+
+#: Controller/CdusController.php:102
+msgid "The cdus could not be deleted. Please, try again."
+msgstr "La CDU no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/CollectionsController.php:55;79
+msgid "The collection has been saved."
+msgstr "La col·lecció s'ha desat."
+
+#: Controller/CollectionsController.php:59;83
+msgid "The collection could not be saved. Please, try again."
+msgstr "La col·lecció no s'ha pogut desar. Si us plau, torneu-ho a intentar."
+
+#: Controller/CollectionsController.php:100
+msgid "The collection has been deleted."
+msgstr "La col·lecció s'ha suprimit."
+
+#: Controller/CollectionsController.php:102
+msgid "The collection could not be deleted. Please, try again."
+msgstr "La col·lecció no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/ConservationStatesController.php:55;79
+msgid "The conservation state has been saved."
+msgstr "L'estat de conservació s'ha desat."
+
+#: Controller/ConservationStatesController.php:59;83
+msgid "The conservation state could not be saved. Please, try again."
+msgstr "L'estat de conservació no s'ha pogut desar. Si us plau, torneu-ho a intentar."
+
+#: Controller/ConservationStatesController.php:100
+msgid "The conservation state has been deleted."
+msgstr "L'estat de conservació s'ha suprimit."
+
+#: Controller/ConservationStatesController.php:102
+msgid "The conservation state could not be deleted. Please, try again."
+msgstr "L'estat de conservació no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/CountriesController.php:55;79
+msgid "The country has been saved."
+msgstr "El país s'ha desat."
+
+#: Controller/CountriesController.php:59;83
+msgid "The country could not be saved. Please, try again."
+msgstr "El país no s'ha pogut desar. Si us plau, torneu-ho a intentar."
+
+#: Controller/CountriesController.php:100
+msgid "The country has been deleted."
+msgstr "El país s'ha suprimit."
+
+#: Controller/CountriesController.php:102
+msgid "The country could not be deleted. Please, try again."
+msgstr "El país no s'ha pogut suprimir. Si us plau, torneu-ho a intentar"
+
+#: Controller/EditionPlacesController.php:58;83
+msgid "The publication place has been saved."
+msgstr "El lloc d'edició s'ha desat."
+
+#: Controller/EditionPlacesController.php:62;87
+msgid "The publication place could not be saved. Please, try again."
+msgstr "El lloc d'edició no s'ha pogut desar. Si us plau, torneu-ho a intentar."
+
+#: Controller/EditionPlacesController.php:105
+msgid "The publication place has been deleted."
+msgstr "El lloc d'edició s'ha suprimit."
+
+#: Controller/EditionPlacesController.php:107
+msgid "The publication place could not be deleted. Please, try again."
+msgstr "El lloc d'edició no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/PublishersController.php:55;80
+msgid "The publisher has been saved."
+msgstr "L'editorial s'ha desat."
+
+#: Controller/PublishersController.php:59;84
+msgid "The publisher could not be saved. Please, try again."
+msgstr "L'editorial no s'ha pogut desar. Si us plau, torneu-ho a intentar."
+
+#: Controller/PublishersController.php:102
+msgid "The publisher has been deleted."
+msgstr "L'editorial s'ha suprimit."
+
+#: Controller/PublishersController.php:104
+msgid "The publisher could not be deleted. Please, try again."
+msgstr "L'editorial no s'ha pogut surpimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/FormatsController.php:55;79
+msgid "The format has been saved."
+msgstr "El tipus de format s'ha desat."
+
+#: Controller/FormatsController.php:59;83
+msgid "The format could not be saved. Please, try again."
+msgstr "El tipus de format no s'ha pogut desar. Si us plau, torneu-ho a intentar."
+
+#: Controller/FormatsController.php:100
+msgid "The format has been deleted."
+msgstr "El tipus de format s'ha suprimit."
+
+#: Controller/FormatsController.php:102
+msgid "The format could not be deleted. Please, try again."
+msgstr "El tipus de format no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/GroupsController.php:55;79
+msgid "The group has been saved."
+msgstr "El grup s'ha desat."
+
+#: Controller/GroupsController.php:59;83
+msgid "The group could not be saved. Please, try again."
+msgstr "El grup no s'ha pogut desar. Si us plau, torneu-ho a intentar."
+
+#: Controller/GroupsController.php:100
+msgid "The group has been deleted."
+msgstr "El grup s'ha suprimit."
+
+#: Controller/GroupsController.php:102
+msgid "The group could not be deleted. Please, try again."
+msgstr "El grup no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/LanguagesController.php:55;80
+msgid "The language has been saved."
+msgstr "La llengua s'ha desat."
+
+#: Controller/LanguagesController.php:59;84
+msgid "The language could not be saved. Please, try again."
+msgstr "La llengua no s'ha pogut desar. Si us plau, torneu-ho a intentar."
+
+#: Controller/LanguagesController.php:102
+msgid "The language has been deleted."
+msgstr "La llengua s'ha suprimit."
+
+#: Controller/LanguagesController.php:104
+msgid "The language could not be deleted. Please, try again."
+msgstr "La llengua no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/LendingPoliciesController.php:58;84
+msgid "The lending policy has been saved."
+msgstr "La política de préstec s'ha desat."
+
+#: Controller/LendingPoliciesController.php:62;88
+msgid "The lending policy could not be saved. Please, try again."
+msgstr "La política de préstec no s'ha pogut desar. Si us plau, torneu-ho a intentar."
+
+#: Controller/LendingPoliciesController.php:107
+msgid "The lending policy has been deleted."
+msgstr "La política de préstec s'ha suprimit."
+
+#: Template/Authorities/view.ctp:60
+#: Template/CatalogueStates/view.ctp:52
+#: Template/Collections/view.ctp:52
+#: Template/ConservationStates/view.ctp:52
+#: Template/Documents/view.ctp:74;186
+#: Template/Formats/view.ctp:52
+#: Template/Languages/view.ctp:26;68
+#: Template/Levels/view.ctp:52
+#: Template/Locations/view.ctp:52
+#: Template/PublicationPlaces/view.ctp:58
+#: Template/Publishers/view.ctp:52
+#: Template/Subjects/view.ctp:52
+msgid "Photo"
+msgstr "Imatge"
+
+#: Template/Authorities/view.ctp:61
+#: Template/CatalogueStates/view.ctp:53
+#: Template/Collections/view.ctp:53
+#: Template/ConservationStates/view.ctp:53
+#: Template/Documents/view.ctp:78;187
+#: Template/Formats/view.ctp:53
+#: Template/Languages/view.ctp:30;69
+#: Template/Levels/view.ctp:53
+#: Template/Locations/view.ctp:53
+#: Template/PublicationPlaces/view.ctp:59
+#: Template/Publishers/view.ctp:53
+#: Template/Subjects/view.ctp:53
+msgid "Photo Dir"
+msgstr "Directori de la imatge"
+
+#: Template/Authorities/view.ctp:62
+#: Template/CatalogueStates/view.ctp:54
+#: Template/Collections/view.ctp:54
+#: Template/ConservationStates/view.ctp:54
+#: Template/Documents/view.ctp:110;188
+#: Template/Formats/view.ctp:54
+#: Template/Languages/view.ctp:42;70
+#: Template/Levels/view.ctp:54
+#: Template/Locations/view.ctp:54
+#: Template/PublicationPlaces/view.ctp:60
+#: Template/Publishers/view.ctp:54
+#: Template/Subjects/view.ctp:54
+msgid "Photo Size"
+msgstr "Mida de la imatge"
+
+#: Template/Authorities/view.ctp:63
+#: Template/CatalogueStates/view.ctp:55
+#: Template/Collections/view.ctp:55
+#: Template/ConservationStates/view.ctp:55
+#: Template/Documents/view.ctp:82;189
+#: Template/Formats/view.ctp:55
+#: Template/Languages/view.ctp:34;71
+#: Template/Levels/view.ctp:55
+#: Template/Locations/view.ctp:55
+#: Template/PublicationPlaces/view.ctp:61
+#: Template/Publishers/view.ctp:55
+#: Template/Subjects/view.ctp:55
+msgid "Photo Type"
+msgstr "Tipus d'imatge"
+
+#: Controller/LendingPoliciesController.php:109
+msgid "The lending policy could not be deleted. Please, try again."
+msgstr "La política de préstec no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/LendingStatesController.php:55;79
+msgid "The lending state has been saved."
+msgstr "L'estat de préstec s'ha desat."
+
+#: Controller/LendingStatesController.php:59;83
+msgid "The lending state could not be saved. Please, try again."
+msgstr "L'estat de préstec no s'ha pogut desar. Si us plau, torneu-ho a intentar."
+
+#: Controller/LendingStatesController.php:100
+msgid "The lending state has been deleted."
+msgstr "L'estat de préstec s'ha suprimit."
+
+#: Controller/LendingStatesController.php:102
+msgid "The lending state could not be deleted. Please, try again."
+msgstr "L'estat de préstec no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/LendingsController.php:58;87
+msgid "The lending has been saved."
+msgstr "El préstec s'ha desat."
+
+#: Controller/LendingsController.php:62;91
+msgid "The lending could not be saved. Please, try again."
+msgstr "EL préstec no s'ha pogut desar. Si us plau, torneu-ho a intentar."
+
+#: Controller/LendingsController.php:113
+msgid "The lending has been deleted."
+msgstr "El moviment de préstec s'ha suprimit."
+
+#: Controller/LendingsController.php:115
+msgid "The lending could not be deleted. Please, try again."
+msgstr "El moviment de préstec no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/LentStatesController.php:55;79
+msgid "The lent state has been saved."
+msgstr "L'estat de préstec s'ha desat."
+
+#: Controller/LentStatesController.php:59;83
+msgid "The lent state could not be saved. Please, try again."
+msgstr "L'estat de préstec no s'ha pogut desar. Si us plau, torneu-ho a intentar."
+
+#: Controller/LentStatesController.php:100
+msgid "The lent state has been deleted."
+msgstr "L'estat de préstec s'ha suprimit."
+
+#: Controller/LentStatesController.php:102
+msgid "The lent state could not be deleted. Please, try again."
+msgstr "L'estat de préstec no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/LevelsController.php:55;80
+msgid "The level has been saved."
+msgstr "El nivell s'ha desat."
+
+#: Controller/LevelsController.php:59;84
+msgid "The level could not be saved. Please, try again."
+msgstr "El nivell no s'ha pogut desar. Si us plau, torneu-ho a intentar."
+
+#: Controller/LevelsController.php:102
+msgid "The level has been deleted."
+msgstr "El nivell s'ha suprimit."
+
+#: Controller/LevelsController.php:104
+msgid "The level could not be deleted. Please, try again."
+msgstr "El nivell no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/LocationsController.php:55;79
+msgid "The location has been saved."
+msgstr "La localització s'ha desat."
+
+#: Controller/LocationsController.php:59;83
+msgid "The location could not be saved. Please, try again."
+msgstr "La localització no s'ha pogut desar. Si us plau, torneu-ho a intentar."
+
+#: Controller/LocationsController.php:100
+msgid "The location has been deleted."
+msgstr "La localització s'ha suprimit."
+
+#: Controller/LocationsController.php:102
+msgid "The location could not be deleted. Please, try again."
+msgstr "La localització no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/SubjectsController.php:55;80
+msgid "The subject has been saved."
+msgstr "La matèria s'ha desat."
+
+#: Controller/SubjectsController.php:59;84
+msgid "The subject could not be saved. Please, try again."
+msgstr "La matèria no s'ha pogut desar. Si us plau, torneu-ho a intentar."
+
+#: Controller/SubjectsController.php:102
+msgid "The subject has been deleted."
+msgstr "La matèria s'ha suprimit."
+
+#: Controller/SubjectsController.php:104
+msgid "The subject could not be deleted. Please, try again."
+msgstr "La matèria no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/SubscriptionStatesController.php:55;79
+msgid "The subscription state has been saved."
+msgstr "L'estat de subscripció s'ha desat."
+
+#: Controller/SubscriptionStatesController.php:59;83
+msgid "The subscription state could not be saved. Please, try again."
+msgstr "L'estat de subscripció no s'ha pogut desar.  Si us plau, torneu-ho a intentar."
+
+#: Controller/SubscriptionStatesController.php:100
+msgid "The subscription state has been deleted."
+msgstr "L'estat de subscripció s'ha suprimit."
+
+#: Controller/SubscriptionStatesController.php:102
+msgid "The subscription state could not be deleted. Please, try again."
+msgstr "L'estat de subscripció no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Controller/UsersController.php:58;84
+msgid "The user has been saved."
+msgstr "L'usuari/a s'ha desat."
+
+#: Controller/UsersController.php:62;88
+msgid "The user could not be saved. Please, try again."
+msgstr "L'usuari/a no s'ha pogut desar. Si us plau, torneu-ho a intentar."
+
+#: Controller/UsersController.php:107
+msgid "The user has been deleted."
+msgstr "L'usuari/a s'ha suprimit."
+
+#: Controller/UsersController.php:109
+msgid "The user could not be deleted. Please, try again."
+msgstr "L'usuari/a no s'ha pogut suprimir. Si us plau, torneu-ho a intentar."
+
+#: Template/AuthorTypes/add.ctp:9
+#: Template/AuthorTypes/edit.ctp:9
+#: Template/AuthorTypes/index.ctp:9;24
+#: Template/AuthorTypes/view.ctp:9;48
+#: Template/Authorities/add.ctp:9
+#: Template/Authorities/edit.ctp:9
+#: Template/Authorities/index.ctp:9;29
+#: Template/Authorities/view.ctp:9;75
+#: Template/AuthoritiesDocuments/add.ctp:9
+#: Template/AuthoritiesDocuments/edit.ctp:9
+#: Template/AuthoritiesDocuments/index.ctp:9;27
+#: Template/AuthoritiesDocuments/view.ctp:9
+#: Template/Authors/add.ctp:9
+#: Template/Authors/edit.ctp:9
+#: Template/Authors/index.ctp:9;24
+#: Template/Authors/view.ctp:9;48
+#: Template/Documents/add.ctp:9
+#: Template/Documents/edit.ctp:9
+#: Template/Documents/index.ctp:9;68
+#: Template/Documents/view.ctp:9;154;182;209;236;263;294;332
+#: Template/DocumentsLanguages/add.ctp:9
+#: Template/DocumentsLanguages/edit.ctp:9
+#: Template/DocumentsLanguages/index.ctp:9;27
+#: Template/DocumentsLanguages/view.ctp:9
+#: Template/DocumentsLevels/add.ctp:9
+#: Template/DocumentsLevels/edit.ctp:9
+#: Template/DocumentsLevels/index.ctp:9;27
+#: Template/DocumentsLevels/view.ctp:9
+#: Template/DocumentsSubjects/add.ctp:9
+#: Template/DocumentsSubjects/edit.ctp:9
+#: Template/DocumentsSubjects/index.ctp:9;27
+#: Template/DocumentsSubjects/view.ctp:9
+#: Template/CatalogueStates/add.ctp:9
+#: Template/CatalogueStates/edit.ctp:9
+#: Template/CatalogueStates/index.ctp:9;24
+#: Template/CatalogueStates/view.ctp:9;67
+#: Template/Cdus/add.ctp:9
+#: Template/Cdus/edit.ctp:9
+#: Template/Cdus/index.ctp:9;23
+#: Template/Cdus/view.ctp:9
+#: Template/Collections/add.ctp:9
+#: Template/Collections/edit.ctp:9
+#: Template/Collections/index.ctp:9;24
+#: Template/Collections/view.ctp:9;67
+#: Template/ConservationStates/add.ctp:9
+#: Template/ConservationStates/edit.ctp:9
+#: Template/ConservationStates/index.ctp:9;26
+#: Template/ConservationStates/view.ctp:9;69;120
+#: Template/Countries/add.ctp:9
+#: Template/Countries/edit.ctp:9
+#: Template/Countries/index.ctp:9;24
+#: Template/Countries/view.ctp:9;48
+#: Template/EditionPlaces/add.ctp:9
+#: Template/EditionPlaces/edit.ctp:9
+#: Template/EditionPlaces/index.ctp:9;27
+#: Template/EditionPlaces/view.ctp:9;73
+#: Template/Publishers/add.ctp:9
+#: Template/Publishers/edit.ctp:9
+#: Template/Publishers/index.ctp:9;24
+#: Template/Publishers/view.ctp:9;67
+#: Template/Formats/add.ctp:9
+#: Template/Formats/edit.ctp:9
+#: Template/Formats/index.ctp:9;26
+#: Template/Formats/view.ctp:9;69;119
+#: Template/Groups/add.ctp:9
+#: Template/Groups/edit.ctp:9
+#: Template/Groups/index.ctp:9;26
+#: Template/Groups/view.ctp:9;52;90
+#: Template/Items/add.ctp:9
+#: Template/Items/edit.ctp:9
+#: Template/Items/index.ctp:9;32
+#: Template/Items/view.ctp:9
+#: Template/Languages/add.ctp:9
+#: Template/Languages/edit.ctp:9
+#: Template/Languages/index.ctp:9;24
+#: Template/Languages/view.ctp:9;67
+#: Template/LendingPolicies/add.ctp:9
+#: Template/LendingPolicies/edit.ctp:9
+#: Template/LendingPolicies/index.ctp:9;29
+#: Template/LendingPolicies/view.ctp:9
+#: Template/LendingStates/add.ctp:9
+#: Template/LendingStates/edit.ctp:9
+#: Template/LendingStates/index.ctp:9;24
+#: Template/LendingStates/view.ctp:9;54
+#: Template/Lendings/add.ctp:9
+#: Template/Lendings/edit.ctp:9
+#: Template/Lendings/index.ctp:9;35
+#: Template/Lendings/view.ctp:9
+#: Template/LentStates/add.ctp:9
+#: Template/LentStates/edit.ctp:9
+#: Template/LentStates/index.ctp:9;22
+#: Template/LentStates/view.ctp:9
+#: Template/Levels/add.ctp:9
+#: Template/Levels/edit.ctp:9
+#: Template/Levels/index.ctp:9;24
+#: Template/Levels/view.ctp:9;67
+#: Template/Locations/add.ctp:9
+#: Template/Locations/edit.ctp:9
+#: Template/Locations/index.ctp:9;26
+#: Template/Locations/view.ctp:9;69;120
+#: Template/Subjects/add.ctp:9
+#: Template/Subjects/edit.ctp:9
+#: Template/Subjects/index.ctp:9;24
+#: Template/Subjects/view.ctp:9;67
+#: Template/SubscriptionStates/add.ctp:9
+#: Template/SubscriptionStates/edit.ctp:9
+#: Template/SubscriptionStates/index.ctp:9;24
+#: Template/SubscriptionStates/view.ctp:9;55
+#: Template/Users/add.ctp:9
+#: Template/Users/edit.ctp:9
+#: Template/Users/index.ctp:9;36
+#: Template/Users/view.ctp:9;90
+msgid "Actions"
+msgstr "Accions"
+
+#: Template/AuthorTypes/add.ctp:10
+#: Template/AuthorTypes/edit.ctp:16
+#: Template/AuthorTypes/view.ctp:12
+#: Template/Authorities/add.ctp:13
+#: Template/Authorities/edit.ctp:19
+#: Template/Authorities/index.ctp:13
+#: Template/Authorities/view.ctp:16
+msgid "List Author Types"
+msgstr "Llista tipus d'autoria"
+
+#: Template/AuthorTypes/add.ctp:11
+#: Template/AuthorTypes/edit.ctp:17
+#: Template/AuthorTypes/index.ctp:11
+#: Template/AuthorTypes/view.ctp:14
+#: Template/Authorities/add.ctp:10
+#: Template/Authorities/edit.ctp:16
+#: Template/Authorities/view.ctp:12
+#: Template/AuthoritiesDocuments/add.ctp:11
+#: Template/AuthoritiesDocuments/edit.ctp:17
+#: Template/AuthoritiesDocuments/index.ctp:11
+#: Template/AuthoritiesDocuments/view.ctp:14
+#: Template/Authors/add.ctp:11
+#: Template/Authors/edit.ctp:17
+#: Template/Authors/index.ctp:11
+#: Template/Authors/view.ctp:14
+#: Template/Documents/add.ctp:29
+#: Template/Documents/edit.ctp:35
+#: Template/Documents/index.ctp:29
+#: Template/Documents/view.ctp:32
+msgid "List Authorities"
+msgstr "Llista autories"
+
+#: Template/AuthorTypes/add.ctp:12
+#: Template/AuthorTypes/edit.ctp:18
+#: Template/AuthorTypes/index.ctp:12
+#: Template/AuthorTypes/view.ctp:15
+#: Template/Authorities/index.ctp:10
+#: Template/Authorities/view.ctp:13
+#: Template/AuthoritiesDocuments/add.ctp:12
+#: Template/AuthoritiesDocuments/edit.ctp:18
+#: Template/AuthoritiesDocuments/index.ctp:12
+#: Template/AuthoritiesDocuments/view.ctp:15
+#: Template/Authors/add.ctp:12
+#: Template/Authors/edit.ctp:18
+#: Template/Authors/index.ctp:12
+#: Template/Authors/view.ctp:15
+#: Template/Documents/add.ctp:30
+#: Template/Documents/edit.ctp:36
+#: Template/Documents/index.ctp:30
+#: Template/Documents/view.ctp:33
+msgid "New Authority"
+msgstr "Nova autoria"
+
+#: Template/AuthorTypes/add.ctp:18
+msgid "Add Author Type"
+msgstr "Afegeix tipus d'autoria"
+
+#: Template/AuthorTypes/add.ctp:23
+#: Template/AuthorTypes/edit.ctp:29
+#: Template/Authorities/add.ctp:29
+#: Template/Authorities/edit.ctp:35
+#: Template/AuthoritiesDocuments/add.ctp:26
+#: Template/AuthoritiesDocuments/edit.ctp:32
+#: Template/Authors/add.ctp:23
+#: Template/Authors/edit.ctp:29
+#: Template/Documents/add.ctp:82
+#: Template/Documents/edit.ctp:80
+#: Template/DocumentsLanguages/add.ctp:26
+#: Template/DocumentsLanguages/edit.ctp:32
+#: Template/DocumentsLevels/add.ctp:26
+#: Template/DocumentsLevels/edit.ctp:32
+#: Template/DocumentsSubjects/add.ctp:26
+#: Template/DocumentsSubjects/edit.ctp:32
+#: Template/CatalogueStates/add.ctp:23
+#: Template/CatalogueStates/edit.ctp:29
+#: Template/Cdus/add.ctp:22
+#: Template/Cdus/edit.ctp:28
+#: Template/Collections/add.ctp:23
+#: Template/Collections/edit.ctp:29
+#: Template/ConservationStates/add.ctp:25
+#: Template/ConservationStates/edit.ctp:31
+#: Template/Countries/add.ctp:23
+#: Template/Countries/edit.ctp:29
+#: Template/EditionPlaces/add.ctp:26
+#: Template/EditionPlaces/edit.ctp:32
+#: Template/Publishers/add.ctp:24
+#: Template/Publishers/edit.ctp:30
+#: Template/Formats/add.ctp:25
+#: Template/Formats/edit.ctp:31
+#: Template/Groups/add.ctp:25
+#: Template/Groups/edit.ctp:31
+#: Template/Items/add.ctp:31
+#: Template/Items/edit.ctp:37
+#: Template/Languages/add.ctp:24
+#: Template/Languages/edit.ctp:30
+#: Template/LendingPolicies/add.ctp:28
+#: Template/LendingPolicies/edit.ctp:34
+#: Template/LendingStates/add.ctp:23
+#: Template/LendingStates/edit.ctp:29
+#: Template/Lendings/add.ctp:34
+#: Template/Lendings/edit.ctp:40
+#: Template/LentStates/add.ctp:21
+#: Template/LentStates/edit.ctp:27
+#: Template/Levels/add.ctp:24
+#: Template/Levels/edit.ctp:30
+#: Template/Locations/add.ctp:25
+#: Template/Locations/edit.ctp:31
+#: Template/Subjects/add.ctp:24
+#: Template/Subjects/edit.ctp:30
+#: Template/SubscriptionStates/add.ctp:23
+#: Template/SubscriptionStates/edit.ctp:29
+#: Template/Users/add.ctp:35
+#: Template/Users/edit.ctp:41
+#: View/Helper/FormHelper.php:1927
+msgid "Submit"
+msgstr "Desa"
+
+#: Template/AuthorTypes/edit.ctp:11
+#: Template/AuthorTypes/index.ctp:37
+#: Template/AuthorTypes/view.ctp:60
+#: Template/Authorities/edit.ctp:11
+#: Template/Authorities/index.ctp:43
+#: Template/Authorities/view.ctp:106
+#: Template/AuthoritiesDocuments/edit.ctp:11
+#: Template/AuthoritiesDocuments/index.ctp:41
+#: Template/Authors/edit.ctp:11
+#: Template/Authors/index.ctp:37
+#: Template/Authors/view.ctp:60
+#: Template/Documents/edit.ctp:11
+#: Template/Documents/index.ctp:99
+#: Template/Documents/view.ctp:166;193;220;247;274;309;350
+#: Template/DocumentsLanguages/edit.ctp:11
+#: Template/DocumentsLanguages/index.ctp:41
+#: Template/DocumentsLevels/edit.ctp:11
+#: Template/DocumentsLevels/index.ctp:41
+#: Template/DocumentsSubjects/edit.ctp:11
+#: Template/DocumentsSubjects/index.ctp:41
+#: Template/CatalogueStates/edit.ctp:11
+#: Template/CatalogueStates/index.ctp:37
+#: Template/CatalogueStates/view.ctp:98
+#: Template/Cdus/edit.ctp:11
+#: Template/Cdus/index.ctp:37
+#: Template/Collections/edit.ctp:11
+#: Template/Collections/index.ctp:37
+#: Template/Collections/view.ctp:98
+#: Template/ConservationStates/edit.ctp:11
+#: Template/ConservationStates/index.ctp:39
+#: Template/ConservationStates/view.ctp:100;135
+#: Template/Countries/edit.ctp:11
+#: Template/Countries/index.ctp:37
+#: Template/Countries/view.ctp:60
+#: Template/EditionPlaces/edit.ctp:11
+#: Template/EditionPlaces/index.ctp:41
+#: Template/EditionPlaces/view.ctp:104
+#: Template/Publishers/edit.ctp:11
+#: Template/Publishers/index.ctp:37
+#: Template/Publishers/view.ctp:98
+#: Template/Formats/edit.ctp:11
+#: Template/Formats/index.ctp:39
+#: Template/Formats/view.ctp:100;133
+#: Template/Groups/edit.ctp:11
+#: Template/Groups/index.ctp:39
+#: Template/Groups/view.ctp:66;109
+#: Template/Items/edit.ctp:11
+#: Template/Items/index.ctp:49
+#: Template/Languages/edit.ctp:11
+#: Template/Languages/index.ctp:37
+#: Template/Languages/view.ctp:98
+#: Template/LendingPolicies/edit.ctp:11
+#: Template/LendingPolicies/index.ctp:45
+#: Template/LendingStates/edit.ctp:11
+#: Template/LendingStates/index.ctp:37
+#: Template/LendingStates/view.ctp:72
+#: Template/Lendings/edit.ctp:11
+#: Template/Lendings/index.ctp:55
+#: Template/LentStates/edit.ctp:11
+#: Template/LentStates/index.ctp:35
+#: Template/Levels/edit.ctp:11
+#: Template/Levels/index.ctp:37
+#: Template/Levels/view.ctp:98
+#: Template/Locations/edit.ctp:11
+#: Template/Locations/index.ctp:39
+#: Template/Locations/view.ctp:100;135
+#: Template/Subjects/edit.ctp:11
+#: Template/Subjects/index.ctp:37
+#: Template/Subjects/view.ctp:98
+#: Template/SubscriptionStates/edit.ctp:11
+#: Template/SubscriptionStates/index.ctp:37
+#: Template/SubscriptionStates/view.ctp:74
+#: Template/Users/edit.ctp:11
+#: Template/Users/index.ctp:57
+#: Template/Users/view.ctp:108
+msgid "Delete"
+msgstr "Suprimeix"
+
+#: Template/AuthorTypes/edit.ctp:13
+#: Template/AuthorTypes/index.ctp:37
+#: Template/AuthorTypes/view.ctp:11;60
+#: Template/Authorities/edit.ctp:13
+#: Template/Authorities/index.ctp:43
+#: Template/Authorities/view.ctp:11;106
+#: Template/AuthoritiesDocuments/edit.ctp:13
+#: Template/AuthoritiesDocuments/index.ctp:41
+#: Template/AuthoritiesDocuments/view.ctp:11
+#: Template/Authors/edit.ctp:13
+#: Template/Authors/index.ctp:37
+#: Template/Authors/view.ctp:11;60
+#: Template/Documents/edit.ctp:13
+#: Template/Documents/index.ctp:99
+#: Template/Documents/view.ctp:11;166;193;220;247;274;309;350
+#: Template/DocumentsLanguages/edit.ctp:13
+#: Template/DocumentsLanguages/index.ctp:41
+#: Template/DocumentsLanguages/view.ctp:11
+#: Template/DocumentsLevels/edit.ctp:13
+#: Template/DocumentsLevels/index.ctp:41
+#: Template/DocumentsLevels/view.ctp:11
+#: Template/DocumentsSubjects/edit.ctp:13
+#: Template/DocumentsSubjects/index.ctp:41
+#: Template/DocumentsSubjects/view.ctp:11
+#: Template/CatalogueStates/edit.ctp:13
+#: Template/CatalogueStates/index.ctp:37
+#: Template/CatalogueStates/view.ctp:11;98
+#: Template/Cdus/edit.ctp:13
+#: Template/Cdus/index.ctp:37
+#: Template/Cdus/view.ctp:11
+#: Template/Collections/edit.ctp:13
+#: Template/Collections/index.ctp:37
+#: Template/Collections/view.ctp:11;98
+#: Template/ConservationStates/edit.ctp:13
+#: Template/ConservationStates/index.ctp:39
+#: Template/ConservationStates/view.ctp:11;100;135
+#: Template/Countries/edit.ctp:13
+#: Template/Countries/index.ctp:37
+#: Template/Countries/view.ctp:11;60
+#: Template/EditionPlaces/edit.ctp:13
+#: Template/EditionPlaces/index.ctp:41
+#: Template/EditionPlaces/view.ctp:11;104
+#: Template/Publishers/edit.ctp:13
+#: Template/Publishers/index.ctp:37
+#: Template/Publishers/view.ctp:11;98
+#: Template/Formats/edit.ctp:13
+#: Template/Formats/index.ctp:39
+#: Template/Formats/view.ctp:11;100;133
+#: Template/Groups/edit.ctp:13
+#: Template/Groups/index.ctp:39
+#: Template/Groups/view.ctp:11;66;109
+#: Template/Items/edit.ctp:13
+#: Template/Items/index.ctp:49
+#: Template/Items/view.ctp:11
+#: Template/Languages/edit.ctp:13
+#: Template/Languages/index.ctp:37
+#: Template/Languages/view.ctp:11;98
+#: Template/LendingPolicies/edit.ctp:13
+#: Template/LendingPolicies/index.ctp:45
+#: Template/LendingPolicies/view.ctp:11
+#: Template/LendingStates/edit.ctp:13
+#: Template/LendingStates/index.ctp:37
+#: Template/LendingStates/view.ctp:11;72
+#: Template/Lendings/edit.ctp:13
+#: Template/Lendings/index.ctp:55
+#: Template/Lendings/view.ctp:11
+#: Template/LentStates/edit.ctp:13
+#: Template/LentStates/index.ctp:35
+#: Template/LentStates/view.ctp:11
+#: Template/Levels/edit.ctp:13
+#: Template/Levels/index.ctp:37
+#: Template/Levels/view.ctp:11;98
+#: Template/Locations/edit.ctp:13
+#: Template/Locations/index.ctp:39
+#: Template/Locations/view.ctp:11;100;135
+#: Template/Subjects/edit.ctp:13
+#: Template/Subjects/index.ctp:37
+#: Template/Subjects/view.ctp:11;98
+#: Template/SubscriptionStates/edit.ctp:13
+#: Template/SubscriptionStates/index.ctp:37
+#: Template/SubscriptionStates/view.ctp:11;74
+#: Template/Users/edit.ctp:13
+#: Template/Users/index.ctp:57
+#: Template/Users/view.ctp:11;108
+msgid "Are you sure you want to delete # {0}?"
+msgstr "Segur que cal esborrar # {0}?"
+
+#: Template/AuthorTypes/edit.ctp:24
+#: Template/AuthorTypes/view.ctp:10
+msgid "Edit Author Type"
+msgstr "Edita tipus d'autoria"
+
+#: Template/AuthorTypes/index.ctp:10
+#: Template/AuthorTypes/view.ctp:13
+#: Template/Authorities/add.ctp:14
+#: Template/Authorities/edit.ctp:20
+#: Template/Authorities/index.ctp:14
+#: Template/Authorities/view.ctp:17
+msgid "New Author Type"
+msgstr "Afegeix tipus d'autoria"
+
+#: Template/AuthorTypes/index.ctp:16
+msgid "Author Types"
+msgstr "Tipus d'autoria"
+
+#: Template/AuthorTypes/index.ctp:35
+#: Template/AuthorTypes/view.ctp:58
+#: Template/Authorities/index.ctp:41
+#: Template/Authorities/view.ctp:104
+#: Template/AuthoritiesDocuments/index.ctp:39
+#: Template/Authors/index.ctp:35
+#: Template/Authors/view.ctp:58
+#: Template/Documents/index.ctp:97
+#: Template/Documents/view.ctp:164;191;218;245;272;307;348
+#: Template/DocumentsLanguages/index.ctp:39
+#: Template/DocumentsLevels/index.ctp:39
+#: Template/DocumentsSubjects/index.ctp:39
+#: Template/CatalogueStates/index.ctp:35
+#: Template/CatalogueStates/view.ctp:96
+#: Template/Cdus/index.ctp:35
+#: Template/Collections/index.ctp:35
+#: Template/Collections/view.ctp:96
+#: Template/ConservationStates/index.ctp:37
+#: Template/ConservationStates/view.ctp:98;133
+#: Template/Countries/index.ctp:35
+#: Template/Countries/view.ctp:58
+#: Template/EditionPlaces/index.ctp:39
+#: Template/EditionPlaces/view.ctp:102
+#: Template/Publishers/index.ctp:35
+#: Template/Publishers/view.ctp:96
+#: Template/Formats/index.ctp:37
+#: Template/Formats/view.ctp:98;131
+#: Template/Groups/index.ctp:37
+#: Template/Groups/view.ctp:64;107
+#: Template/Items/index.ctp:47
+#: Template/Languages/index.ctp:35
+#: Template/Languages/view.ctp:96
+#: Template/LendingPolicies/index.ctp:43
+#: Template/LendingStates/index.ctp:35
+#: Template/LendingStates/view.ctp:70
+#: Template/Lendings/index.ctp:53
+#: Template/LentStates/index.ctp:33
+#: Template/Levels/index.ctp:35
+#: Template/Levels/view.ctp:96
+#: Template/Locations/index.ctp:37
+#: Template/Locations/view.ctp:98;133
+#: Template/Subjects/index.ctp:35
+#: Template/Subjects/view.ctp:96
+#: Template/SubscriptionStates/index.ctp:35
+#: Template/SubscriptionStates/view.ctp:72
+#: Template/Users/index.ctp:55
+#: Template/Users/view.ctp:106
+#: View/Helper/PaginatorHelper.php:1220
+msgid "View"
+msgstr "Visualitza"
+
+#: Template/AuthorTypes/index.ctp:36
+#: Template/AuthorTypes/view.ctp:59
+#: Template/Authorities/index.ctp:42
+#: Template/Authorities/view.ctp:105
+#: Template/AuthoritiesDocuments/index.ctp:40
+#: Template/Authors/index.ctp:36
+#: Template/Authors/view.ctp:59
+#: Template/Documents/index.ctp:98
+#: Template/Documents/view.ctp:165;192;219;246;273;308;349
+#: Template/DocumentsLanguages/index.ctp:40
+#: Template/DocumentsLevels/index.ctp:40
+#: Template/DocumentsSubjects/index.ctp:40
+#: Template/CatalogueStates/index.ctp:36
+#: Template/CatalogueStates/view.ctp:97
+#: Template/Cdus/index.ctp:36
+#: Template/Collections/index.ctp:36
+#: Template/Collections/view.ctp:97
+#: Template/ConservationStates/index.ctp:38
+#: Template/ConservationStates/view.ctp:99;134
+#: Template/Countries/index.ctp:36
+#: Template/Countries/view.ctp:59
+#: Template/EditionPlaces/index.ctp:40
+#: Template/EditionPlaces/view.ctp:103
+#: Template/Publishers/index.ctp:36
+#: Template/Publishers/view.ctp:97
+#: Template/Formats/index.ctp:38
+#: Template/Formats/view.ctp:99;132
+#: Template/Groups/index.ctp:38
+#: Template/Groups/view.ctp:65;108
+#: Template/Items/index.ctp:48
+#: Template/Languages/index.ctp:36
+#: Template/Languages/view.ctp:97
+#: Template/LendingPolicies/index.ctp:44
+#: Template/LendingStates/index.ctp:36
+#: Template/LendingStates/view.ctp:71
+#: Template/Lendings/index.ctp:54
+#: Template/LentStates/index.ctp:34
+#: Template/Levels/index.ctp:36
+#: Template/Levels/view.ctp:97
+#: Template/Locations/index.ctp:38
+#: Template/Locations/view.ctp:99;134
+#: Template/Subjects/index.ctp:36
+#: Template/Subjects/view.ctp:97
+#: Template/SubscriptionStates/index.ctp:36
+#: Template/SubscriptionStates/view.ctp:73
+#: Template/Users/index.ctp:56
+#: Template/Users/view.ctp:107
+msgid "Edit"
+msgstr "Edita"
+
+#: Template/AuthorTypes/index.ctp:45
+#: Template/Authorities/index.ctp:51
+#: Template/AuthoritiesDocuments/index.ctp:49
+#: Template/Authors/index.ctp:45
+#: Template/Documents/index.ctp:107
+#: Template/DocumentsLanguages/index.ctp:49
+#: Template/DocumentsLevels/index.ctp:49
+#: Template/DocumentsSubjects/index.ctp:49
+#: Template/CatalogueStates/index.ctp:45
+#: Template/Cdus/index.ctp:45
+#: Template/Collections/index.ctp:45
+#: Template/ConservationStates/index.ctp:47
+#: Template/Countries/index.ctp:45
+#: Template/EditionPlaces/index.ctp:49
+#: Template/Publishers/index.ctp:45
+#: Template/Formats/index.ctp:47
+#: Template/Groups/index.ctp:47
+#: Template/Items/index.ctp:57
+#: Template/Languages/index.ctp:45
+#: Template/LendingPolicies/index.ctp:53
+#: Template/LendingStates/index.ctp:45
+#: Template/Lendings/index.ctp:63
+#: Template/LentStates/index.ctp:43
+#: Template/Levels/index.ctp:45
+#: Template/Locations/index.ctp:47
+#: Template/Subjects/index.ctp:45
+#: Template/SubscriptionStates/index.ctp:45
+#: Template/Users/index.ctp:65
+msgid "first"
+msgstr "primera pàgina"
+
+#: Template/AuthorTypes/index.ctp:46
+#: Template/Authorities/index.ctp:52
+#: Template/AuthoritiesDocuments/index.ctp:50
+#: Template/Authors/index.ctp:46
+#: Template/Documents/index.ctp:108
+#: Template/DocumentsLanguages/index.ctp:50
+#: Template/DocumentsLevels/index.ctp:50
+#: Template/DocumentsSubjects/index.ctp:50
+#: Template/CatalogueStates/index.ctp:46
+#: Template/Cdus/index.ctp:46
+#: Template/Collections/index.ctp:46
+#: Template/ConservationStates/index.ctp:48
+#: Template/Countries/index.ctp:46
+#: Template/EditionPlaces/index.ctp:50
+#: Template/Publishers/index.ctp:46
+#: Template/Formats/index.ctp:48
+#: Template/Groups/index.ctp:48
+#: Template/Items/index.ctp:58
+#: Template/Languages/index.ctp:46
+#: Template/LendingPolicies/index.ctp:54
+#: Template/LendingStates/index.ctp:46
+#: Template/Lendings/index.ctp:64
+#: Template/LentStates/index.ctp:44
+#: Template/Levels/index.ctp:46
+#: Template/Locations/index.ctp:48
+#: Template/Subjects/index.ctp:46
+#: Template/SubscriptionStates/index.ctp:46
+#: Template/Users/index.ctp:66
+msgid "previous"
+msgstr "anterior"
+
+#: Template/AuthorTypes/index.ctp:48
+#: Template/Authorities/index.ctp:54
+#: Template/AuthoritiesDocuments/index.ctp:52
+#: Template/Authors/index.ctp:48
+#: Template/Documents/index.ctp:110
+#: Template/DocumentsLanguages/index.ctp:52
+#: Template/DocumentsLevels/index.ctp:52
+#: Template/DocumentsSubjects/index.ctp:52
+#: Template/CatalogueStates/index.ctp:48
+#: Template/Cdus/index.ctp:48
+#: Template/Collections/index.ctp:48
+#: Template/ConservationStates/index.ctp:50
+#: Template/Countries/index.ctp:48
+#: Template/EditionPlaces/index.ctp:52
+#: Template/Publishers/index.ctp:48
+#: Template/Formats/index.ctp:50
+#: Template/Groups/index.ctp:50
+#: Template/Items/index.ctp:60
+#: Template/Languages/index.ctp:48
+#: Template/LendingPolicies/index.ctp:56
+#: Template/LendingStates/index.ctp:48
+#: Template/Lendings/index.ctp:66
+#: Template/LentStates/index.ctp:46
+#: Template/Levels/index.ctp:48
+#: Template/Locations/index.ctp:50
+#: Template/Subjects/index.ctp:48
+#: Template/SubscriptionStates/index.ctp:48
+#: Template/Users/index.ctp:68
+msgid "next"
+msgstr "següent"
+
+#: Template/AuthorTypes/index.ctp:49
+#: Template/Authorities/index.ctp:55
+#: Template/AuthoritiesDocuments/index.ctp:53
+#: Template/Authors/index.ctp:49
+#: Template/Documents/index.ctp:111
+#: Template/DocumentsLanguages/index.ctp:53
+#: Template/DocumentsLevels/index.ctp:53
+#: Template/DocumentsSubjects/index.ctp:53
+#: Template/CatalogueStates/index.ctp:49
+#: Template/Cdus/index.ctp:49
+#: Template/Collections/index.ctp:49
+#: Template/ConservationStates/index.ctp:51
+#: Template/Countries/index.ctp:49
+#: Template/EditionPlaces/index.ctp:53
+#: Template/Publishers/index.ctp:49
+#: Template/Formats/index.ctp:51
+#: Template/Groups/index.ctp:51
+#: Template/Items/index.ctp:61
+#: Template/Languages/index.ctp:49
+#: Template/LendingPolicies/index.ctp:57
+#: Template/LendingStates/index.ctp:49
+#: Template/Lendings/index.ctp:67
+#: Template/LentStates/index.ctp:47
+#: Template/Levels/index.ctp:49
+#: Template/Locations/index.ctp:51
+#: Template/Subjects/index.ctp:49
+#: Template/SubscriptionStates/index.ctp:49
+#: Template/Users/index.ctp:69
+msgid "last"
+msgstr "última pàgina"
+
+#: Template/AuthorTypes/index.ctp:51
+#: Template/Authorities/index.ctp:57
+#: Template/AuthoritiesDocuments/index.ctp:55
+#: Template/Authors/index.ctp:51
+#: Template/Documents/index.ctp:113
+#: Template/DocumentsLanguages/index.ctp:55
+#: Template/DocumentsLevels/index.ctp:55
+#: Template/DocumentsSubjects/index.ctp:55
+#: Template/CatalogueStates/index.ctp:51
+#: Template/Cdus/index.ctp:51
+#: Template/Collections/index.ctp:51
+#: Template/ConservationStates/index.ctp:53
+#: Template/Countries/index.ctp:51
+#: Template/EditionPlaces/index.ctp:55
+#: Template/Publishers/index.ctp:51
+#: Template/Formats/index.ctp:53
+#: Template/Groups/index.ctp:53
+#: Template/Items/index.ctp:63
+#: Template/Languages/index.ctp:51
+#: Template/LendingPolicies/index.ctp:59
+#: Template/LendingStates/index.ctp:51
+#: Template/Lendings/index.ctp:69
+#: Template/LentStates/index.ctp:49
+#: Template/Levels/index.ctp:51
+#: Template/Locations/index.ctp:53
+#: Template/Subjects/index.ctp:51
+#: Template/SubscriptionStates/index.ctp:51
+#: Template/Users/index.ctp:71
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr "Pàgina {{page}} de {{pages}}, mostrant {{current}} registre(s) dels {{count}}."
+
+#: Template/AuthorTypes/view.ctp:11
+msgid "Delete Author Type"
+msgstr "Suprimeix tipus d'autoria"
+
+#: Template/AuthorTypes/view.ctp:22
+#: Template/Authorities/view.ctp:52
+#: Template/Authors/view.ctp:22
+#: Template/Documents/view.ctp:48;179;206;233;260
+#: Template/CatalogueStates/view.ctp:22;44
+#: Template/Cdus/view.ctp:20
+#: Template/Collections/view.ctp:22;44
+#: Template/ConservationStates/view.ctp:24;46
+#: Template/Countries/view.ctp:22;44
+#: Template/EditionPlaces/view.ctp:24;50
+#: Template/Publishers/view.ctp:22;44
+#: Template/Formats/view.ctp:24;46
+#: Template/Groups/view.ctp:24;79
+#: Template/Languages/view.ctp:22;44
+#: Template/LendingStates/view.ctp:22
+#: Template/LentStates/view.ctp:20
+#: Template/Levels/view.ctp:22;44
+#: Template/Locations/view.ctp:24;46
+#: Template/Subjects/view.ctp:22;44
+#: Template/SubscriptionStates/view.ctp:22;44
+#: Template/Users/view.ctp:26
+msgid "Name"
+msgstr "Nom"
+
+#: Template/AuthorTypes/view.ctp:26;43
+#: Template/Authorities/view.ctp:34;51
+#: Template/AuthoritiesDocuments/view.ctp:32
+#: Template/Authors/view.ctp:26;43
+#: Template/Documents/view.ctp:104;149;178;205;232;259;286;321
+#: Template/DocumentsLanguages/view.ctp:32
+#: Template/DocumentsLevels/view.ctp:32
+#: Template/DocumentsSubjects/view.ctp:32
+#: Template/CatalogueStates/view.ctp:26;43
+#: Template/Cdus/view.ctp:28
+#: Template/Collections/view.ctp:26;43
+#: Template/ConservationStates/view.ctp:28;45;112
+#: Template/Countries/view.ctp:26;43
+#: Template/EditionPlaces/view.ctp:32;49
+#: Template/Publishers/view.ctp:26;43
+#: Template/Formats/view.ctp:28;45;112
+#: Template/Groups/view.ctp:28;45;78
+#: Template/Items/view.ctp:38
+#: Template/Languages/view.ctp:26;43
+#: Template/LendingPolicies/view.ctp:32
+#: Template/LendingStates/view.ctp:26;43
+#: Template/Lendings/view.ctp:38
+#: Template/LentStates/view.ctp:24
+#: Template/Levels/view.ctp:26;43
+#: Template/Locations/view.ctp:28;45;112
+#: Template/Subjects/view.ctp:26;43
+#: Template/SubscriptionStates/view.ctp:26;43
+#: Template/Users/view.ctp:58;79
+msgid "Id"
+msgstr "Núm. registre"
+
+#: Template/AuthorTypes/view.ctp:30;46
+#: Template/Authorities/view.ctp:38;73
+#: Template/AuthoritiesDocuments/view.ctp:36
+#: Template/Authors/view.ctp:30;46
+#: Template/Documents/view.ctp:128;152;180;207;234;261;292;330
+#: Template/DocumentsLanguages/view.ctp:36
+#: Template/DocumentsLevels/view.ctp:36
+#: Template/DocumentsSubjects/view.ctp:36
+#: Template/CatalogueStates/view.ctp:30;65
+#: Template/Cdus/view.ctp:32
+#: Template/Collections/view.ctp:30;65
+#: Template/ConservationStates/view.ctp:32;67;118
+#: Template/Countries/view.ctp:30;46
+#: Template/EditionPlaces/view.ctp:36;71
+#: Template/Publishers/view.ctp:30;65
+#: Template/Formats/view.ctp:32;67;117
+#: Template/Groups/view.ctp:32;50;88
+#: Template/Items/view.ctp:50
+#: Template/Languages/view.ctp:30;65
+#: Template/LendingPolicies/view.ctp:44
+#: Template/LendingStates/view.ctp:30;52
+#: Template/Lendings/view.ctp:62
+#: Template/LentStates/view.ctp:28
+#: Template/Levels/view.ctp:30;65
+#: Template/Locations/view.ctp:32;67;118
+#: Template/Subjects/view.ctp:30;65
+#: Template/SubscriptionStates/view.ctp:30;53
+#: Template/Users/view.ctp:66;88
+msgid "Created"
+msgstr "Data de creació"
+
+#: Template/AuthorTypes/view.ctp:34;47
+#: Template/Authorities/view.ctp:42;74
+#: Template/AuthoritiesDocuments/view.ctp:40
+#: Template/Authors/view.ctp:34;47
+#: Template/Documents/view.ctp:132;153;181;208;235;262;293;331
+#: Template/DocumentsLanguages/view.ctp:40
+#: Template/DocumentsLevels/view.ctp:40
+#: Template/DocumentsSubjects/view.ctp:40
+#: Template/CatalogueStates/view.ctp:34;66
+#: Template/Cdus/view.ctp:36
+#: Template/Collections/view.ctp:34;66
+#: Template/ConservationStates/view.ctp:36;68;119
+#: Template/Countries/view.ctp:34;47
+#: Template/EditionPlaces/view.ctp:40;72
+#: Template/Publishers/view.ctp:34;66
+#: Template/Formats/view.ctp:36;68;118
+#: Template/Groups/view.ctp:36;51;89
+#: Template/Items/view.ctp:54
+#: Template/Languages/view.ctp:34;66
+#: Template/LendingPolicies/view.ctp:48
+#: Template/LendingStates/view.ctp:34;53
+#: Template/Lendings/view.ctp:66
+#: Template/LentStates/view.ctp:32
+#: Template/Levels/view.ctp:34;66
+#: Template/Locations/view.ctp:36;68;119
+#: Template/Subjects/view.ctp:34;66
+#: Template/SubscriptionStates/view.ctp:34;54
+#: Template/Users/view.ctp:70;89
+msgid "Modified"
+msgstr "Última modificació"
+
+#: Template/AuthorTypes/view.ctp:39
+#: Template/Authors/view.ctp:39
+#: Template/Documents/view.ctp:145
+msgid "Related Authorities"
+msgstr "Autories"
+
+#: Template/AuthorTypes/view.ctp:44
+#: Template/Authors/view.ctp:44
+#: Template/Documents/view.ctp:150
+msgid "Author Id"
+msgstr "Autor"
+
+#: Template/AuthorTypes/view.ctp:45
+#: Template/Authors/view.ctp:45
+#: Template/Documents/view.ctp:151
+msgid "Author Type Id"
+msgstr "Tipus d'autoria"
+
+#: Template/Authorities/add.ctp:11
+#: Template/Authorities/edit.ctp:17
+#: Template/Authorities/index.ctp:11
+#: Template/Authorities/view.ctp:14
+#: Template/Authors/add.ctp:10
+#: Template/Authors/edit.ctp:16
+#: Template/Authors/view.ctp:12
+msgid "List Authors"
+msgstr "Llista autors/es"
+
+#: Template/Authorities/add.ctp:12
+#: Template/Authorities/edit.ctp:18
+#: Template/Authorities/index.ctp:12
+#: Template/Authorities/view.ctp:15
+#: Template/Authors/index.ctp:10
+#: Template/Authors/view.ctp:13
+msgid "New Author"
+msgstr "Afegeix autor/a"
+
+#: Template/Authorities/add.ctp:15
+#: Template/Authorities/edit.ctp:21
+#: Template/Authorities/index.ctp:15
+#: Template/Authorities/view.ctp:18
+#: Template/AuthoritiesDocuments/add.ctp:13
+#: Template/AuthoritiesDocuments/edit.ctp:19
+#: Template/AuthoritiesDocuments/index.ctp:13
+#: Template/AuthoritiesDocuments/view.ctp:16
+#: Template/Documents/add.ctp:10
+#: Template/Documents/edit.ctp:16
+#: Template/Documents/view.ctp:12
+#: Template/DocumentsLanguages/add.ctp:11
+#: Template/DocumentsLanguages/edit.ctp:17
+#: Template/DocumentsLanguages/index.ctp:11
+#: Template/DocumentsLanguages/view.ctp:14
+#: Template/DocumentsLevels/add.ctp:11
+#: Template/DocumentsLevels/edit.ctp:17
+#: Template/DocumentsLevels/index.ctp:11
+#: Template/DocumentsLevels/view.ctp:14
+#: Template/DocumentsSubjects/add.ctp:11
+#: Template/DocumentsSubjects/edit.ctp:17
+#: Template/DocumentsSubjects/index.ctp:11
+#: Template/DocumentsSubjects/view.ctp:14
+#: Template/CatalogueStates/add.ctp:11
+#: Template/CatalogueStates/edit.ctp:17
+#: Template/CatalogueStates/index.ctp:11
+#: Template/CatalogueStates/view.ctp:14
+#: Template/Collections/add.ctp:11
+#: Template/Collections/edit.ctp:17
+#: Template/Collections/index.ctp:11
+#: Template/Collections/view.ctp:14
+#: Template/ConservationStates/add.ctp:11
+#: Template/ConservationStates/edit.ctp:17
+#: Template/ConservationStates/index.ctp:11
+#: Template/ConservationStates/view.ctp:14
+#: Template/EditionPlaces/add.ctp:13
+#: Template/EditionPlaces/edit.ctp:19
+#: Template/EditionPlaces/index.ctp:13
+#: Template/EditionPlaces/view.ctp:16
+#: Template/Publishers/add.ctp:11
+#: Template/Publishers/edit.ctp:17
+#: Template/Publishers/index.ctp:11
+#: Template/Publishers/view.ctp:14
+#: Template/Formats/add.ctp:11
+#: Template/Formats/edit.ctp:17
+#: Template/Formats/index.ctp:11
+#: Template/Formats/view.ctp:14
+#: Template/Items/add.ctp:11
+#: Template/Items/edit.ctp:17
+#: Template/Items/index.ctp:11
+#: Template/Items/view.ctp:14
+#: Template/Languages/add.ctp:11
+#: Template/Languages/edit.ctp:17
+#: Template/Languages/index.ctp:11
+#: Template/Languages/view.ctp:14
+#: Template/Lendings/add.ctp:11
+#: Template/Lendings/edit.ctp:17
+#: Template/Lendings/index.ctp:11
+#: Template/Lendings/view.ctp:14
+#: Template/Levels/add.ctp:11
+#: Template/Levels/edit.ctp:17
+#: Template/Levels/index.ctp:11
+#: Template/Levels/view.ctp:14
+#: Template/Locations/add.ctp:11
+#: Template/Locations/edit.ctp:17
+#: Template/Locations/index.ctp:11
+#: Template/Locations/view.ctp:14
+#: Template/Subjects/add.ctp:11
+#: Template/Subjects/edit.ctp:17
+#: Template/Subjects/index.ctp:11
+#: Template/Subjects/view.ctp:14
+msgid "List Documents"
+msgstr "Llista documents"
+
+#: Template/Authorities/add.ctp:16
+#: Template/Authorities/edit.ctp:22
+#: Template/Authorities/index.ctp:16
+#: Template/Authorities/view.ctp:19
+#: Template/AuthoritiesDocuments/add.ctp:14
+#: Template/AuthoritiesDocuments/edit.ctp:20
+#: Template/AuthoritiesDocuments/index.ctp:14
+#: Template/AuthoritiesDocuments/view.ctp:17
+#: Template/Documents/index.ctp:10
+#: Template/Documents/view.ctp:13
+#: Template/DocumentsLanguages/add.ctp:12
+#: Template/DocumentsLanguages/edit.ctp:18
+#: Template/DocumentsLanguages/index.ctp:12
+#: Template/DocumentsLanguages/view.ctp:15
+#: Template/DocumentsLevels/add.ctp:12
+#: Template/DocumentsLevels/edit.ctp:18
+#: Template/DocumentsLevels/index.ctp:12
+#: Template/DocumentsLevels/view.ctp:15
+#: Template/DocumentsSubjects/add.ctp:12
+#: Template/DocumentsSubjects/edit.ctp:18
+#: Template/DocumentsSubjects/index.ctp:12
+#: Template/DocumentsSubjects/view.ctp:15
+#: Template/CatalogueStates/add.ctp:12
+#: Template/CatalogueStates/edit.ctp:18
+#: Template/CatalogueStates/index.ctp:12
+#: Template/CatalogueStates/view.ctp:15
+#: Template/Collections/add.ctp:12
+#: Template/Collections/edit.ctp:18
+#: Template/Collections/index.ctp:12
+#: Template/Collections/view.ctp:15
+#: Template/ConservationStates/add.ctp:12
+#: Template/ConservationStates/edit.ctp:18
+#: Template/ConservationStates/index.ctp:12
+#: Template/ConservationStates/view.ctp:15
+#: Template/EditionPlaces/add.ctp:14
+#: Template/EditionPlaces/edit.ctp:20
+#: Template/EditionPlaces/index.ctp:14
+#: Template/EditionPlaces/view.ctp:17
+#: Template/Publishers/add.ctp:12
+#: Template/Publishers/edit.ctp:18
+#: Template/Publishers/index.ctp:12
+#: Template/Publishers/view.ctp:15
+#: Template/Formats/add.ctp:12
+#: Template/Formats/edit.ctp:18
+#: Template/Formats/index.ctp:12
+#: Template/Formats/view.ctp:15
+#: Template/Items/add.ctp:12
+#: Template/Items/edit.ctp:18
+#: Template/Items/index.ctp:12
+#: Template/Items/view.ctp:15
+#: Template/Languages/add.ctp:12
+#: Template/Languages/edit.ctp:18
+#: Template/Languages/index.ctp:12
+#: Template/Languages/view.ctp:15
+#: Template/Lendings/add.ctp:12
+#: Template/Lendings/edit.ctp:18
+#: Template/Lendings/index.ctp:12
+#: Template/Lendings/view.ctp:15
+#: Template/Levels/add.ctp:12
+#: Template/Levels/edit.ctp:18
+#: Template/Levels/index.ctp:12
+#: Template/Levels/view.ctp:15
+#: Template/Locations/add.ctp:12
+#: Template/Locations/edit.ctp:18
+#: Template/Locations/index.ctp:12
+#: Template/Locations/view.ctp:15
+#: Template/Subjects/add.ctp:12
+#: Template/Subjects/edit.ctp:18
+#: Template/Subjects/index.ctp:12
+#: Template/Subjects/view.ctp:15
+msgid "New Document"
+msgstr "Afegeix document"
+
+#: Template/Authorities/add.ctp:22
+msgid "Add Authority"
+msgstr "Afegeix autoria"
+
+#: Template/Authorities/edit.ctp:28
+#: Template/Authorities/view.ctp:10
+msgid "Edit Authority"
+msgstr "Edita autoria"
+
+#: Template/Authorities/index.ctp:20
+msgid "Authorities"
+msgstr "Autories"
+
+#: Template/Authorities/view.ctp:11
+msgid "Delete Authority"
+msgstr "Suprimeix autoria"
+
+#: Template/Authorities/view.ctp:26
+msgid "Author"
+msgstr "Autor/a"
+
+#: Template/Authorities/view.ctp:30
+msgid "Author Type"
+msgstr "Tipus d'autoria"
+
+#: Template/Authorities/view.ctp:47
+#: Template/CatalogueStates/view.ctp:39
+#: Template/Collections/view.ctp:39
+#: Template/ConservationStates/view.ctp:41
+#: Template/EditionPlaces/view.ctp:45
+#: Template/Publishers/view.ctp:39
+#: Template/Formats/view.ctp:41
+#: Template/Languages/view.ctp:39
+#: Template/Levels/view.ctp:39
+#: Template/Locations/view.ctp:41
+#: Template/Subjects/view.ctp:39
+msgid "Related Documents"
+msgstr "Documents"
+
+#: Template/Authorities/view.ctp:53
+#: Template/Documents/view.ctp:52
+#: Template/CatalogueStates/view.ctp:45
+#: Template/Collections/view.ctp:45
+#: Template/ConservationStates/view.ctp:47
+#: Template/EditionPlaces/view.ctp:51
+#: Template/Publishers/view.ctp:45
+#: Template/Formats/view.ctp:47
+#: Template/Languages/view.ctp:45
+#: Template/Levels/view.ctp:45
+#: Template/Locations/view.ctp:47
+#: Template/Subjects/view.ctp:45
+msgid "Isbn"
+msgstr "ISBN"
+
+#: Template/Authorities/view.ctp:54
+#: Template/CatalogueStates/view.ctp:46
+#: Template/Collections/view.ctp:46
+#: Template/ConservationStates/view.ctp:48
+#: Template/EditionPlaces/view.ctp:52
+#: Template/Publishers/view.ctp:46
+#: Template/Formats/view.ctp:48
+#: Template/Languages/view.ctp:46
+#: Template/Levels/view.ctp:46
+#: Template/Locations/view.ctp:48
+#: Template/Subjects/view.ctp:46
+msgid "Cdu Id"
+msgstr "CDU"
+
+#: Template/Authorities/view.ctp:55
+#: Template/CatalogueStates/view.ctp:47
+#: Template/Collections/view.ctp:47
+#: Template/ConservationStates/view.ctp:49
+#: Template/EditionPlaces/view.ctp:53
+#: Template/Publishers/view.ctp:47
+#: Template/Formats/view.ctp:49;114
+#: Template/Groups/view.ctp:47
+#: Template/Languages/view.ctp:47
+#: Template/Levels/view.ctp:47
+#: Template/Locations/view.ctp:49
+#: Template/Subjects/view.ctp:47
+msgid "Format Id"
+msgstr "Tipus de format"
+
+#: Template/Authorities/view.ctp:56
+#: Template/CatalogueStates/view.ctp:48
+#: Template/Collections/view.ctp:48
+#: Template/ConservationStates/view.ctp:50
+#: Template/EditionPlaces/view.ctp:54
+#: Template/Publishers/view.ctp:48
+#: Template/Formats/view.ctp:50
+#: Template/Languages/view.ctp:48
+#: Template/Levels/view.ctp:48
+#: Template/Locations/view.ctp:50
+#: Template/Subjects/view.ctp:48
+msgid "Collection Id"
+msgstr "Col·lecció"
+
+#: Template/Authorities/view.ctp:57
+#: Template/Documents/view.ctp:108
+#: Template/CatalogueStates/view.ctp:49
+#: Template/Collections/view.ctp:49
+#: Template/ConservationStates/view.ctp:51
+#: Template/EditionPlaces/view.ctp:55
+#: Template/Publishers/view.ctp:49
+#: Template/Formats/view.ctp:51
+#: Template/Languages/view.ctp:49
+#: Template/Levels/view.ctp:49
+#: Template/Locations/view.ctp:51
+#: Template/Subjects/view.ctp:49
+msgid "Collection Item"
+msgstr "Núm. dins la col·lecció"
+
+#: Template/Authorities/view.ctp:58
+#: Template/CatalogueStates/view.ctp:50
+#: Template/Collections/view.ctp:50
+#: Template/ConservationStates/view.ctp:52
+#: Template/EditionPlaces/view.ctp:56
+#: Template/Publishers/view.ctp:50
+#: Template/Formats/view.ctp:52
+#: Template/Languages/view.ctp:50
+#: Template/Levels/view.ctp:50
+#: Template/Locations/view.ctp:52
+#: Template/Subjects/view.ctp:50
+msgid "Publication Place Id"
+msgstr "Lloc d'edició"
+
+#: Template/Authorities/view.ctp:59
+#: Template/Documents/view.ctp:72
+#: Template/CatalogueStates/view.ctp:51
+#: Template/Collections/view.ctp:51
+#: Template/ConservationStates/view.ctp:53
+#: Template/EditionPlaces/view.ctp:57
+#: Template/Publishers/view.ctp:51
+#: Template/Formats/view.ctp:53
+#: Template/Languages/view.ctp:51
+#: Template/Levels/view.ctp:51
+#: Template/Locations/view.ctp:53
+#: Template/Subjects/view.ctp:51
+msgid "Edition Date"
+msgstr "Data d'edició"
+
+#: Template/Authorities/view.ctp:60
+#: Template/Documents/view.ctp:76
+#: Template/CatalogueStates/view.ctp:52
+#: Template/Collections/view.ctp:52
+#: Template/ConservationStates/view.ctp:54
+#: Template/EditionPlaces/view.ctp:58
+#: Template/Publishers/view.ctp:52
+#: Template/Formats/view.ctp:54
+#: Template/Languages/view.ctp:52
+#: Template/Levels/view.ctp:52
+#: Template/Locations/view.ctp:54
+#: Template/Subjects/view.ctp:52
+msgid "Image"
+msgstr "Imatge"
+
+#: Template/Authorities/view.ctp:61
+#: Template/Documents/view.ctp:80
+#: Template/CatalogueStates/view.ctp:53
+#: Template/Collections/view.ctp:53
+#: Template/ConservationStates/view.ctp:55
+#: Template/EditionPlaces/view.ctp:59
+#: Template/Publishers/view.ctp:53
+#: Template/Formats/view.ctp:55
+#: Template/Languages/view.ctp:53
+#: Template/Levels/view.ctp:53
+#: Template/Locations/view.ctp:55
+#: Template/Subjects/view.ctp:53
+msgid "Image Dir"
+msgstr "Directori de la imatge"
+
+#: Template/Authorities/view.ctp:62
+#: Template/Documents/view.ctp:112
+#: Template/CatalogueStates/view.ctp:54
+#: Template/Collections/view.ctp:54
+#: Template/ConservationStates/view.ctp:56
+#: Template/EditionPlaces/view.ctp:60
+#: Template/Publishers/view.ctp:54
+#: Template/Formats/view.ctp:56
+#: Template/Languages/view.ctp:54
+#: Template/Levels/view.ctp:54
+#: Template/Locations/view.ctp:56
+#: Template/Subjects/view.ctp:54
+msgid "Image Size"
+msgstr "Mida de la imatge"
+
+#: Template/Authorities/view.ctp:63
+#: Template/Documents/view.ctp:84
+#: Template/CatalogueStates/view.ctp:55
+#: Template/Collections/view.ctp:55
+#: Template/ConservationStates/view.ctp:57
+#: Template/EditionPlaces/view.ctp:61
+#: Template/Publishers/view.ctp:55
+#: Template/Formats/view.ctp:57
+#: Template/Languages/view.ctp:55
+#: Template/Levels/view.ctp:55
+#: Template/Locations/view.ctp:57
+#: Template/Subjects/view.ctp:55
+msgid "Image Type"
+msgstr "Tipus d'imatge"
+
+#: Template/Authorities/view.ctp:64
+#: Template/Documents/view.ctp:137
+#: Template/CatalogueStates/view.ctp:56
+#: Template/Collections/view.ctp:56
+#: Template/ConservationStates/view.ctp:58
+#: Template/EditionPlaces/view.ctp:62
+#: Template/Publishers/view.ctp:56
+#: Template/Formats/view.ctp:58
+#: Template/Languages/view.ctp:56
+#: Template/Levels/view.ctp:56
+#: Template/Locations/view.ctp:58
+#: Template/Subjects/view.ctp:56
+msgid "Abstract"
+msgstr "Resum"
+
+#: Template/Authorities/view.ctp:65
+#: Template/Documents/view.ctp:141
+#: Template/CatalogueStates/view.ctp:57
+#: Template/Collections/view.ctp:57
+#: Template/ConservationStates/view.ctp:59
+#: Template/EditionPlaces/view.ctp:63
+#: Template/Publishers/view.ctp:57
+#: Template/Formats/view.ctp:59
+#: Template/Languages/view.ctp:57
+#: Template/Levels/view.ctp:57
+#: Template/Locations/view.ctp:59
+#: Template/Subjects/view.ctp:57
+msgid "Notes"
+msgstr "Notes"
+
+#: Template/Authorities/view.ctp:66
+#: Template/Documents/view.ctp:88
+#: Template/CatalogueStates/view.ctp:58
+#: Template/Collections/view.ctp:58
+#: Template/ConservationStates/view.ctp:60
+#: Template/EditionPlaces/view.ctp:64
+#: Template/Publishers/view.ctp:58
+#: Template/Formats/view.ctp:60
+#: Template/Languages/view.ctp:58
+#: Template/Levels/view.ctp:58
+#: Template/Locations/view.ctp:60
+#: Template/Subjects/view.ctp:58
+msgid "Url"
+msgstr "Web"
+
+#: Template/Authorities/view.ctp:67
+#: Template/Documents/view.ctp:116
+#: Template/CatalogueStates/view.ctp:59
+#: Template/Collections/view.ctp:59
+#: Template/ConservationStates/view.ctp:61
+#: Template/EditionPlaces/view.ctp:65
+#: Template/Publishers/view.ctp:59
+#: Template/Formats/view.ctp:61
+#: Template/Languages/view.ctp:59
+#: Template/Levels/view.ctp:59
+#: Template/Locations/view.ctp:61
+#: Template/Subjects/view.ctp:59
+msgid "Height"
+msgstr "Alçada"
+
+#: Template/Authorities/view.ctp:68
+#: Template/Documents/view.ctp:120
+#: Template/CatalogueStates/view.ctp:60
+#: Template/Collections/view.ctp:60
+#: Template/ConservationStates/view.ctp:62
+#: Template/EditionPlaces/view.ctp:66
+#: Template/Publishers/view.ctp:60
+#: Template/Formats/view.ctp:62
+#: Template/Languages/view.ctp:60
+#: Template/Levels/view.ctp:60
+#: Template/Locations/view.ctp:62
+#: Template/Subjects/view.ctp:60
+msgid "Width"
+msgstr "Amplada"
+
+#: Template/Authorities/view.ctp:69
+#: Template/Documents/view.ctp:124
+#: Template/CatalogueStates/view.ctp:61
+#: Template/Collections/view.ctp:61
+#: Template/ConservationStates/view.ctp:63
+#: Template/EditionPlaces/view.ctp:67
+#: Template/Publishers/view.ctp:61
+#: Template/Formats/view.ctp:63
+#: Template/Languages/view.ctp:61
+#: Template/Levels/view.ctp:61
+#: Template/Locations/view.ctp:63
+#: Template/Subjects/view.ctp:61
+msgid "Pagecount"
+msgstr "Núm. de pàgines"
+
+#: Template/Authorities/view.ctp:70
+#: Template/Documents/view.ctp:288
+#: Template/CatalogueStates/view.ctp:62
+#: Template/Collections/view.ctp:62
+#: Template/ConservationStates/view.ctp:64;114
+#: Template/EditionPlaces/view.ctp:68
+#: Template/Publishers/view.ctp:62
+#: Template/Formats/view.ctp:64
+#: Template/Languages/view.ctp:62
+#: Template/Levels/view.ctp:62
+#: Template/Locations/view.ctp:64;114
+#: Template/Subjects/view.ctp:62
+msgid "Location Id"
+msgstr "Localització"
+
+#: Template/Authorities/view.ctp:71
+#: Template/CatalogueStates/view.ctp:63
+#: Template/Collections/view.ctp:63
+#: Template/ConservationStates/view.ctp:65
+#: Template/EditionPlaces/view.ctp:69
+#: Template/Publishers/view.ctp:63
+#: Template/Formats/view.ctp:65
+#: Template/Languages/view.ctp:63
+#: Template/Levels/view.ctp:63
+#: Template/Locations/view.ctp:65
+#: Template/Subjects/view.ctp:63
+msgid "Catalogue State Id"
+msgstr "Estat de catalogació"
+
+#: Template/Authorities/view.ctp:72
+#: Template/Documents/view.ctp:291
+#: Template/CatalogueStates/view.ctp:64
+#: Template/Collections/view.ctp:64
+#: Template/ConservationStates/view.ctp:66;117
+#: Template/EditionPlaces/view.ctp:70
+#: Template/Publishers/view.ctp:64
+#: Template/Formats/view.ctp:66
+#: Template/Languages/view.ctp:64
+#: Template/Levels/view.ctp:64
+#: Template/Locations/view.ctp:66;117
+#: Template/Subjects/view.ctp:64
+msgid "Conservation State Id"
+msgstr "Estat de conservació"
+
+#: Template/AuthoritiesDocuments/add.ctp:10
+#: Template/AuthoritiesDocuments/edit.ctp:16
+#: Template/AuthoritiesDocuments/view.ctp:12
+msgid "List Authorities Documents"
+msgstr "Llista associacions de documents i autories"
+
+#: Template/AuthoritiesDocuments/add.ctp:20
+msgid "Add Authorities Document"
+msgstr "Associa document i autoria"
+
+#: Template/AuthoritiesDocuments/edit.ctp:26
+#: Template/AuthoritiesDocuments/view.ctp:10
+msgid "Edit Authorities Document"
+msgstr "Edita associació de document i autoria"
+
+#: Template/AuthoritiesDocuments/index.ctp:10
+#: Template/AuthoritiesDocuments/view.ctp:13
+msgid "New Authorities Document"
+msgstr "Associa document i autoria"
+
+#: Template/AuthoritiesDocuments/index.ctp:18
+msgid "Authorities Documents"
+msgstr "Associacions de documents i autories"
+
+#: Template/AuthoritiesDocuments/view.ctp:11
+msgid "Delete Authorities Document"
+msgstr "Suprimeix associacio de document i autoria"
+
+#: Template/AuthoritiesDocuments/view.ctp:24
+msgid "Authority"
+msgstr "Autoria"
+
+#: Template/AuthoritiesDocuments/view.ctp:28
+#: Template/DocumentsLanguages/view.ctp:24
+#: Template/DocumentsLevels/view.ctp:24
+#: Template/DocumentsSubjects/view.ctp:24
+#: Template/Items/view.ctp:26
+#: Template/Lendings/view.ctp:26
+msgid "Document"
+msgstr "Document"
+msgstr ""
+
+#: Template/Authors/add.ctp:18
+msgid "Add Author"
+msgstr "Afegir autor/a"
+
+#: Template/Authors/edit.ctp:24
+#: Template/Authors/view.ctp:10
+msgid "Edit Author"
+msgstr "Edita autor/a"
+
+#: Template/Authors/index.ctp:16
+msgid "Authors"
+msgstr "Autors/es"
+
+#: Template/Authors/view.ctp:11
+msgid "Delete Author"
+msgstr "Suprimeix autor/a"
+
+#: Template/Documents/add.ctp:11
+#: Template/Documents/edit.ctp:17
+#: Template/Documents/index.ctp:11
+#: Template/Documents/view.ctp:14
+#: Template/Cdus/add.ctp:10
+#: Template/Cdus/edit.ctp:16
+#: Template/Cdus/view.ctp:12
+msgid "List Cdus"
+msgstr "Llista CDUs"
+
+#: Template/Documents/add.ctp:12
+#: Template/Documents/edit.ctp:18
+#: Template/Documents/index.ctp:12
+#: Template/Documents/view.ctp:15
+#: Template/Cdus/index.ctp:10
+#: Template/Cdus/view.ctp:13
+msgid "New Cdus"
+msgstr "Afegeix CDU"
+
+#: Template/Documents/add.ctp:13
+#: Template/Documents/edit.ctp:19
+#: Template/Documents/index.ctp:13
+#: Template/Documents/view.ctp:16
+#: Template/Formats/add.ctp:10
+#: Template/Formats/edit.ctp:16
+#: Template/Formats/view.ctp:12
+#: Template/LendingPolicies/add.ctp:13
+#: Template/LendingPolicies/edit.ctp:19
+#: Template/LendingPolicies/index.ctp:13
+#: Template/LendingPolicies/view.ctp:16
+msgid "List Formats"
+msgstr "Llista tipus de format"
+
+#: Template/Documents/add.ctp:14
+#: Template/Documents/edit.ctp:20
+#: Template/Documents/index.ctp:14
+#: Template/Documents/view.ctp:17
+#: Template/Formats/index.ctp:10
+#: Template/Formats/view.ctp:13
+#: Template/LendingPolicies/add.ctp:14
+#: Template/LendingPolicies/edit.ctp:20
+#: Template/LendingPolicies/index.ctp:14
+#: Template/LendingPolicies/view.ctp:17
+msgid "New Format"
+msgstr "Afegeix tipus de format"
+
+#: Template/Documents/add.ctp:15
+#: Template/Documents/edit.ctp:21
+#: Template/Documents/index.ctp:15
+#: Template/Documents/view.ctp:18
+#: Template/Collections/add.ctp:10
+#: Template/Collections/edit.ctp:16
+#: Template/Collections/view.ctp:12
+msgid "List Collections"
+msgstr "Llista col·leccions"
+
+#: Template/Documents/add.ctp:16
+#: Template/Documents/edit.ctp:22
+#: Template/Documents/index.ctp:16
+#: Template/Documents/view.ctp:19
+#: Template/Collections/index.ctp:10
+#: Template/Collections/view.ctp:13
+msgid "New Collection"
+msgstr "Afegeix col·lecció"
+
+#: Template/Documents/add.ctp:17
+#: Template/Documents/edit.ctp:23
+#: Template/Documents/index.ctp:17
+#: Template/Documents/view.ctp:20
+#: Template/Countries/add.ctp:11
+#: Template/Countries/edit.ctp:17
+#: Template/Countries/index.ctp:11
+#: Template/Countries/view.ctp:14
+#: Template/EditionPlaces/add.ctp:10
+#: Template/EditionPlaces/edit.ctp:16
+#: Template/EditionPlaces/view.ctp:12
+msgid "List Publication Places"
+msgstr "Lista llocs d'edició"
+
+#: Template/Documents/add.ctp:18
+#: Template/Documents/edit.ctp:24
+#: Template/Documents/index.ctp:18
+#: Template/Documents/view.ctp:21
+#: Template/Countries/add.ctp:12
+#: Template/Countries/edit.ctp:18
+#: Template/Countries/index.ctp:12
+#: Template/Countries/view.ctp:15
+#: Template/EditionPlaces/index.ctp:10
+#: Template/EditionPlaces/view.ctp:13
+msgid "New Publication Place"
+msgstr "Afegeix lloc d'edició"
+
+#: Template/Documents/add.ctp:19
+#: Template/Documents/edit.ctp:25
+#: Template/Documents/index.ctp:19
+#: Template/Documents/view.ctp:22
+#: Template/Items/add.ctp:13
+#: Template/Items/edit.ctp:19
+#: Template/Items/index.ctp:13
+#: Template/Items/view.ctp:16
+#: Template/Locations/add.ctp:10
+#: Template/Locations/edit.ctp:16
+#: Template/Locations/view.ctp:12
+msgid "List Locations"
+msgstr "Llista localitzacións"
+
+#: Template/Documents/add.ctp:20
+#: Template/Documents/edit.ctp:26
+#: Template/Documents/index.ctp:20
+#: Template/Documents/view.ctp:23
+#: Template/Items/add.ctp:14
+#: Template/Items/edit.ctp:20
+#: Template/Items/index.ctp:14
+#: Template/Items/view.ctp:17
+#: Template/Locations/index.ctp:10
+#: Template/Locations/view.ctp:13
+msgid "New Location"
+msgstr "Afegeix localització"
+
+#: Template/Documents/add.ctp:21
+#: Template/Documents/edit.ctp:27
+#: Template/Documents/index.ctp:21
+#: Template/Documents/view.ctp:24
+#: Template/CatalogueStates/add.ctp:10
+#: Template/CatalogueStates/edit.ctp:16
+#: Template/CatalogueStates/view.ctp:12
+msgid "List Catalogue States"
+msgstr "Llista estats de catalogació"
+
+#: Template/Documents/add.ctp:22
+#: Template/Documents/edit.ctp:28
+#: Template/Documents/index.ctp:22
+#: Template/Documents/view.ctp:25
+#: Template/CatalogueStates/index.ctp:10
+#: Template/CatalogueStates/view.ctp:13
+msgid "New Catalogue State"
+msgstr "Afegeix estat de catalogació"
+
+#: Template/Documents/add.ctp:23
+#: Template/Documents/edit.ctp:29
+#: Template/Documents/index.ctp:23
+#: Template/Documents/view.ctp:26
+#: Template/ConservationStates/add.ctp:10
+#: Template/ConservationStates/edit.ctp:16
+#: Template/ConservationStates/view.ctp:12
+#: Template/Items/add.ctp:15
+#: Template/Items/edit.ctp:21
+#: Template/Items/index.ctp:15
+#: Template/Items/view.ctp:18
+msgid "List Conservation States"
+msgstr "Llista estats de conservació"
+
+#: Template/Documents/add.ctp:24
+#: Template/Documents/edit.ctp:30
+#: Template/Documents/index.ctp:24
+#: Template/Documents/view.ctp:27
+#: Template/ConservationStates/index.ctp:10
+#: Template/ConservationStates/view.ctp:13
+#: Template/Items/add.ctp:16
+#: Template/Items/edit.ctp:22
+#: Template/Items/index.ctp:16
+#: Template/Items/view.ctp:19
+msgid "New Conservation State"
+msgstr "Afegeix estat de conservació"
+
+#: Template/Documents/add.ctp:25
+#: Template/Documents/edit.ctp:31
+#: Template/Documents/index.ctp:25
+#: Template/Documents/view.ctp:28
+#: Template/ConservationStates/add.ctp:13
+#: Template/ConservationStates/edit.ctp:19
+#: Template/ConservationStates/index.ctp:13
+#: Template/ConservationStates/view.ctp:16
+#: Template/Items/add.ctp:10
+#: Template/Items/edit.ctp:16
+#: Template/Items/view.ctp:12
+#: Template/Locations/add.ctp:13
+#: Template/Locations/edit.ctp:19
+#: Template/Locations/index.ctp:13
+#: Template/Locations/view.ctp:16
+msgid "List Items"
+msgstr "Llista exemplars"
+
+#: Template/Documents/add.ctp:26
+#: Template/Documents/edit.ctp:32
+#: Template/Documents/index.ctp:26
+#: Template/Documents/view.ctp:29
+#: Template/ConservationStates/add.ctp:14
+#: Template/ConservationStates/edit.ctp:20
+#: Template/ConservationStates/index.ctp:14
+#: Template/ConservationStates/view.ctp:17
+#: Template/Items/index.ctp:10
+#: Template/Items/view.ctp:13
+#: Template/Locations/add.ctp:14
+#: Template/Locations/edit.ctp:20
+#: Template/Locations/index.ctp:14
+#: Template/Locations/view.ctp:17
+msgid "New Item"
+msgstr "Afegeix exemplar"
+
+#: Template/Documents/add.ctp:27
+#: Template/Documents/edit.ctp:33
+#: Template/Documents/index.ctp:27
+#: Template/Documents/view.ctp:30
+#: Template/LendingStates/add.ctp:11
+#: Template/LendingStates/edit.ctp:17
+#: Template/LendingStates/index.ctp:11
+#: Template/LendingStates/view.ctp:14
+#: Template/Lendings/add.ctp:10
+#: Template/Lendings/edit.ctp:16
+#: Template/Lendings/view.ctp:12
+#: Template/Users/add.ctp:15
+#: Template/Users/edit.ctp:21
+#: Template/Users/index.ctp:15
+#: Template/Users/view.ctp:18
+msgid "List Lendings"
+msgstr "Llista moviments de préstec"
+
+#: Template/Documents/add.ctp:28
+#: Template/Documents/edit.ctp:34
+#: Template/Documents/index.ctp:28
+#: Template/Documents/view.ctp:31
+#: Template/LendingStates/add.ctp:12
+#: Template/LendingStates/edit.ctp:18
+#: Template/LendingStates/index.ctp:12
+#: Template/LendingStates/view.ctp:15
+#: Template/Lendings/index.ctp:10
+#: Template/Lendings/view.ctp:13
+#: Template/Users/add.ctp:16
+#: Template/Users/edit.ctp:22
+#: Template/Users/index.ctp:16
+#: Template/Users/view.ctp:19
+msgid "New Lending"
+msgstr "Afegeix préstec"
+
+#: Template/Documents/add.ctp:31
+#: Template/Documents/edit.ctp:37
+#: Template/Documents/index.ctp:31
+#: Template/Documents/view.ctp:34
+#: Template/Publishers/add.ctp:10
+#: Template/Publishers/edit.ctp:16
+#: Template/Publishers/view.ctp:12
+msgid "List Publishers"
+msgstr "Llista editorials"
+
+#: Template/Documents/add.ctp:32
+#: Template/Documents/edit.ctp:38
+#: Template/Documents/index.ctp:32
+#: Template/Documents/view.ctp:35
+#: Template/Publishers/index.ctp:10
+#: Template/Publishers/view.ctp:13
+msgid "New Publisher"
+msgstr "Afegeix editorial"
+
+#: Template/Documents/add.ctp:33
+#: Template/Documents/edit.ctp:39
+#: Template/Documents/index.ctp:33
+#: Template/Documents/view.ctp:36
+#: Template/DocumentsLanguages/add.ctp:13
+#: Template/DocumentsLanguages/edit.ctp:19
+#: Template/DocumentsLanguages/index.ctp:13
+#: Template/DocumentsLanguages/view.ctp:16
+#: Template/Languages/add.ctp:10
+#: Template/Languages/edit.ctp:16
+#: Template/Languages/view.ctp:12
+msgid "List Languages"
+msgstr "Llista llengües"
+
+#: Template/Documents/add.ctp:34
+#: Template/Documents/edit.ctp:40
+#: Template/Documents/index.ctp:34
+#: Template/Documents/view.ctp:37
+#: Template/DocumentsLanguages/add.ctp:14
+#: Template/DocumentsLanguages/edit.ctp:20
+#: Template/DocumentsLanguages/index.ctp:14
+#: Template/DocumentsLanguages/view.ctp:17
+#: Template/Languages/index.ctp:10
+#: Template/Languages/view.ctp:13
+msgid "New Language"
+msgstr "Afegeix llengüa"
+
+#: Template/Documents/add.ctp:35
+#: Template/Documents/edit.ctp:41
+#: Template/Documents/index.ctp:35
+#: Template/Documents/view.ctp:38
+#: Template/DocumentsLevels/add.ctp:13
+#: Template/DocumentsLevels/edit.ctp:19
+#: Template/DocumentsLevels/index.ctp:13
+#: Template/DocumentsLevels/view.ctp:16
+#: Template/Levels/add.ctp:10
+#: Template/Levels/edit.ctp:16
+#: Template/Levels/view.ctp:12
+msgid "List Levels"
+msgstr "Llista nivells"
+
+#: Template/Documents/add.ctp:36
+#: Template/Documents/edit.ctp:42
+#: Template/Documents/index.ctp:36
+#: Template/Documents/view.ctp:39
+#: Template/DocumentsLevels/add.ctp:14
+#: Template/DocumentsLevels/edit.ctp:20
+#: Template/DocumentsLevels/index.ctp:14
+#: Template/DocumentsLevels/view.ctp:17
+#: Template/Levels/index.ctp:10
+#: Template/Levels/view.ctp:13
+msgid "New Level"
+msgstr "Afegeix nivell"
+
+#: Template/Documents/add.ctp:37
+#: Template/Documents/edit.ctp:43
+#: Template/Documents/index.ctp:37
+#: Template/Documents/view.ctp:40
+#: Template/DocumentsSubjects/add.ctp:13
+#: Template/DocumentsSubjects/edit.ctp:19
+#: Template/DocumentsSubjects/index.ctp:13
+#: Template/DocumentsSubjects/view.ctp:16
+#: Template/Subjects/add.ctp:10
+#: Template/Subjects/edit.ctp:16
+#: Template/Subjects/view.ctp:12
+msgid "List Subjects"
+msgstr "Llista matèries"
+
+#: Template/Documents/add.ctp:38
+#: Template/Documents/edit.ctp:44
+#: Template/Documents/index.ctp:38
+#: Template/Documents/view.ctp:41
+#: Template/DocumentsSubjects/add.ctp:14
+#: Template/DocumentsSubjects/edit.ctp:20
+#: Template/DocumentsSubjects/index.ctp:14
+#: Template/DocumentsSubjects/view.ctp:17
+#: Template/Subjects/index.ctp:10
+#: Template/Subjects/view.ctp:13
+msgid "New Subject"
+msgstr "Afegeix matèria"
+
+#: Template/Documents/add.ctp:44
+msgid "Add Document"
+msgstr "Afegeix document"
+
+#: Template/Documents/edit.ctp:50
+#: Template/Documents/view.ctp:10
+msgid "Edit Document"
+msgstr "Edita document"
+
+#: Template/Documents/index.ctp:42
+msgid "Documents"
+msgstr "Documents"
+
+#: Template/Documents/view.ctp:11
+msgid "Delete Document"
+msgstr "Suprimeix document"
+
+#: Template/Documents/view.ctp:56
+#: Template/Cdus/index.ctp:14
+msgid "Cdus"
+msgstr "CDU"
+
+#: Template/Documents/view.ctp:60
+#: Template/LendingPolicies/view.ctp:28
+msgid "Format"
+msgstr "Tipus de format"
+
+#: Template/Documents/view.ctp:64
+msgid "Collection"
+msgstr "Col·lecció"
+
+#: Template/Documents/view.ctp:68
+msgid "Publication Place"
+msgstr "Lloc d'edició"
+
+#: Template/Documents/view.ctp:92
+#: Template/Items/view.ctp:30
+msgid "Location"
+msgstr "Localització"
+
+#: Template/Documents/view.ctp:96
+msgid "Catalogue State"
+msgstr "Estat de catalogació"
+
+#: Template/Documents/view.ctp:100
+#: Template/Items/view.ctp:34
+msgid "Conservation State"
+msgstr "Estat de conservació"
+
+#: Template/Documents/view.ctp:174
+msgid "Related Publishers"
+msgstr "Editorials"
+
+#: Template/Documents/view.ctp:201
+msgid "Related Languages"
+msgstr "Llengües"
+
+#: Template/Documents/view.ctp:228
+msgid "Related Levels"
+msgstr "Nivells"
+
+#: Template/Documents/view.ctp:255
+msgid "Related Subjects"
+msgstr "Matèries"
+
+#: Template/Documents/view.ctp:282
+#: Template/ConservationStates/view.ctp:108
+#: Template/Locations/view.ctp:108
+msgid "Related Items"
+msgstr "Exemplars"
+
+#: Template/Documents/view.ctp:287;322
+#: Template/ConservationStates/view.ctp:113
+#: Template/LendingStates/view.ctp:44
+#: Template/Locations/view.ctp:113
+#: Template/Users/view.ctp:80
+msgid "Document Id"
+msgstr "Document"
+
+#: Template/Documents/view.ctp:289
+#: Template/ConservationStates/view.ctp:115
+#: Template/Items/view.ctp:42
+#: Template/Locations/view.ctp:115
+msgid "Lendable State"
+msgstr "Estat prestable"
+
+#: Template/Documents/view.ctp:290
+#: Template/ConservationStates/view.ctp:116
+#: Template/Items/view.ctp:46
+#: Template/Lendings/view.ctp:34
+#: Template/Locations/view.ctp:116
+msgid "Lending State"
+msgstr "Estat de préstec"
+
+#: Template/Documents/view.ctp:317
+#: Template/LendingStates/view.ctp:39
+#: Template/Users/view.ctp:75
+msgid "Related Lendings"
+msgstr "Préstecs"
+
+#: Template/Documents/view.ctp:323
+#: Template/LendingStates/view.ctp:45
+#: Template/Users/view.ctp:81
+msgid "User Id"
+msgstr "Usuari/a"
+
+#: Template/Documents/view.ctp:324
+#: Template/LendingStates/view.ctp:46
+#: Template/Lendings/view.ctp:42
+#: Template/Users/view.ctp:82
+msgid "Set Loan User Id"
+msgstr "Usuari que ha fet el préstec"
+
+#: Template/Documents/view.ctp:325
+#: Template/LendingStates/view.ctp:47
+#: Template/Lendings/view.ctp:46
+#: Template/Users/view.ctp:83
+msgid "Set Return User Id"
+msgstr "Usuari que ha fet el retorn"
+
+#: Template/Documents/view.ctp:326
+#: Template/LendingStates/view.ctp:48
+#: Template/Lendings/view.ctp:50
+#: Template/Users/view.ctp:84
+msgid "Date Taken"
+msgstr "Data de préstec"
+
+#: Template/Documents/view.ctp:327
+#: Template/LendingStates/view.ctp:49
+#: Template/Lendings/view.ctp:54
+#: Template/Users/view.ctp:85
+msgid "Date Return"
+msgstr "Data de retorn prevista"
+
+#: Template/Documents/view.ctp:328
+#: Template/LendingStates/view.ctp:50
+#: Template/Lendings/view.ctp:58
+#: Template/Users/view.ctp:86
+msgid "Date Real Return"
+msgstr "Data de retorn real"
+
+#: Template/Documents/view.ctp:329
+#: Template/LendingStates/view.ctp:51
+#: Template/Users/view.ctp:87
+msgid "Lending State Id"
+msgstr "Estat de préstec"
+
+#: Template/DocumentsLanguages/add.ctp:10
+#: Template/DocumentsLanguages/edit.ctp:16
+#: Template/DocumentsLanguages/view.ctp:12
+msgid "List Documents Languages"
+msgstr "Llista associacions de documents i llengües"
+
+#: Template/DocumentsLanguages/add.ctp:20
+msgid "Add Documents Language"
+msgstr "Associa document i llengua"
+
+#: Template/DocumentsLanguages/edit.ctp:26
+#: Template/DocumentsLanguages/view.ctp:10
+msgid "Edit Documents Language"
+msgstr "Edita associació de document i llengua"
+
+#: Template/DocumentsLanguages/index.ctp:10
+#: Template/DocumentsLanguages/view.ctp:13
+msgid "New Documents Language"
+msgstr "Associa document i llengua"
+
+#: Template/DocumentsLanguages/index.ctp:18
+msgid "Documents Languages"
+msgstr "Associacions de documents i llengües"
+
+#: Template/DocumentsLanguages/view.ctp:11
+msgid "Delete Documents Language"
+msgstr "Desassocia document i llengüa"
+
+#: Template/DocumentsLanguages/view.ctp:28
+msgid "Language"
+msgstr "Llengua"
+
+#: Template/DocumentsLevels/add.ctp:10
+#: Template/DocumentsLevels/edit.ctp:16
+#: Template/DocumentsLevels/view.ctp:12
+msgid "List Documents Levels"
+msgstr "Llista associacions de documents i nivells"
+
+#: Template/DocumentsLevels/add.ctp:20
+msgid "Add Documents Level"
+msgstr "Associa document i nivell"
+
+#: Template/DocumentsLevels/edit.ctp:26
+#: Template/DocumentsLevels/view.ctp:10
+msgid "Edit Documents Level"
+msgstr "Edita associació de document i nivell"
+
+#: Template/DocumentsLevels/index.ctp:10
+#: Template/DocumentsLevels/view.ctp:13
+msgid "New Documents Level"
+msgstr "Associa document i nivell"
+
+#: Template/DocumentsLevels/index.ctp:18
+msgid "Documents Levels"
+msgstr "Associacions de documents i nivells"
+
+#: Template/DocumentsLevels/view.ctp:11
+msgid "Delete Documents Level"
+msgstr "Desassocia document i nivell"
+
+#: Template/DocumentsLevels/view.ctp:28
+msgid "Level"
+msgstr "Nivell"
+
+#: Template/DocumentsSubjects/add.ctp:10
+#: Template/DocumentsSubjects/edit.ctp:16
+#: Template/DocumentsSubjects/view.ctp:12
+msgid "List Documents Subjects"
+msgstr "Llista associacions de documents i matèries"
+
+#: Template/DocumentsSubjects/add.ctp:20
+msgid "Add Documents Subject"
+msgstr "Associa document i matèria"
+
+#: Template/DocumentsSubjects/edit.ctp:26
+#: Template/DocumentsSubjects/view.ctp:10
+msgid "Edit Documents Subject"
+msgstr "Edita associació de document i matèria"
+
+#: Template/DocumentsSubjects/index.ctp:10
+#: Template/DocumentsSubjects/view.ctp:13
+msgid "New Documents Subject"
+msgstr "Associa document i matèria"
+
+#: Template/DocumentsSubjects/index.ctp:18
+msgid "Documents Subjects"
+msgstr "Associacions de documents i matèries"
+
+#: Template/DocumentsSubjects/view.ctp:11
+msgid "Delete Documents Subject"
+msgstr "Desassocia document i matèria"
+
+#: Template/DocumentsSubjects/view.ctp:28
+msgid "Subject"
+msgstr "Matèria"
+
+#: Template/CatalogueStates/add.ctp:18
+msgid "Add Catalogue State"
+msgstr "Afegeix estat de catalogació"
+
+#: Template/CatalogueStates/edit.ctp:24
+#: Template/CatalogueStates/view.ctp:10
+msgid "Edit Catalogue State"
+msgstr "Edita estat de catalogació"
+
+#: Template/CatalogueStates/index.ctp:16
+msgid "Catalogue States"
+msgstr "Estats de catalogació"
+
+#: Template/CatalogueStates/view.ctp:11
+msgid "Delete Catalogue State"
+msgstr "Suprimexi estat de catalogació"
+
+#: Template/Cdus/add.ctp:16
+msgid "Add Cdus"
+msgstr "Afegeix CDU"
+
+#: Template/Cdus/edit.ctp:22
+#: Template/Cdus/view.ctp:10
+msgid "Edit Cdus"
+msgstr "Edita CDU"
+
+#: Template/Cdus/view.ctp:11
+msgid "Delete Cdus"
+msgstr "Suprimeix CDU"
+
+#: Template/Cdus/view.ctp:24
+msgid "Description"
+msgstr "Descripció"
+
+#: Template/Collections/add.ctp:18
+msgid "Add Collection"
+msgstr "Afegeix col·lecció"
+
+#: Template/Collections/edit.ctp:24
+#: Template/Collections/view.ctp:10
+msgid "Edit Collection"
+msgstr "Edita col·lecció"
+
+#: Template/Collections/index.ctp:16
+msgid "Collections"
+msgstr "Col·leccions"
+
+#: Template/Collections/view.ctp:11
+msgid "Delete Collection"
+msgstr "Suprimeix col·leccions"
+
+#: Template/ConservationStates/add.ctp:20
+msgid "Add Conservation State"
+msgstr "Afegeix estat de conservació"
+
+#: Template/ConservationStates/edit.ctp:26
+#: Template/ConservationStates/view.ctp:10
+msgid "Edit Conservation State"
+msgstr "Edita estat de conservació"
+
+#: Template/ConservationStates/index.ctp:18
+msgid "Conservation States"
+msgstr "Estats de conservació"
+
+#: Template/ConservationStates/view.ctp:11
+msgid "Delete Conservation State"
+msgstr "Suprimeix estats de conservació"
+
+#: Template/Countries/add.ctp:10
+#: Template/Countries/edit.ctp:16
+#: Template/Countries/view.ctp:12
+#: Template/EditionPlaces/add.ctp:11
+#: Template/EditionPlaces/edit.ctp:17
+#: Template/EditionPlaces/index.ctp:11
+#: Template/EditionPlaces/view.ctp:14
+msgid "List Countries"
+msgstr "Llista països"
+
+#: Template/Countries/add.ctp:18
+msgid "Add Country"
+msgstr "Afegeix país"
+
+#: Template/Countries/edit.ctp:24
+#: Template/Countries/view.ctp:10
+msgid "Edit Country"
+msgstr "Edita país"
+
+#: Template/Countries/index.ctp:10
+#: Template/Countries/view.ctp:13
+#: Template/EditionPlaces/add.ctp:12
+#: Template/EditionPlaces/edit.ctp:18
+#: Template/EditionPlaces/index.ctp:12
+#: Template/EditionPlaces/view.ctp:15
+msgid "New Country"
+msgstr "Afegeix país"
+
+#: Template/Countries/index.ctp:16
+msgid "Countries"
+msgstr "Països"
+
+#: Template/Countries/view.ctp:11
+msgid "Delete Country"
+msgstr "Suprimeix país"
+
+#: Template/Countries/view.ctp:39
+msgid "Related Publication Places"
+msgstr "Llocs d'edició"
+
+#: Template/Countries/view.ctp:45
+msgid "Country Id"
+msgstr "País"
+
+#: Template/EditionPlaces/add.ctp:20
+msgid "Add Publication Place"
+msgstr "Afegeix lloc d'edició"
+
+#: Template/EditionPlaces/edit.ctp:26
+#: Template/EditionPlaces/view.ctp:10
+msgid "Edit Publication Place"
+msgstr "Edita lloc d'edició"
+
+#: Template/EditionPlaces/index.ctp:18
+msgid "Publication Places"
+msgstr "Llocs d'edició"
+
+#: Template/EditionPlaces/view.ctp:11
+msgid "Delete Publication Place"
+msgstr "Suprimeix lloc d'edició"
+
+#: Template/EditionPlaces/view.ctp:28
+msgid "Country"
+msgstr "País"
+
+#: Template/Publishers/add.ctp:18
+msgid "Add Publisher"
+msgstr "Afegeix editorial"
+
+#: Template/Publishers/edit.ctp:24
+#: Template/Publishers/view.ctp:10
+msgid "Edit Publisher"
+msgstr "Edita editorial"
+
+#: Template/Publishers/index.ctp:16
+msgid "Publishers"
+msgstr "Editorials"
+
+#: Template/Publishers/view.ctp:11
+msgid "Delete Publisher"
+msgstr "Suprimeix editorial"
+
+#: Template/Formats/add.ctp:13
+#: Template/Formats/edit.ctp:19
+#: Template/Formats/index.ctp:13
+#: Template/Formats/view.ctp:16
+#: Template/Groups/add.ctp:11
+#: Template/Groups/edit.ctp:17
+#: Template/Groups/index.ctp:11
+#: Template/Groups/view.ctp:14
+#: Template/LendingPolicies/add.ctp:10
+#: Template/LendingPolicies/edit.ctp:16
+#: Template/LendingPolicies/view.ctp:12
+msgid "List Lending Policies"
+msgstr "Llista polítiques de préstec"
+
+#: Template/Formats/add.ctp:14
+#: Template/Formats/edit.ctp:20
+#: Template/Formats/index.ctp:14
+#: Template/Formats/view.ctp:17
+#: Template/Groups/add.ctp:12
+#: Template/Groups/edit.ctp:18
+#: Template/Groups/index.ctp:12
+#: Template/Groups/view.ctp:15
+#: Template/LendingPolicies/index.ctp:10
+#: Template/LendingPolicies/view.ctp:13
+msgid "New Lending Policy"
+msgstr "Afegeix política de préstec"
+
+#: Template/Formats/add.ctp:20
+msgid "Add Format"
+msgstr "Afegeix tipus de format"
+
+#: Template/Formats/edit.ctp:26
+#: Template/Formats/view.ctp:10
+msgid "Edit Format"
+msgstr "Edita tipus de format"
+
+#: Template/Formats/index.ctp:18
+msgid "Formats"
+msgstr "Tipus de format"
+
+#: Template/Formats/view.ctp:11
+msgid "Delete Format"
+msgstr "Suprimeix tipus de format"
+
+#: Template/Formats/view.ctp:108
+#: Template/Groups/view.ctp:41
+msgid "Related Lending Policies"
+msgstr "Polítiques de préstec"
+
+#: Template/Formats/view.ctp:113
+#: Template/Groups/view.ctp:46;86
+#: Template/SubscriptionStates/view.ctp:51
+msgid "Group Id"
+msgstr "Grup"
+
+#: Template/Formats/view.ctp:115
+#: Template/Groups/view.ctp:48
+#: Template/LendingPolicies/view.ctp:36
+msgid "Lending Length"
+msgstr "Durada del préstec"
+
+#: Template/Formats/view.ctp:116
+#: Template/Groups/view.ctp:49
+#: Template/LendingPolicies/view.ctp:40
+msgid "Lending Max"
+msgstr "Núm. màxim de documents"
+
+#: Template/Groups/add.ctp:10
+#: Template/Groups/edit.ctp:16
+#: Template/Groups/view.ctp:12
+#: Template/LendingPolicies/add.ctp:11
+#: Template/LendingPolicies/edit.ctp:17
+#: Template/LendingPolicies/index.ctp:11
+#: Template/LendingPolicies/view.ctp:14
+#: Template/Users/add.ctp:11
+#: Template/Users/edit.ctp:17
+#: Template/Users/index.ctp:11
+#: Template/Users/view.ctp:14
+msgid "List Groups"
+msgstr "Llista grups"
+
+#: Template/Groups/add.ctp:13
+#: Template/Groups/edit.ctp:19
+#: Template/Groups/index.ctp:13
+#: Template/Groups/view.ctp:16
+#: Template/Lendings/add.ctp:13
+#: Template/Lendings/edit.ctp:19
+#: Template/Lendings/index.ctp:13
+#: Template/Lendings/view.ctp:16
+#: Template/SubscriptionStates/add.ctp:11
+#: Template/SubscriptionStates/edit.ctp:17
+#: Template/SubscriptionStates/index.ctp:11
+#: Template/SubscriptionStates/view.ctp:14
+#: Template/Users/add.ctp:10
+#: Template/Users/edit.ctp:16
+#: Template/Users/view.ctp:12
+msgid "List Users"
+msgstr "Llista usuaris/es"
+
+#: Template/Groups/add.ctp:14
+#: Template/Groups/edit.ctp:20
+#: Template/Groups/index.ctp:14
+#: Template/Groups/view.ctp:17
+#: Template/Lendings/add.ctp:14
+#: Template/Lendings/edit.ctp:20
+#: Template/Lendings/index.ctp:14
+#: Template/Lendings/view.ctp:17
+#: Template/SubscriptionStates/add.ctp:12
+#: Template/SubscriptionStates/edit.ctp:18
+#: Template/SubscriptionStates/index.ctp:12
+#: Template/SubscriptionStates/view.ctp:15
+#: Template/Users/index.ctp:10
+#: Template/Users/view.ctp:13
+msgid "New User"
+msgstr "Afegeix usuari/a"
+
+#: Template/Groups/add.ctp:20
+msgid "Add Group"
+msgstr "Afegeix grup"
+
+#: Template/Groups/edit.ctp:26
+#: Template/Groups/view.ctp:10
+msgid "Edit Group"
+msgstr "Edita grup"
+
+#: Template/Groups/index.ctp:10
+#: Template/Groups/view.ctp:13
+#: Template/LendingPolicies/add.ctp:12
+#: Template/LendingPolicies/edit.ctp:18
+#: Template/LendingPolicies/index.ctp:12
+#: Template/LendingPolicies/view.ctp:15
+#: Template/Users/add.ctp:12
+#: Template/Users/edit.ctp:18
+#: Template/Users/index.ctp:12
+#: Template/Users/view.ctp:15
+msgid "New Group"
+msgstr "Afegeix grup"
+
+#: Template/Groups/index.ctp:18
+msgid "Groups"
+msgstr "Grups"
+
+#: Template/Groups/view.ctp:11
+msgid "Delete Group"
+msgstr "Suprimeix grup"
+
+#: Template/Groups/view.ctp:74
+#: Template/SubscriptionStates/view.ctp:39
+msgid "Related Users"
+msgstr "Usuaris/es"
+
+#: Template/Groups/view.ctp:80
+#: Template/SubscriptionStates/view.ctp:45
+#: Template/Users/view.ctp:30
+msgid "Password"
+msgstr "Contrasenya"
+
+#: Template/Groups/view.ctp:81
+#: Template/SubscriptionStates/view.ctp:46
+#: Template/Users/view.ctp:34
+msgid "Mail1"
+msgstr "Correu electrònic"
+
+#: Template/Groups/view.ctp:82
+#: Template/SubscriptionStates/view.ctp:47
+#: Template/Users/view.ctp:38
+msgid "Mail2"
+msgstr "Correu electrònic 2"
+
+#: Template/Groups/view.ctp:83
+#: Template/SubscriptionStates/view.ctp:48
+#: Template/Users/view.ctp:42
+msgid "Phone1"
+msgstr "Telèfon"
+
+#: Template/Groups/view.ctp:84
+#: Template/SubscriptionStates/view.ctp:49
+#: Template/Users/view.ctp:46
+msgid "Phone2"
+msgstr "Telèfon 2"
+
+#: Template/Groups/view.ctp:85
+#: Template/SubscriptionStates/view.ctp:50
+#: Template/Users/view.ctp:62
+msgid "Birth Date"
+msgstr "Data de naixement"
+
+#: Template/Groups/view.ctp:87
+#: Template/SubscriptionStates/view.ctp:52
+msgid "Subscription State Id"
+msgstr "Estat de subscripció"
+
+#: Template/Items/add.ctp:22
+msgid "Add Item"
+msgstr "Afegeix exemplar"
+
+#: Template/Items/edit.ctp:28
+#: Template/Items/view.ctp:10
+msgid "Edit Item"
+msgstr "Edita exemplar"
+
+#: Template/Items/index.ctp:20
+msgid "Items"
+msgstr "Exemplars"
+
+#: Template/Items/view.ctp:11
+msgid "Delete Item"
+msgstr "Suprimeix exemplar"
+
+#: Template/Languages/add.ctp:18
+msgid "Add Language"
+msgstr "Afegeix llengua"
+
+#: Template/Languages/edit.ctp:24
+#: Template/Languages/view.ctp:10
+msgid "Edit Language"
+msgstr "Edita llengua"
+
+#: Template/Languages/index.ctp:16
+msgid "Languages"
+msgstr "Llengües"
+
+#: Template/Languages/view.ctp:11
+msgid "Delete Language"
+msgstr "Suprimeix llengües"
+
+#: Template/Layout/error.ctp:35
+#: Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr "Error"
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr "Enrere"
+
+#: Template/LendingPolicies/add.ctp:20
+msgid "Add Lending Policy"
+msgstr "Afegeix política de préstec"
+
+#: Template/LendingPolicies/edit.ctp:26
+#: Template/LendingPolicies/view.ctp:10
+msgid "Edit Lending Policy"
+msgstr "Edita política de préstec"
+
+#: Template/LendingPolicies/index.ctp:18
+msgid "Lending Policies"
+msgstr "Polítiques de préstec"
+
+#: Template/LendingPolicies/view.ctp:11
+msgid "Delete Lending Policy"
+msgstr "Suprimeix política de préstec"
+
+#: Template/LendingPolicies/view.ctp:24
+#: Template/Users/view.ctp:50
+msgid "Group"
+msgstr "Grup"
+
+#: Template/LendingStates/add.ctp:10
+#: Template/LendingStates/edit.ctp:16
+#: Template/LendingStates/view.ctp:12
+#: Template/Lendings/add.ctp:15
+#: Template/Lendings/edit.ctp:21
+#: Template/Lendings/index.ctp:15
+#: Template/Lendings/view.ctp:18
+msgid "List Lending States"
+msgstr "Llista estats de préstec"
+
+#: Template/LendingStates/add.ctp:18
+msgid "Add Lending State"
+msgstr "Afegeix estat de préstec"
+
+#: Template/LendingStates/edit.ctp:24
+#: Template/LendingStates/view.ctp:10
+msgid "Edit Lending State"
+msgstr "Edita estat de préstec"
+
+#: Template/LendingStates/index.ctp:10
+#: Template/LendingStates/view.ctp:13
+#: Template/Lendings/add.ctp:16
+#: Template/Lendings/edit.ctp:22
+#: Template/Lendings/index.ctp:16
+#: Template/Lendings/view.ctp:19
+msgid "New Lending State"
+msgstr "Afegeix estat de préstec"
+
+#: Template/LendingStates/index.ctp:16
+msgid "Lending States"
+msgstr "Estats de préstec"
+
+#: Template/LendingStates/view.ctp:11
+msgid "Delete Lending State"
+msgstr "Suprimeix estat de préstec"
+
+#: Template/Lendings/add.ctp:22
+msgid "Add Lending"
+msgstr "Afegeix préstec"
+
+#: Template/Lendings/edit.ctp:28
+#: Template/Lendings/view.ctp:10
+msgid "Edit Lending"
+msgstr "Edita moviment de préstec"
+
+#: Template/Lendings/index.ctp:20
+msgid "Lendings"
+msgstr "Préstecs"
+
+#: Template/Lendings/view.ctp:11
+msgid "Delete Lending"
+msgstr "Suprimeix moviment de préstec"
+
+#: Template/Lendings/view.ctp:30
+msgid "User"
+msgstr "Usuari/a"
+
+#: Template/LentStates/add.ctp:10
+#: Template/LentStates/edit.ctp:16
+#: Template/LentStates/view.ctp:12
+msgid "List Lent States"
+msgstr "Llista estats de préstec"
+
+#: Template/LentStates/add.ctp:16
+msgid "Add Lent State"
+msgstr "Afegeix estat de préstec"
+
+#: Template/LentStates/edit.ctp:22
+#: Template/LentStates/view.ctp:10
+msgid "Edit Lent State"
+msgstr "Edita estat de préstec"
+
+#: Template/LentStates/index.ctp:10
+#: Template/LentStates/view.ctp:13
+msgid "New Lent State"
+msgstr "Afegeix estat de préstec"
+
+#: Template/LentStates/index.ctp:14
+msgid "Lent States"
+msgstr "Estats de préstec"
+
+#: Template/LentStates/view.ctp:11
+msgid "Delete Lent State"
+msgstr "Suprimeix estat de préstec"
+
+#: Template/Levels/add.ctp:18
+msgid "Add Level"
+msgstr "Afegeix nivell"
+
+#: Template/Levels/edit.ctp:24
+#: Template/Levels/view.ctp:10
+msgid "Edit Level"
+msgstr "Edita nivell"
+
+#: Template/Levels/index.ctp:16
+msgid "Levels"
+msgstr "Nivells"
+
+#: Template/Levels/view.ctp:11
+msgid "Delete Level"
+msgstr "Suprimeix nivell"
+
+#: Template/Locations/add.ctp:20
+msgid "Add Location"
+msgstr "Afegeix localització"
+
+#: Template/Locations/edit.ctp:26
+#: Template/Locations/view.ctp:10
+msgid "Edit Location"
+msgstr "Edita localització"
+
+#: Template/Locations/index.ctp:18
+msgid "Locations"
+msgstr "Localitzacions"
+
+#: Template/Locations/view.ctp:11
+msgid "Delete Location"
+msgstr "Suprimeix localització"
+
+#: Template/Subjects/add.ctp:18
+msgid "Add Subject"
+msgstr "Afegeix matèria"
+
+#: Template/Subjects/edit.ctp:24
+#: Template/Subjects/view.ctp:10
+msgid "Edit Subject"
+msgstr "Edita matèria"
+
+#: Template/Subjects/index.ctp:16
+msgid "Subjects"
+msgstr "Matèries"
+
+#: Template/Subjects/view.ctp:11
+msgid "Delete Subject"
+msgstr "Suprimeix matèria"
+
+#: Template/SubscriptionStates/add.ctp:10
+#: Template/SubscriptionStates/edit.ctp:16
+#: Template/SubscriptionStates/view.ctp:12
+#: Template/Users/add.ctp:13
+#: Template/Users/edit.ctp:19
+#: Template/Users/index.ctp:13
+#: Template/Users/view.ctp:16
+msgid "List Subscription States"
+msgstr "Llista estats de subscripció"
+
+#: Template/SubscriptionStates/add.ctp:18
+msgid "Add Subscription State"
+msgstr "Afegeix estat de subscripció"
+
+#: Template/SubscriptionStates/edit.ctp:24
+#: Template/SubscriptionStates/view.ctp:10
+msgid "Edit Subscription State"
+msgstr "Edita estat de subscripció"
+
+#: Template/SubscriptionStates/index.ctp:10
+#: Template/SubscriptionStates/view.ctp:13
+#: Template/Users/add.ctp:14
+#: Template/Users/edit.ctp:20
+#: Template/Users/index.ctp:14
+#: Template/Users/view.ctp:17
+msgid "New Subscription State"
+msgstr "Afegeix estat de subscripció"
+
+#: Template/SubscriptionStates/index.ctp:16
+msgid "Subscription States"
+msgstr "Estats de subscripció"
+
+#: Template/SubscriptionStates/view.ctp:11
+msgid "Delete Subscription State"
+msgstr "Suprimeix estat de subscripció"
+
+#: Template/Users/add.ctp:22
+msgid "Add User"
+msgstr "Afegeix usuari/a"
+
+#: Template/Users/edit.ctp:28
+#: Template/Users/view.ctp:10
+msgid "Edit User"
+msgstr "Edita usuari/a"
+
+#: Template/Users/index.ctp:20
+msgid "Users"
+msgstr "Usuaris/es"
+
+#: Template/Users/view.ctp:11
+msgid "Delete User"
+msgstr "Suprimeix usuari/a"
+
+#: Template/Users/view.ctp:54
+msgid "Subscription State"
+msgstr "Estat de subscripció"
