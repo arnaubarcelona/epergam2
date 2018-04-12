@@ -4,15 +4,7 @@
  * @var \App\Model\Entity\LendingState[]|\Cake\Collection\CollectionInterface $lendingStates
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Lending State'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Lendings'), ['controller' => 'Lendings', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Lending'), ['controller' => 'Lendings', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="lendingStates index large-9 medium-8 columns content">
+<div class="noudiv">
     <h3><?= __('Lending States') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>

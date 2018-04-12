@@ -50,11 +50,48 @@ class LocationsController extends AppController
     {
         $location = $this->Locations->newEntity();
         if ($this->request->is('post')) {
-            $location = $this->Locations->patchEntity($location, $this->request->getData());
+
+            if ($this->request->is('ajax')) {
+                $defaultSaveData = [
+                    'photo' => '',
+                    'photo_dir' => '',
+                    'photo_size' => 0,
+                    'photo_type' => '',
+                ];
+                $saveData = $this->request->getData();
+                $saveData = array_merge($saveData, $defaultSaveData);
+
+                $location = $this->Locations->patchEntity(
+                    $location,
+                    $saveData,
+                    ['validate' => false]
+                );
+            } else {
+                $location = $this->Locations->patchEntity($location, $this->request->getData());
+            }
+            
+
             if ($this->Locations->save($location)) {
+                // Check for ajax
+                if ($this->request->is('ajax')) {
+                    return $this->response->withType('application/json')
+                        ->withStringBody(json_encode([
+                            'status' => 'success',
+                            'message' => __('The location has been saved.'),
+                            'data' => json_decode(json_encode($location), true)
+                        ]));
+                }
                 $this->Flash->success(__('The location has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
+            }
+            // Check for ajax
+            if ($this->request->is('ajax')) {
+                return $this->response->withType('application/json')
+                    ->withStringBody(json_encode([
+                        'status' => 'error',
+                        'message' => __('The location could not be saved. Please, try again.')
+                    ]));
             }
             $this->Flash->error(__('The location could not be saved. Please, try again.'));
         }
@@ -103,5 +140,26 @@ class LocationsController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function isLocationAlreadyExists()
+    {
+        $response = false;
+
+        if ($this->request->is('ajax')) {
+            $name = $this->request->getData('name');
+
+            $location = $this->Locations->find()
+                ->where(['name' => $name])
+                ->first();
+
+            if ($location) {
+                return $this->response->withStringBody(true);
+            }
+
+            $response = false;
+        }
+
+        return $this->response->withStringBody($response);
     }
 }

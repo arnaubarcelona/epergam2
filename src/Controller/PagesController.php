@@ -40,6 +40,20 @@ class PagesController extends AppController
      */
     public function display(...$path)
     {
+		$us = $this->LoadModel('Users');
+		$users = $us->find('list',
+		['keyField' => 'id',
+		'valueField' => 'name']);
+		$docs = $this->LoadModel('Documents'); 
+		$documents = $docs->find('list',
+		['keyField' => 'id',
+		'valueField' => 'fullname']);
+		$subs = $this->LoadModel('Subjects'); 
+		$subjects = $subs->find('list');
+		$langs = $this->LoadModel('Languages'); 
+		$languages = $langs->find('list');
+		$auths = $this->LoadModel('Authors'); 
+		$authors = $auths->find('list');
         $count = count($path);
         if (!$count) {
             return $this->redirect('/');
@@ -55,7 +69,7 @@ class PagesController extends AppController
         if (!empty($path[1])) {
             $subpage = $path[1];
         }
-        $this->set(compact('page', 'subpage'));
+        $this->set(compact('page', 'subpage', 'users', 'documents', 'languages', 'authors', 'subjects'));
 
         try {
             $this->render(implode('/', $path));

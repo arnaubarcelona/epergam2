@@ -5,7 +5,7 @@
  */
 ?>
 
-<div class="languages form large-4 medium-8 columns content">
+<div class="noudiv">
     <?= $this->Form->create($language, ['type' => 'file']) ?>
     <fieldset>
         <legend><?= __('Add Language') ?></legend>

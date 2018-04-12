@@ -4,58 +4,88 @@
  * @var \App\Model\Entity\Subject[]|\Cake\Collection\CollectionInterface $subjects
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Subject'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Documents'), ['controller' => 'Documents', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Document'), ['controller' => 'Documents', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="subjects index large-9 medium-8 columns content">
-    <h3><?= __('Subjects') ?></h3>
-    <table cellpadding="0" cellspacing="0">
+
+<div class="noudiv">
+    <br>
+    <h3><?= __('Subjects') ?>&emsp;<a href="http://80.211.14.98/epergam2/subjects/pdfindex/1.pdf"><img width="24" height="24" src="http://80.211.14.98/epergam2/webroot/img/icons/printer.png"> </b></a></h3>
+    <div class="paginator">
+		<table class="responsive-table">
+		<tr>
+		<?php $numpages = $this->Paginator->counter(['format' => '{{pages}}']) ?>
+		<?php $num2 = $this->Paginator->counter(['format' => '{{start}}'])?>
+		<?php $num3 = str_replace('.','',$num2)?>
+		<?php $nummm = $num3 - 1?>
+		<?php $total1 = $this->Paginator->counter(['format' => '{{count}}']) ?>
+		<?php $total = str_replace('.','',$total1)?>
+		<?php if($numpages == "1"):?>
+		<?php else:?>
+		<td colspan="2">
+		<center><ul class="pagination">
+			<?= $this->Paginator->first('<< ' . __('first')) ?>
+			<?= $this->Paginator->prev('< ' . __('previous')) ?>
+			<?= $this->Paginator->numbers() ?>
+			<?= $this->Paginator->next(__('next') . ' >') ?>
+			<?php $pages = ' (' . $this->Paginator->counter(['format' => '{{pages}}']) . ')' ?>
+			<?= $this->Paginator->last(__('last') . $pages . ' >>') ?>
+		</ul>
+		</center>
+		<?php endif;?>
+		</td>		
+		</tr>
+		</table>
+	</div>
+	
+    <table cellpadding="0" cellspacing="0" class="responsive-table">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('name') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_dir') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_size') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_type') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('created') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
+				<th scope="col"><center>Número</th>
+                <th scope="col"><center><?= $this->Paginator->sort('id', ['label' => 'Núm. de registre']) ?></th>
+                <th scope="col" colspan="2"><?= $this->Paginator->sort('name') ?></th>
+                <th scope="col"><center><?= $this->Paginator->sort('count_documents', ['label' => 'Recompte de documents']) ?></th>
+                <th scope="col" colspan="2"><center><?= $this->Paginator->sort('created') ?></th>
+                <th scope="col" colspan="2"><center><?= $this->Paginator->sort('modified') ?></th>
+                <th scope="col" colspan="2" class="actions"><center><?= __('Actions') ?></th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($subjects as $subject): ?>
+            <?php $nummm = $nummm + 1 ?>
             <tr>
-                <td><?= $this->Number->format($subject->id) ?></td>
-                <td><?= h($subject->name) ?></td>
-                <td><?= h($subject->photo) ?></td>
-                <td><?= h($subject->photo_dir) ?></td>
-                <td><?= $this->Number->format($subject->photo_size) ?></td>
-                <td><?= h($subject->photo_type) ?></td>
-                <td><?= h($subject->created) ?></td>
-                <td><?= h($subject->modified) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $subject->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $subject->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $subject->id], ['confirm' => __('Are you sure you want to delete # {0}?', $subject->id)]) ?>
+				<td><center><?= $nummm . ' / ' . $total ?></td>
+                <td><center><?= $subject->id ?></td>
+                <td colspan="2"><a href="http://80.211.14.98/epergam2/subjects/view/<?=$subject->id?>"><?= h($subject->name) ?></a></td>
+                <td><center><?= $subject->count_documents ?></td>
+                <td colspan="2"><center><?= h($subject->created->i18nFormat('dd/MM/YYYY hh:mm')) ?></td>
+                <td colspan="2"><center><?= h($subject->modified->i18nFormat('dd/MM/YYYY hh:mm')) ?></td>
+                <td colspan="2" class="actions"><center>
+					<a href="http://80.211.14.98/epergam2/subjects/view/<?=$subject->id?>"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/view.png"></a>
+					<a href="http://80.211.14.98/epergam2/subjects/edit/<?=$subject->id?>"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/edit.png"></a>
+                    <?= $this->Form->postLink($this->Html->image('http://80.211.14.98/epergam2/webroot/img/icons/delete.png', ['height' => 24, 'width' => 24]), ['action' => 'delete', $subject->id], ['escape' => false, 'confirm' => __('Segur que voleu esborrar ' . $subject->name . '?', $subject->id)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->first('<< ' . __('first')) ?>
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-            <?= $this->Paginator->last(__('last') . ' >>') ?>
-        </ul>
-        <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
-    </div>
+<div class="paginator">
+		<table class="responsive-table">
+		<tr>
+		<?php $numpages = $this->Paginator->counter(['format' => '{{pages}}']) ?>
+		<?php if($numpages == "1"):?>
+		<?php else:?>
+		<td colspan="2">
+		<center><ul class="pagination">
+			<?= $this->Paginator->first('<< ' . __('first')) ?>
+			<?= $this->Paginator->prev('< ' . __('previous')) ?>
+			<?= $this->Paginator->numbers() ?>
+			<?= $this->Paginator->next(__('next') . ' >') ?>
+			<?php $pages = ' (' . $this->Paginator->counter(['format' => '{{pages}}']) . ')' ?>
+			<?= $this->Paginator->last(__('last') . $pages . ' >>') ?>
+		</ul>
+		</center>
+		<?php endif;?>
+		</td>		
+		</tr>
+		</table>
+		<?php $total = $this->Paginator->counter(['format' => '{{count}}']) ?>
+	</div>
 </div>

@@ -28,7 +28,7 @@
             <tr>
 				<td><center><?= $nummm . ' / ' . $total ?></td>
                 <td><center><?= $language->id ?></td>
-                <td colspan="2"><img height="24" width="24" src="http://127.0.0.1/epergam2/<?php echo $language->photo_dir ?>/<?php echo $language->photo ?>"> <?= h($language->name) ?></td>
+                <td colspan="2"><img height="24" width="24" src="http://80.211.14.98/epergam2/<?php echo $language->photo_dir ?>/<?php echo $language->photo ?>"> <?= h($language->name) ?></td>
                 <td><center><?= $language->count_documents ?></center></td>
                 <td colspan="2"><center><?= h($language->created->i18nFormat('d/M/YYYY hh:mm')) ?></td>
                 <td colspan="2"><center><?= h($language->modified->i18nFormat('d/M/YYYY hh:mm')) ?></td>

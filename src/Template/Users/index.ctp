@@ -4,80 +4,94 @@
  * @var \App\Model\Entity\User[]|\Cake\Collection\CollectionInterface $users
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New User'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Groups'), ['controller' => 'Groups', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Group'), ['controller' => 'Groups', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Subscription States'), ['controller' => 'SubscriptionStates', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Subscription State'), ['controller' => 'SubscriptionStates', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Lendings'), ['controller' => 'Lendings', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Lending'), ['controller' => 'Lendings', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="users index large-9 medium-8 columns content">
-    <h3><?= __('Users') ?></h3>
-    <table cellpadding="0" cellspacing="0">
+
+<div class="noudiv">
+    <h3><?= __('Users') ?> <a href="http://80.211.14.98/epergam2/users/add"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/add.png"></a></h3>
+        <div class="paginator">
+		<table class="responsive-table">
+		<tr>
+		<?php $numpages = $this->Paginator->counter(['format' => '{{pages}}']) ?>
+		<?php $num2 = $this->Paginator->counter(['format' => '{{start}}'])?>
+		<?php $num3 = str_replace('.','',$num2)?>
+		<?php $nummm = $num3 - 1?>
+		<?php $total1 = $this->Paginator->counter(['format' => '{{count}}']) ?>
+		<?php $total = str_replace('.','',$total1)?>
+		<?php if($numpages == "1"):?>
+		<?php else:?>
+		<td colspan="2">
+		<ul class="pagination">
+			<?= $this->Paginator->first('<< ' . __('first')) ?>
+			<?= $this->Paginator->prev('< ' . __('previous')) ?>
+			<?= $this->Paginator->numbers() ?>
+			<?= $this->Paginator->next(__('next') . ' >') ?>
+			<?php $pages = ' (' . $this->Paginator->counter(['format' => '{{pages}}']) . ')' ?>
+			<?= $this->Paginator->last(__('last') . $pages . ' >>') ?>
+		</ul>
+		</center>
+		<?php endif;?>
+		</td>		
+		</tr>
+		</table>
+	</div>
+    <table cellpadding="0" cellspacing="0" class="index-table">
         <thead>
             <tr>
+				<th scope="col"><span class="fadehide">Ordena per:</span><span class="fadeshow">Número</span></th>
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('name') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('username') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('password') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('mail1') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('mail2') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('phone1') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('phone2') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('birth_date') ?></th>
+                <th colspan="4" scope="col"><?= $this->Paginator->sort('name') ?></th>
+                <th colspan="2" scope="col"><?= $this->Paginator->sort('username', ['label' => 'Nom d\'usuari/a']) ?></th>
                 <th scope="col"><?= $this->Paginator->sort('group_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('subscription_state_id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_dir') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_size') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_type') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
+                <th scope="col" class="actions"><span class="fadeshow"><?= __('Actions') ?></span></th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($users as $user): ?>
+            <?php $nummm = $nummm + 1 ?>
             <tr>
-                <td><?= $this->Number->format($user->id) ?></td>
-                <td><?= h($user->name) ?></td>
-                <td><?= h($user->username) ?></td>
-                <td><?= h($user->password) ?></td>
-                <td><?= h($user->mail1) ?></td>
-                <td><?= h($user->mail2) ?></td>
-                <td><?= h($user->phone1) ?></td>
-                <td><?= h($user->phone2) ?></td>
-                <td><?= h($user->birth_date) ?></td>
-                <td><?= $user->has('group') ? $this->Html->link($user->group->name, ['controller' => 'Groups', 'action' => 'view', $user->group->id]) : '' ?></td>
-                <td><?= $user->has('subscription_state') ? $this->Html->link($user->subscription_state->name, ['controller' => 'SubscriptionStates', 'action' => 'view', $user->subscription_state->id]) : '' ?></td>
-                <td><?= h($user->photo) ?></td>
-                <td><?= h($user->photo_dir) ?></td>
-                <td><?= $this->Number->format($user->photo_size) ?></td>
-                <td><?= h($user->photo_type) ?></td>
-                <td><?= h($user->created) ?></td>
-                <td><?= h($user->modified) ?></td>
+				<td><span class="fadehide"><b>Número: </b></span><?= $nummm . ' / ' . $total ?></td>
+                <td><span class="fadehide"><b>Número de registre: </b></span><?= $user->id ?></td>
+                <td colspan="4"><span class="fadehide"><b>Nom: </b></span><a href="http://80.211.14.98/epergam2/users/view/<?=$user->id?>"><?= h($user->name) ?></a></td>
+                <td colspan="2"><span class="fadehide"><b>Nom d'usuari/a: </b></span><?= h($user->username) ?></td>
+                <td><span class="fadehide"><b>Grup: </b></span><?= $user->has('group') ? $this->Html->link($user->group->name, ['controller' => 'Groups', 'action' => 'view', $user->group->id]) : '' ?></td>
+                <td><span class="fadehide"><b>Estat de subscripció: </b></span><?= $user->has('subscription_state') ? $this->Html->link($user->subscription_state->name, ['controller' => 'SubscriptionStates', 'action' => 'view', $user->subscription_state->id]) : '' ?></td>
+                <td><span class="fadehide"><b>Data de creació: </b></span><?= h($user->created->i18nFormat('dd/MM/YYYY HH:mm')) ?></td>
+                <td><span class="fadehide"><b>Última modificació: </b></span><?= h($user->modified->i18nFormat('dd/MM/YYYY HH:mm')) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $user->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $user->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $user->id], ['confirm' => __('Are you sure you want to delete # {0}?', $user->id)]) ?>
+                    <a href="http://80.211.14.98/epergam2/users/view/<?=$user->id?>"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/view.png"></a>
+					<a href="http://80.211.14.98/epergam2/users/edit/<?=$user->id?>"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/edit.png"></a>
+                    <?= $this->Form->postLink($this->Html->image('http://80.211.14.98/epergam2/webroot/img/icons/delete.png', ['height' => 24, 'width' => 24]), ['action' => 'delete', $user->id], ['escape' => false, 'confirm' => __('Segur que voleu esborrar ' . $user->name . '?', $user->id)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->first('<< ' . __('first')) ?>
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-            <?= $this->Paginator->last(__('last') . ' >>') ?>
-        </ul>
-        <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
-    </div>
+        <div class="paginator">
+		<table class="responsive-table">
+		<tr>
+		<?php $numpages = $this->Paginator->counter(['format' => '{{pages}}']) ?>
+		<?php $num2 = $this->Paginator->counter(['format' => '{{start}}'])?>
+		<?php $num3 = str_replace('.','',$num2)?>
+		<?php $nummm = $num3 - 1?>
+		<?php $total1 = $this->Paginator->counter(['format' => '{{count}}']) ?>
+		<?php $total = str_replace('.','',$total1)?>
+		<?php if($numpages == "1"):?>
+		<?php else:?>
+		<td colspan="2">
+		<ul class="pagination">
+			<?= $this->Paginator->first('<< ' . __('first')) ?>
+			<?= $this->Paginator->prev('< ' . __('previous')) ?>
+			<?= $this->Paginator->numbers() ?>
+			<?= $this->Paginator->next(__('next') . ' >') ?>
+			<?php $pages = ' (' . $this->Paginator->counter(['format' => '{{pages}}']) . ')' ?>
+			<?= $this->Paginator->last(__('last') . $pages . ' >>') ?>
+		</ul>
+		</center>
+		<?php endif;?>
+		</td>		
+		</tr>
+		</table>
+	</div>
 </div>

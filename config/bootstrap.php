@@ -227,9 +227,9 @@ Configure::write('CakePdf', [
             'outline' => true,
             'dpi' => 96,
             'header-spacing' => '1',
-            'header-html' => 'http://127.0.0.1/pdf_header.html',
+            'header-html' => 'http://80.211.14.98/pdf_header.html',
             'footer-spacing' => '1',
-            'footer-html' => 'http://127.0.0.1/pdf_footer.html',
+            'footer-html' => 'http://80.211.14.98/pdf_footer.html',
         ],
     ],
     'download' => true

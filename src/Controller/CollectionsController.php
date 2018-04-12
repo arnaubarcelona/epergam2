@@ -52,9 +52,26 @@ class CollectionsController extends AppController
         if ($this->request->is('post')) {
             $collection = $this->Collections->patchEntity($collection, $this->request->getData());
             if ($this->Collections->save($collection)) {
+                // Check for ajax
+                if ($this->request->is('ajax')) {
+                    return $this->response->withType('application/json')
+                        ->withStringBody(json_encode([
+                            'status' => 'success',
+                            'message' => __('The collection has been saved.'),
+                            'data' => json_decode(json_encode($collection), true)
+                        ]));
+                }
                 $this->Flash->success(__('The collection has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
+            }
+            // Check for ajax
+            if ($this->request->is('ajax')) {
+                return $this->response->withType('application/json')
+                    ->withStringBody(json_encode([
+                        'status' => 'error',
+                        'message' => __('The collection could not be saved. Please, try again.')
+                    ]));
             }
             $this->Flash->error(__('The collection could not be saved. Please, try again.'));
         }
@@ -103,5 +120,26 @@ class CollectionsController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function isCollectionAlreadyExists()
+    {
+        $response = false;
+
+        if ($this->request->is('ajax')) {
+            $name = $this->request->getData('name');
+
+            $collection = $this->Collections->find()
+                ->where(['name' => $name])
+                ->first();
+
+            if ($collection) {
+                return $this->response->withStringBody(true);
+            }
+
+            $response = false;
+        }
+
+        return $this->response->withStringBody($response);
     }
 }

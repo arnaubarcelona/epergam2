@@ -4,18 +4,7 @@
  * @var \App\Model\Entity\Format $format
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Format'), ['action' => 'edit', $format->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Format'), ['action' => 'delete', $format->id], ['confirm' => __('Are you sure you want to delete # {0}?', $format->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Formats'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Format'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Documents'), ['controller' => 'Documents', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Document'), ['controller' => 'Documents', 'action' => 'add']) ?> </li>
-    </ul>
-</nav>
-<div class="formats view large-9 medium-8 columns content">
+<div class="noudiv">
     <h3><?= h($format->name) ?></h3>
     <table class="vertical-table">
         <tr>
@@ -27,20 +16,8 @@
             <td><?= h($format->photo) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Photo Dir') ?></th>
-            <td><?= h($format->photo_dir) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Photo Type') ?></th>
-            <td><?= h($format->photo_type) ?></td>
-        </tr>
-        <tr>
             <th scope="row"><?= __('Id') ?></th>
             <td><?= $this->Number->format($format->id) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Photo Size') ?></th>
-            <td><?= $this->Number->format($format->photo_size) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Created') ?></th>
@@ -66,9 +43,6 @@
                 <th scope="col"><?= __('Publication Place Id') ?></th>
                 <th scope="col"><?= __('Edition Date') ?></th>
                 <th scope="col"><?= __('Photo') ?></th>
-                <th scope="col"><?= __('Photo Dir') ?></th>
-                <th scope="col"><?= __('Photo Size') ?></th>
-                <th scope="col"><?= __('Photo Type') ?></th>
                 <th scope="col"><?= __('Abstract') ?></th>
                 <th scope="col"><?= __('Notes') ?></th>
                 <th scope="col"><?= __('Url') ?></th>

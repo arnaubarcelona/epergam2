@@ -4,69 +4,46 @@
  * @var \App\Model\Entity\Document $document
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Documents'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Cdus'), ['controller' => 'Cdus', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Cdus'), ['controller' => 'Cdus', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Formats'), ['controller' => 'Formats', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Format'), ['controller' => 'Formats', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Collections'), ['controller' => 'Collections', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Collection'), ['controller' => 'Collections', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Publication Places'), ['controller' => 'PublicationPlaces', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Publication Place'), ['controller' => 'PublicationPlaces', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Locations'), ['controller' => 'Locations', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Location'), ['controller' => 'Locations', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Catalogue States'), ['controller' => 'CatalogueStates', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Catalogue State'), ['controller' => 'CatalogueStates', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Conservation States'), ['controller' => 'ConservationStates', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Conservation State'), ['controller' => 'ConservationStates', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Lendings'), ['controller' => 'Lendings', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Lending'), ['controller' => 'Lendings', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Authorities'), ['controller' => 'Authorities', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Authority'), ['controller' => 'Authorities', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Languages'), ['controller' => 'Languages', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Language'), ['controller' => 'Languages', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Levels'), ['controller' => 'Levels', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Level'), ['controller' => 'Levels', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Publishers'), ['controller' => 'Publishers', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Publisher'), ['controller' => 'Publishers', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Subjects'), ['controller' => 'Subjects', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Subject'), ['controller' => 'Subjects', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="documents form large-9 medium-8 columns content">
-    <?= $this->Form->create($document) ?>
+
+<div class="noudiv">
+    <?= $this->Form->create($document, ['type' => 'file']) ?>
     <fieldset>
         <legend><?= __('Add Document') ?></legend>
         <?php
-            echo $this->Form->control('name');
+            echo $this->Form->control('name', ['empty' => false]);
             echo $this->Form->control('isbn');
             echo $this->Form->control('authority_ids', [
+				'label' => 'Autoria',
                 'type' => 'select',
                 'multiple' => true,
                 'class' => 'multiple_autocomplete',
-                'options' => $formattedAuthorities
+                'options' => $formattedAuthorities,
+                'empty' => false
             ]);
+            ?><br><?php
             echo $this->Form->control('cdu_id', [
+				'label' => 'CDU',
                 'type' => 'select',
                 'class' => 'single_autocomplete',
-                'options' => $formattedCdus
+                'options' => $formattedCdus,
+                'empty' => false
             ]);
+            ?><br><?php
             echo $this->Form->control('collection_id', [
                 'type' => 'select',
-                'class' => 'single_autocomplete',
+                'class' => 'add_collection',
                 'options' => $collections,
                 'empty' => true
             ]);
+            ?><br><?php
             echo $this->Form->control('collection_item');
             echo $this->Form->control('publication_place_id', [
                 'type' => 'select',
-                'class' => 'single_autocomplete',
+                'class' => 'add_publicationPlace',
                 'options' => $publicationPlaces,
-                'empty' => false
+                'empty' => true
             ]);
+            ?><br><?php
             echo $this->Form->control('edition_date');
             echo $this->Form->input('photo', ['type' => 'file']);
             echo $this->Form->control('abstract');
@@ -74,35 +51,48 @@
             echo $this->Form->control('url');
             echo $this->Form->control('height');
             echo $this->Form->control('width');
-            echo $this->Form->control('volume');
+            echo $this->Form->control('volume', ['label' => 'Volum']);
             echo $this->Form->control('pagecount');
-            echo $this->Form->control('length');
+            echo $this->Form->control('length', ['label' => 'Duració']);
             echo $this->Form->control('location_id', [
                 'type' => 'select',
-                'class' => 'single_autocomplete',
+                'class' => 'add_location',
                 'options' => $locations,
-                'emtpy' => false
-            ]);
+                'empty' => false
+            ]);?><br><?php
             echo $this->Form->control('catalogue_state_id', [
                 'type' => 'select',
                 'class' => 'single_autocomplete',
                 'options' => $catalogueStates,
-                'emtpy' => false
-            ]);
+                'empty' => false
+            ]);?><br><?php
             echo $this->Form->control('conservation_state_id', [
                 'type' => 'select',
                 'class' => 'single_autocomplete',
                 'options' => $conservationStates,
-                'emtpy' => false
-            ]);
-            echo $this->Form->control('languages._ids', ['options' => $languages]);
-            echo $this->Form->control('levels._ids', ['options' => $levels]);
-            echo $this->Form->control('publishers._ids', ['options' => $publishers]);
+                'empty' => false
+            ]);?><br><?php
+            echo $this->Form->control('languages._ids', [
+                'type' => 'select',
+                'multiple' => true,
+                'class' => 'check_languages',
+                'options' => $languages,
+                'empty' => false
+            ]);?><br><?php
+            echo $this->Form->control('levels._ids', ['options' => $levels, 'multiple' => 'checkbox', 'empty' => false]);
+            echo $this->Form->control('publishers._ids', [
+                'type' => 'select',
+                'multiple' => true,
+                'class' => 'check_publishers',
+                'options' => $publishers,
+                'empty' => false
+            ]);?><br><?php
             echo $this->Form->control('subjects._ids', [
                 'multiple' => true,
                 'type' => 'select',
                 'class' => 'multi_subject_documents',
-                'options' => $subjects
+                'options' => $subjects,
+                'empty' => false
             ]);
         ?>
     </fieldset>

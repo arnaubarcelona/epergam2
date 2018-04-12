@@ -4,15 +4,7 @@
  * @var \App\Model\Entity\Collection $collection
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Collections'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Documents'), ['controller' => 'Documents', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Document'), ['controller' => 'Documents', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="collections form large-9 medium-8 columns content">
+<div class="noudiv">
     <?= $this->Form->create($collection) ?>
     <fieldset>
         <legend><?= __('Add Collection') ?></legend>

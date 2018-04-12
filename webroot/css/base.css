@@ -2119,7 +2119,6 @@ th.show-for-print{display:table-cell !important}
   order: 2; 
   background-color: whitesmoke;
   padding: 0px;
-  text-align: justify;
   white-space: normal;
 }
 
@@ -2133,9 +2132,9 @@ background-color: khaki;
 .responsive-table td {
   display: block;
   padding: 5px;  
-  text-align: justify;
   white-space: normal;
   border-width: 0px;
+  text-align: justify;
 }
 
 
@@ -2152,15 +2151,14 @@ width: 100%;
   padding: .5em;
   vertical-align: middle;
   
+  
 }
 
 .responsive-table caption {
   margin-bottom: 1em;
   font-size: 1em;
   font-weight: bold;  
-  text-align: justify;
   display: block;
-   
   order: 1;
 }
 
@@ -2177,12 +2175,12 @@ width: 100%;
 
 
 .responsive-table tbody td[data-type=currency] {
-  	text-align: justify;
+	
 }
 
 
 .responsive-table tbody td {
-  text-align: justify;
+ text-align: justify;
 }
 
 
@@ -2191,6 +2189,7 @@ width: 100%;
   .responsive-table th,
   .responsive-table td {
     padding: .75em;
+    
   }
 
 }
@@ -2198,11 +2197,13 @@ width: 100%;
 @media (min-width: 62em) {
   .responsive-table {
     font-size: 1em;
+    
   }
 
   .responsive-table th,
   .responsive-table td {
     padding: .75em .5em;
+    
   }
 
   .responsive-table tfoot {
@@ -2215,6 +2216,7 @@ width: 100%;
   .responsive-table {
     font-size: .9em;
     display: table;
+    
   }
 
   .responsive-table thead {
@@ -2265,11 +2267,187 @@ width: 100%;
   }
 
   .responsive-table tbody td {
-	text-align: justify;
     vertical-align: middle; 
   }
 
   .responsive-table tbody td[data-title]:before {
+    content: none;
+  }
+
+}
+
+
+
+
+.index-table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  border-collapse:collapse;
+}
+
+
+.index-table tbody {
+  display: flex;
+  flex-direction: column;
+  order: 2; 
+  background-color: whitesmoke;
+  padding: 0px;
+  white-space: normal;
+}
+
+.index-table thead{
+background-color: khaki;
+}
+
+ 
+.index-table tr,
+.index-table th,
+.index-table td {
+  display: block;
+  padding: 5px;  
+  white-space: normal;
+  border-width: 0px;
+  text-align: justify;
+}
+
+
+.index-table tr:nth-child(even) {background-color: #e6e6e6;}
+
+
+.index-table th.especial,
+width: 100%;
+}
+
+
+.index-table th,
+.index-table td {
+  padding: .5em;
+  vertical-align: middle;
+  
+  
+}
+
+.index-table caption {
+  margin-bottom: 1em;
+  font-size: 1em;
+  font-weight: bold;  
+  display: block;
+  order: 1;
+}
+
+.index-table tfoot {
+  font-size: .8em;
+  font-style: italic;
+  display: block;   
+  order: 3;
+}
+
+.index-table tbody tr:last-of-type {
+  margin-bottom: 0;
+}
+
+
+.index-table tbody td[data-type=currency] {
+	
+}
+
+
+.index-table tbody td {
+ text-align: justify;
+}
+
+
+ 
+@media (min-width: 75em) {
+  .index-table th,
+  .index-table td {
+    padding: .75em;
+    
+  }
+
+}
+
+@media (min-width: 62em) {
+  .index-table {
+    font-size: 1em;
+    
+  }
+
+  .index-table th,
+  .index-table td {
+    padding: .75em .5em;
+    
+  }
+
+  .index-table tfoot {
+    font-size: .9em;
+  }
+
+}
+
+@media (min-width: 52em) {
+  .index-table {
+    font-size: .9em;
+    display: table;
+    
+  }
+
+  .index-table thead {
+    display: table-header-group;
+    position: relative;
+    clip: auto;
+    height: auto;
+    width: auto;
+    overflow: auto;
+  }
+
+  .index-table tfoot {
+    display: table-footer-group;
+  }
+
+  .index-table tr {
+    display: table-row;
+  }
+
+  .index-table th,
+  .index-table td {
+	text-align: center;
+    display: table-cell;
+    padding: .5em;
+  }
+
+ 
+  .index-table caption {
+    font-size: 1.5em;
+    display: table-caption;
+  }
+
+  .index-table tbody {
+    display: table-row-group;
+  }
+
+  .index-table tbody tr {
+    display: table-row;
+  }
+
+  .index-table tbody tr:nth-of-type(even) {
+    background-color: #e6e6e6;
+  }
+
+  .index-table tbody th[scope="row"] {
+    background-color: transparent;
+    color: #5e5d52;
+    
+  }
+
+  .index-table tbody td {
+	text-align: center;
+    vertical-align: middle; 
+  }
+
+  .index-table tbody td[data-title]:before {
     content: none;
   }
 
@@ -2296,3 +2474,215 @@ width: 100%;
   border-right:10px solid black; 
 }
 
+
+
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 998; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: cadetblue; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav ul {
+color: cadetblue;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: khaki;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+
+.rsidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 998; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: cadetblue; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.rsidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.rsidenav ul {
+color: cadetblue;
+}
+
+/* When you mouse over the navigation links, change their color */
+.rsidenav a:hover {
+    color: khaki;
+}
+
+/* Position and style the close button (top right corner) */
+.rsidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .rsidenav {padding-top: 15px;}
+    .rsidenav a {font-size: 18px;}
+}
+
+.noudiv {
+  position: absolute;
+  margin: auto;
+  top: 14%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 98%;
+  height: 88%;
+  background-color: white;
+  border-radius: 3px;
+}
+.notificacio {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 3px;
+  z-index: 999;
+  transition: height 300ms ease-out 0s;
+}
+.notificacio.hidden {
+display: none;
+}
+
+.noudiv h3 { color: firebrick; }
+
+.topbar {
+  position: fixed;
+  z-index: 997;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 12%;
+  background-color: white;;
+}
+.resetbtn {
+	color: white;
+    border: none;
+    margin: 0;
+    padding: 10;
+    width: auto;
+    overflow: visible;
+
+    background: darkcyan;
+
+    /* inherit font & color from ancestor */
+    font-weight: bold;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+.barra table,
+.barra thead,
+.barra tbody,
+.barra tfoot,
+.barra tr,
+.barra th,
+.barra td {
+	background-color: cadetblue;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-collapse: inherit;
+    border-spacing: 0;
+    border-color: inherit;
+    vertical-align: inherit;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: inherit;
+    -webkit-border-horizontal-spacing: 0;
+    -webkit-border-vertical-spacing: 0;
+}
+th, td {
+    display: inline;
+}
+.fadehide {display: none;}
+.doscols {column-count: 2;}
+
+@media screen and (max-width: 450px) {
+    .fadeshow { display: none; }
+    .fadehide { display: block; }
+    .doscols { column-count: 1;}
+}

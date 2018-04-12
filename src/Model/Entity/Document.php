@@ -59,6 +59,15 @@ class Document extends Entity
      *
      * @var array
      */
+      protected function _getFullname()
+    {
+        return
+			'['.
+            $this->_properties['id'] .
+            '] ' .
+            $this->_properties['name'];
+    }
+    
     protected $_accessible = [
         'name' => true,
         'isbn' => true,

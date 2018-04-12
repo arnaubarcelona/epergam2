@@ -4,15 +4,7 @@
  * @var \App\Model\Entity\LendingPolicy[]|\Cake\Collection\CollectionInterface $lendingPolicies
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Lending Policy'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Groups'), ['controller' => 'Groups', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Group'), ['controller' => 'Groups', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="lendingPolicies index large-9 medium-8 columns content">
+<div class="noudiv">
     <h3><?= __('Lending Policies') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>

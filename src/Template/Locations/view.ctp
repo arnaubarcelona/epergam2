@@ -4,18 +4,7 @@
  * @var \App\Model\Entity\Location $location
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Location'), ['action' => 'edit', $location->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Location'), ['action' => 'delete', $location->id], ['confirm' => __('Are you sure you want to delete # {0}?', $location->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Locations'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Location'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Documents'), ['controller' => 'Documents', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Document'), ['controller' => 'Documents', 'action' => 'add']) ?> </li>
-    </ul>
-</nav>
-<div class="locations view large-9 medium-8 columns content">
+<div class="noudiv">
     <h3><?= h($location->name) ?></h3>
     <table class="vertical-table">
         <tr>
@@ -27,20 +16,8 @@
             <td><?= h($location->photo) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Photo Dir') ?></th>
-            <td><?= h($location->photo_dir) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Photo Type') ?></th>
-            <td><?= h($location->photo_type) ?></td>
-        </tr>
-        <tr>
             <th scope="row"><?= __('Id') ?></th>
             <td><?= $this->Number->format($location->id) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Photo Size') ?></th>
-            <td><?= $this->Number->format($location->photo_size) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Created') ?></th>

@@ -4,15 +4,7 @@
  * @var \App\Model\Entity\Collection[]|\Cake\Collection\CollectionInterface $collections
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Collection'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Documents'), ['controller' => 'Documents', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Document'), ['controller' => 'Documents', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="collections index large-9 medium-8 columns content">
+<div class="noudiv">
     <h3><?= __('Collections') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>

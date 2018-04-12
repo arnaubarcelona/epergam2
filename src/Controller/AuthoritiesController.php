@@ -227,7 +227,7 @@ class AuthoritiesController extends AppController
                     return $this->response->withType('application/json')
                         ->withStringBody(json_encode([
                             'status' => 'success',
-                            'message' => 'Lautoria sha desat.',
+                            'message' => 'L\'autoria s\'ha desat.',
                             'data' => json_decode(json_encode($isAuthoritiesSaved), true)
                         ]));
                 }
@@ -235,7 +235,7 @@ class AuthoritiesController extends AppController
                 return $this->response->withType('application/json')
                     ->withStringBody(json_encode([
                         'status' => 'error',
-                        'message' => 'Lautoria no sha pogut desar. Si us plau, torneu-ho a intentar.'
+                        'message' => 'L\'autoria no s\'ha pogut desar. Si us plau, torneu-ho a intentar.'
                     ]));
             }
 
@@ -247,9 +247,9 @@ class AuthoritiesController extends AppController
             }
             $this->Flash->error(__('The authority could not be saved. Please, try again.'));
         }
-        $authors = $this->Authorities->Authors->find('list');
+        $authors = $this->Authorities->Authors->find('list')->order(['name' => 'ASC']);
         $authorTypes = $this->Authorities->AuthorTypes->find('list');
-        $documents = $this->Authorities->Documents->find('list');
+        $documents = $this->Authorities->Documents->find('list')->order(['name' => 'ASC']);
         $this->set(compact('authority', 'authors', 'authorTypes', 'documents'));
     }
 
@@ -275,8 +275,8 @@ class AuthoritiesController extends AppController
             $this->Flash->error(__('The authority could not be saved. Please, try again.'));
         }
         $authors = $this->Authorities->Authors->find('list', ['limit' => 200]);
-        $authorTypes = $this->Authorities->AuthorTypes->find('list', ['limit' => 200]);
-        $documents = $this->Authorities->Documents->find('list', ['limit' => 200]);
+        $authorTypes = $this->Authorities->AuthorTypes->find('list')->order(['name' => 'ASC']);
+        $documents = $this->Authorities->Documents->find('list')->order(['name' => 'ASC']);
         $this->set(compact('authority', 'authors', 'authorTypes', 'documents'));
     }
 
@@ -297,7 +297,7 @@ class AuthoritiesController extends AppController
             $this->Flash->error(__('The authority could not be deleted. Please, try again.'));
         }
 
-        return $this->redirect(['action' => 'index']);
+        return $this->redirect($this->referer());
     }
      public function upsertAuthorities($requestData)
     {

@@ -4,18 +4,7 @@
  * @var \App\Model\Entity\LendingState $lendingState
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Lending State'), ['action' => 'edit', $lendingState->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Lending State'), ['action' => 'delete', $lendingState->id], ['confirm' => __('Are you sure you want to delete # {0}?', $lendingState->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Lending States'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Lending State'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Lendings'), ['controller' => 'Lendings', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Lending'), ['controller' => 'Lendings', 'action' => 'add']) ?> </li>
-    </ul>
-</nav>
-<div class="lendingStates view large-9 medium-8 columns content">
+<div class="noudiv">
     <h3><?= h($lendingState->name) ?></h3>
     <table class="vertical-table">
         <tr>

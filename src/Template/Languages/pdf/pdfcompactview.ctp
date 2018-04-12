@@ -1,4 +1,4 @@
-    <h3><img height="32" width="32" src="http://127.0.0.1/epergam2/<?php echo $language->photo_dir?>/<?php echo $language->photo?>">  <?= __('Documents') ?> en <?= h($language->name) ?></h3>
+    <h3><img height="32" width="32" src="http://80.211.14.98/epergam2/<?php echo $language->photo_dir?>/<?php echo $language->photo?>">  <?= __('Documents') ?> en <?= h($language->name) ?></h3>
 	
 		<?php $nummm = 0 ?>
 <?php if (!empty($language->documents)): ?>
@@ -19,21 +19,21 @@
 			  <?php endif;?>
 			  
 			  <?php if(strlen($documents->id)==1):?>
-			  <img height="24" width="24" src="http://127.0.0.1/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/<?= h($documents->id) ?>"> <?= h($documents->id) ?></a> &emsp;&emsp;
+			  <img height="24" width="24" src="http://80.211.14.98/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/<?= h($documents->id) ?>"> <?= h($documents->id) ?></a> &emsp;&emsp;
 			  <?php elseif(strlen($documents->id)==2):?>
-			  <img height="24" width="24" src="http://127.0.0.1/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/<?= h($documents->id) ?>"> <?= h($documents->id) ?></a>&emsp;&emsp;
+			  <img height="24" width="24" src="http://80.211.14.98/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/<?= h($documents->id) ?>"> <?= h($documents->id) ?></a>&emsp;&emsp;
 			  <?php elseif(strlen($documents->id)==3):?>
-			  <img height="24" width="24" src="http://127.0.0.1/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/<?= h($documents->id) ?>"> <?= h($documents->id) ?></a> &emsp;
+			  <img height="24" width="24" src="http://80.211.14.98/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/<?= h($documents->id) ?>"> <?= h($documents->id) ?></a> &emsp;
 			  <?php elseif(strlen($documents->id)==4):?>
-			  <img height="24" width="24" src="http://127.0.0.1/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/<?= h($documents->id) ?>"> <?= h($documents->id) ?></a>&emsp;
+			  <img height="24" width="24" src="http://80.211.14.98/epergam2/webroot/img/icons/id.png"> <a href="../../documents/edit/<?= h($documents->id) ?>"> <?= h($documents->id) ?></a>&emsp;
 			  <?php endif;?>
 			 
-			  <img height="24" width="24" src="http://127.0.0.1/epergam2/<?php echo $documents->lending_state->photo_dir?>/<?php echo $documents->lending_state->photo?>"> 
+			  <img height="24" width="24" src="http://80.211.14.98/epergam2/<?php echo $documents->lending_state->photo_dir?>/<?php echo $documents->lending_state->photo?>"> 
 			  <?php if($documents->lending_state_id == 6):?>
-			  <img height="24" width="24" src="http://127.0.0.1/epergam2/<?php echo $documents->catalogue_state->photo_dir?>/<?php echo $documents->catalogue_state->photo?>"> 
+			  <img height="24" width="24" src="http://80.211.14.98/epergam2/<?php echo $documents->catalogue_state->photo_dir?>/<?php echo $documents->catalogue_state->photo?>"> 
 			  <?php endif; ?>
 			  <?php if($documents->lending_state_id == 1):?>
-			  <a href="../../lendings/add/<?= $documents->id?>/<?= $currurl ?>"><img src="http://127.0.0.1/epergam2/webroot/img/icons/loan.png" height="24" width="24"></a>
+			  <a href="../../lendings/add/<?= $documents->id?>/<?= $currurl ?>"><img src="http://80.211.14.98/epergam2/webroot/img/icons/loan.png" height="24" width="24"></a>
 			  <?php endif;?>		  
 			  <?php if($documents->lending_state_id == 6):?>
 			  <?php endif; ?>
@@ -44,7 +44,7 @@
 					<?php if (!empty($documents->lendings)):?>
 					  <?php foreach ($documents->lendings as $lending): ?>
 						<?php if($lending->lending_state_id == 2 || $lending->lending_state_id == 3):?>
-							<a href="../../lendings/return/<?php echo $documents->id?>/<?php echo $lending->id?>/<?php echo $currurl?>"><img height="24" width="24" src="http://127.0.0.1/epergam2/webroot/img/icons/return.png"></a>
+							<a href="../../lendings/return/<?php echo $documents->id?>/<?php echo $lending->id?>/<?php echo $currurl?>"><img height="24" width="24" src="http://80.211.14.98/epergam2/webroot/img/icons/return.png"></a>
 						<?php else:?>
 							
 						<?php endif;?>
@@ -58,7 +58,7 @@
 					<?php if (!empty($documents->lendings)):?>
 					  <?php foreach ($documents->lendings as $lending): ?>			  
 						<?php if($lending->lending_state_id == 2 || $lending->lending_state_id == 3):?>
-							<a href="../../lendings/return/<?php echo $documents->id?>/<?php echo $lending->id?>/<?php echo $currurl?>"><img height="24" width="24" src="http://127.0.0.1/epergam2/webroot/img/icons/return.png"></a><br>
+							<a href="../../lendings/return/<?php echo $documents->id?>/<?php echo $lending->id?>/<?php echo $currurl?>"><img height="24" width="24" src="http://80.211.14.98/epergam2/webroot/img/icons/return.png"></a><br>
 						<?php else:?>
 							
 						<?php endif;?>
@@ -70,7 +70,7 @@
 				<?php endif;?></td>  
 		  <td width="750px" style="font-size: 1em; font-weight: bold; cursor: pointer;" onclick="window.location='../../documents/view/<?php echo $documents->id ?>'">
 			  <?php foreach ($documents->levels as $level): ?>
-			  <img height="12" width="12" src="http://127.0.0.1/epergam2/<?php echo $level->photo_dir?>/<?php echo $level->photo?>" alt="<?php echo $level->name ?>" /></a>
+			  <img height="12" width="12" src="http://80.211.14.98/epergam2/<?php echo $level->photo_dir?>/<?php echo $level->photo?>" alt="<?php echo $level->name ?>" /></a>
 			  <?php endforeach; ?> 
 			  <?php if(!empty($documents->url)): ?>
 			  <a target="_blank" href="http://<?= h($documents->url) ?>"><?= h($documents->name) ?></a>

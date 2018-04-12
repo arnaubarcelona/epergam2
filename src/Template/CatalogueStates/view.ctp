@@ -4,18 +4,7 @@
  * @var \App\Model\Entity\CatalogueState $catalogueState
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Catalogue State'), ['action' => 'edit', $catalogueState->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Catalogue State'), ['action' => 'delete', $catalogueState->id], ['confirm' => __('Are you sure you want to delete # {0}?', $catalogueState->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Catalogue States'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Catalogue State'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Documents'), ['controller' => 'Documents', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Document'), ['controller' => 'Documents', 'action' => 'add']) ?> </li>
-    </ul>
-</nav>
-<div class="catalogueStates view large-9 medium-8 columns content">
+<div class="noudiv">
     <h3><?= h($catalogueState->name) ?></h3>
     <table class="vertical-table">
         <tr>

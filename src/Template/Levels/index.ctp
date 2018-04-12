@@ -4,15 +4,7 @@
  * @var \App\Model\Entity\Level[]|\Cake\Collection\CollectionInterface $levels
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Level'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Documents'), ['controller' => 'Documents', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Document'), ['controller' => 'Documents', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="levels index large-9 medium-8 columns content">
+<div class="noudiv">
     <h3><?= __('Levels') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
@@ -22,9 +14,6 @@
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('photo') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_dir') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_size') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_type') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -36,9 +25,6 @@
                 <td><?= h($level->created) ?></td>
                 <td><?= h($level->modified) ?></td>
                 <td><?= h($level->photo) ?></td>
-                <td><?= h($level->photo_dir) ?></td>
-                <td><?= $this->Number->format($level->photo_size) ?></td>
-                <td><?= h($level->photo_type) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $level->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $level->id]) ?>

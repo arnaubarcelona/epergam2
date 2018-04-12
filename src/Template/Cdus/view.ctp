@@ -4,16 +4,7 @@
  * @var \App\Model\Entity\Cdus $cdus
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Cdus'), ['action' => 'edit', $cdus->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Cdus'), ['action' => 'delete', $cdus->id], ['confirm' => __('Are you sure you want to delete # {0}?', $cdus->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Cdus'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Cdus'), ['action' => 'add']) ?> </li>
-    </ul>
-</nav>
-<div class="cdus view large-9 medium-8 columns content">
+<div class="noudiv">
     <h3><?= h($cdus->name) ?></h3>
     <table class="vertical-table">
         <tr>
@@ -68,9 +59,6 @@
                 <th scope="col"><?= __('Publication Place Id') ?></th>
                 <th scope="col"><?= __('Edition Date') ?></th>
                 <th scope="col"><?= __('Photo') ?></th>
-                <th scope="col"><?= __('Photo Dir') ?></th>
-                <th scope="col"><?= __('Photo Size') ?></th>
-                <th scope="col"><?= __('Photo Type') ?></th>
                 <th scope="col"><?= __('Abstract') ?></th>
                 <th scope="col"><?= __('Notes') ?></th>
                 <th scope="col"><?= __('Url') ?></th>
@@ -98,9 +86,6 @@
                 <td><?= h($documents->publication_place_id) ?></td>
                 <td><?= h($documents->edition_date) ?></td>
                 <td><?= h($documents->photo) ?></td>
-                <td><?= h($documents->photo_dir) ?></td>
-                <td><?= h($documents->photo_size) ?></td>
-                <td><?= h($documents->photo_type) ?></td>
                 <td><?= h($documents->abstract) ?></td>
                 <td><?= h($documents->notes) ?></td>
                 <td><?= h($documents->url) ?></td>

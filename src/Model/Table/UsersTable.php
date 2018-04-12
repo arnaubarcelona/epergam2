@@ -5,6 +5,7 @@ use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
+use Cake\Auth\DefaultPasswordHasher;
 
 /**
  * Users Model
@@ -68,7 +69,7 @@ class UsersTable extends Table
         $validator
             ->scalar('name')
             ->maxLength('name', 255)
-            ->allowEmpty('name');
+            ->notEmpty('name');
 
         $validator
             ->scalar('username')
@@ -79,7 +80,7 @@ class UsersTable extends Table
         $validator
             ->scalar('password')
             ->maxLength('password', 255)
-            ->allowEmpty('password');
+            ->notEmpty('password');
 
         $validator
             ->scalar('mail1')
@@ -127,6 +128,55 @@ class UsersTable extends Table
         return $validator;
     }
 
+public function validationPassword(Validator $validator )
+    {
+
+        $validator
+            ->add('old_password','custom',[
+                'rule'=>  function($value, $context){
+                    $user = $this->get($context['data']['id']);
+                    if ($user) {
+                        if ((new DefaultPasswordHasher)->check($value, $user->password)) {
+                            return true;
+                        }
+                    }
+                    return false;
+                },
+                'message'=>'La contrasenya antiga no és correcta!',
+            ])
+            ->notEmpty('old_password');
+
+        $validator
+            ->add('password1', [
+                'length' => [
+                    'rule' => ['minLength', 6],
+                    'message' => 'La contrasenya ha de tenir 6 caràcters com a mínim!',
+                ]
+            ])
+            ->add('password1',[
+                'match'=>[
+                    'rule'=> ['compareWith','password2'],
+                    'message'=>'Les contrasenyes no coincideixen!',
+                ]
+            ])
+            ->notEmpty('password1');
+        $validator
+            ->add('password2', [
+                'length' => [
+                    'rule' => ['minLength', 6],
+                    'message' => 'La contrasenya ha de tenir 6 caràcters com a mínim!',
+                ]
+            ])
+            ->add('password2',[
+                'match'=>[
+                    'rule'=> ['compareWith','password1'],
+                    'message'=>'Les contrasenyes no coincideixen!',
+                ]
+            ])
+            ->notEmpty('password2');
+
+        return $validator;
+	}
     /**
      * Returns a rules checker object that will be used for validating
      * application integrity.

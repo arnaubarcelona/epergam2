@@ -35,7 +35,6 @@ use Cake\Validation\Validator;
  */
 class DocumentsTable extends Table
 {
-
     /**
      * Initialize method
      *
@@ -47,7 +46,7 @@ class DocumentsTable extends Table
         parent::initialize($config);
 
         $this->setTable('documents');
-        $this->setDisplayField('name');
+        $this->setDisplayField('fullname');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
@@ -168,7 +167,7 @@ class DocumentsTable extends Table
         $validator
             ->scalar('name')
             ->maxLength('name', 255)
-            ->allowEmpty('name');
+            ->notEmpty('name');
 
         $validator
             ->scalar('isbn')
@@ -180,7 +179,7 @@ class DocumentsTable extends Table
             ->allowEmpty('collection_item');
 
         $validator
-            ->scalar('edition_date')
+            ->integer('edition_date')
             ->allowEmpty('edition_date');
 
         $validator

@@ -4,19 +4,7 @@
  * @var \App\Model\Entity\Group[]|\Cake\Collection\CollectionInterface $groups
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Group'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Documents'), ['controller' => 'Documents', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Document'), ['controller' => 'Documents', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Lending Policies'), ['controller' => 'LendingPolicies', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Lending Policy'), ['controller' => 'LendingPolicies', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="groups index large-9 medium-8 columns content">
+<div class="noudiv">
     <h3><?= __('Groups') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
@@ -24,9 +12,6 @@
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('photo') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_dir') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_size') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_type') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('lending_policy_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
@@ -39,9 +24,6 @@
                 <td><?= $this->Number->format($group->id) ?></td>
                 <td><?= h($group->name) ?></td>
                 <td><?= h($group->photo) ?></td>
-                <td><?= h($group->photo_dir) ?></td>
-                <td><?= $this->Number->format($group->photo_size) ?></td>
-                <td><?= h($group->photo_type) ?></td>
                 <td><?= $this->Number->format($group->lending_policy_id) ?></td>
                 <td><?= h($group->created) ?></td>
                 <td><?= h($group->modified) ?></td>

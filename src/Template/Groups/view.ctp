@@ -4,22 +4,7 @@
  * @var \App\Model\Entity\Group $group
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Group'), ['action' => 'edit', $group->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Group'), ['action' => 'delete', $group->id], ['confirm' => __('Are you sure you want to delete # {0}?', $group->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Groups'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Group'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Documents'), ['controller' => 'Documents', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Document'), ['controller' => 'Documents', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Lending Policies'), ['controller' => 'LendingPolicies', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Lending Policy'), ['controller' => 'LendingPolicies', 'action' => 'add']) ?> </li>
-    </ul>
-</nav>
-<div class="groups view large-9 medium-8 columns content">
+<div class="noudiv">
     <h3><?= h($group->name) ?></h3>
     <table class="vertical-table">
         <tr>
@@ -31,20 +16,8 @@
             <td><?= h($group->photo) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Photo Dir') ?></th>
-            <td><?= h($group->photo_dir) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Photo Type') ?></th>
-            <td><?= h($group->photo_type) ?></td>
-        </tr>
-        <tr>
             <th scope="row"><?= __('Id') ?></th>
             <td><?= $this->Number->format($group->id) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Photo Size') ?></th>
-            <td><?= $this->Number->format($group->photo_size) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Lending Policy Id') ?></th>

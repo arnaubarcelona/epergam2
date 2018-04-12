@@ -4,18 +4,7 @@
  * @var \App\Model\Entity\ConservationState $conservationState
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Conservation State'), ['action' => 'edit', $conservationState->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Conservation State'), ['action' => 'delete', $conservationState->id], ['confirm' => __('Are you sure you want to delete # {0}?', $conservationState->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Conservation States'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Conservation State'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Documents'), ['controller' => 'Documents', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Document'), ['controller' => 'Documents', 'action' => 'add']) ?> </li>
-    </ul>
-</nav>
-<div class="conservationStates view large-9 medium-8 columns content">
+<div class="noudiv">
     <h3><?= h($conservationState->name) ?></h3>
     <table class="vertical-table">
         <tr>

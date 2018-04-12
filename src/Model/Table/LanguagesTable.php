@@ -33,12 +33,13 @@ class LanguagesTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
-		$randstr=substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 10);
+		
         $this->setTable('languages');
         $this->setDisplayField('name');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
+        $randstr=substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 10);
         $this->addBehavior('Josegonzalez/Upload.Upload', [
             'photo' => [
 				'path' => 'webroot{DS}img{DS}{model}{DS}' . $randstr,

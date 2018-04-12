@@ -4,18 +4,7 @@
  * @var \App\Model\Entity\LendingPolicy $lendingPolicy
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Lending Policy'), ['action' => 'edit', $lendingPolicy->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Lending Policy'), ['action' => 'delete', $lendingPolicy->id], ['confirm' => __('Are you sure you want to delete # {0}?', $lendingPolicy->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Lending Policies'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Lending Policy'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Groups'), ['controller' => 'Groups', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Group'), ['controller' => 'Groups', 'action' => 'add']) ?> </li>
-    </ul>
-</nav>
-<div class="lendingPolicies view large-9 medium-8 columns content">
+<div class="noudiv">
     <h3><?= h($lendingPolicy->id) ?></h3>
     <table class="vertical-table">
         <tr>

@@ -4,15 +4,7 @@
  * @var \App\Model\Entity\Location[]|\Cake\Collection\CollectionInterface $locations
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Location'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Documents'), ['controller' => 'Documents', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Document'), ['controller' => 'Documents', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="locations index large-9 medium-8 columns content">
+<div class="noudiv">
     <h3><?= __('Locations') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
@@ -20,9 +12,6 @@
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('photo') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_dir') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_size') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_type') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
@@ -34,9 +23,6 @@
                 <td><?= $this->Number->format($location->id) ?></td>
                 <td><?= h($location->name) ?></td>
                 <td><?= h($location->photo) ?></td>
-                <td><?= h($location->photo_dir) ?></td>
-                <td><?= $this->Number->format($location->photo_size) ?></td>
-                <td><?= h($location->photo_type) ?></td>
                 <td><?= h($location->created) ?></td>
                 <td><?= h($location->modified) ?></td>
                 <td class="actions">

@@ -20,11 +20,32 @@ class AuthoritiesDocumentsController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['Authorities', 'Documents']
-        ];
-        $authoritiesDocuments = $this->paginate($this->AuthoritiesDocuments);
+        $where = [
+        'recursive'=>-1,
+        'fields' => [
+           'AuthoritiesDocuments.id',
+           'AuthoritiesDocuments.authority_id',
+           'AuthoritiesDocuments.document_id',
+           'AuthoritiesDocuments.created',
+           'AuthoritiesDocuments.modified',
+           'document_id' => 'Documents.id',
+           'document_name' => 'Documents.name',
+		   'author_id' => 'Authors.id',
+		   'author_type_id' => 'AuthorTypes.id',
+           'author_name' => 'Authors.name',
+           'author_type_name' => 'AuthorTypes.name',
+         ],
+        'order' => ['Authors.name' => 'ASC'],
+        'contain' => ['Authorities' => ['Authors', 'AuthorTypes'], 'Documents'], 
+        'sortWhitelist' => ['id', 'author_id', 'author_type_name', 'author_id', 'author_type_id', 'author_name', 'count_documents','created','modified']
+    ];
 
+     // Set pagination
+    $this->paginate = $where;
+
+    // Get data
+    $authoritiesDocuments = $this->paginate($this->AuthoritiesDocuments, ['limit' => 100]);
+		
         $this->set(compact('authoritiesDocuments'));
     }
 

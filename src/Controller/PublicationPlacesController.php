@@ -109,4 +109,25 @@ class PublicationPlacesController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    
+    public function isPublicationPlaceAlreadyExists()
+    {
+        $response = false;
+
+        if ($this->request->is('ajax')) {
+            $name = $this->request->getData('name');
+
+            $publicationPlace = $this->PublicationPlaces->find()
+                ->where(['name' => $name])
+                ->first();
+
+            if ($publicationPlace) {
+                return $this->response->withStringBody(true);
+            }
+
+            $response = false;
+        }
+
+        return $this->response->withStringBody($response);
+    }
 }

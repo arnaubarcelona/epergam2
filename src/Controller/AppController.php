@@ -17,6 +17,8 @@ namespace App\Controller;
 use Cake\Controller\Controller;
 use Cake\Event\Event;
 use Cake\View\Helper\SessionHelper;
+use Cake\Routing\Router;
+use Cake\Core\Configure;
 
 /**
  * Application Controller
@@ -38,6 +40,29 @@ class AppController extends Controller
      *
      * @return void
      */
+     
+    public function beforeFilter(Event $event){
+	$url = Router::url(NULL, true); //complete url
+    if (!preg_match('/login|logout/i', $url)){
+        $this->request->session()->write('lastUrl', $url);
+    }
+    $us = $this->LoadModel('Users');
+		$users = $us->find('list',
+		['keyField' => 'id',
+		'valueField' => 'name']);
+		$docs = $this->LoadModel('Documents'); 
+		$documents = $docs->find('list',
+		['keyField' => 'id',
+		'valueField' => 'fullname']);
+		$subs = $this->LoadModel('Subjects'); 
+		$subjects = $subs->find('list');
+		$langs = $this->LoadModel('Languages'); 
+		$languages = $langs->find('list');
+		$auths = $this->LoadModel('Authors'); 
+		$authors = $auths->find('list');
+    $this->set(compact('users', 'documents', 'authors', 'subjects', 'languages'));
+}
+
    
     public function initialize()
     {
@@ -64,7 +89,7 @@ class AppController extends Controller
 		]);
 		// Allow the display action so our PagesController
 		// continues to work. Also enable the read only actions.
-		$this->Auth->allow(['display', 'view', 'index', 'compactview', 'pdfcompactview', 'pdfindex']);
+		$this->Auth->allow(['display', 'view', 'index', 'compactview', 'pdfcompactview', 'pdfindex', 'doneindex']);
 		}
 		
         /*

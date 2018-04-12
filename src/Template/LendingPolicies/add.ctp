@@ -4,15 +4,7 @@
  * @var \App\Model\Entity\LendingPolicy $lendingPolicy
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Lending Policies'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Groups'), ['controller' => 'Groups', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Group'), ['controller' => 'Groups', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="lendingPolicies form large-9 medium-8 columns content">
+<div class="noudiv">
     <?= $this->Form->create($lendingPolicy) ?>
     <fieldset>
         <legend><?= __('Add Lending Policy') ?></legend>

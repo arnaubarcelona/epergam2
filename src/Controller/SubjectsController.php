@@ -18,11 +18,107 @@ class SubjectsController extends AppController
      *
      * @return \Cake\Http\Response|void
      */
+     
+      public function pdfindex()
+    {
+		$this->viewBuilder()->options([
+            'pdfConfig' => [
+                'orientation' => 'portrait',
+                'filename' => 'Llista de matèries.pdf'
+            ]
+        ]);
+        $psubjects = $this->Subjects->find('all', [
+        'recursive'=>-1,
+        'fields' => [
+           'Subjects.id',
+           'Subjects.name',
+           'Subjects.photo',
+           'Subjects.photo_dir',
+           'Subjects.created',
+           'Subjects.modified',
+           //'Subjects__count_documents' => 'count(SubjectsDocuments.authority_id)',
+           'count_documents' => 'count(DocumentsSubjects.subject_id)'
+           // 'Licensees.count_users' => 'count(LicenseesUsers.licensees_id)', 
+         ],
+        'order' => ['Subjects.name' => 'ASC'],
+        'contain' => ['Documents'],
+        'sortWhitelist' => ['id', 'name', 'count_documents','created','modified'],
+        'join' => [
+            'DocumentsSubjects' => [
+                'table' => 'documents_subjects',
+                'type' => 'LEFT',
+                'conditions' => [
+                    'DocumentsSubjects.subject_id = Subjects.id'
+                ],
+            ],
+        ],
+        'group' => 'Subjects.id'
+    ]);
+        $this->set(compact('psubjects'));
+    }
+    
     public function index()
     {
-        $subjects = $this->paginate($this->Subjects);
+        $where = [
+        'recursive'=>-1,
+        'fields' => [
+           'Subjects.id',
+           'Subjects.name',
+           'Subjects.photo',
+           'Subjects.photo_dir',
+           'Subjects.created',
+           'Subjects.modified',
+           //'Subjects__count_documents' => 'count(SubjectsDocuments.authority_id)',
+           'count_documents' => 'count(DocumentsSubjects.subject_id)'
+           // 'Licensees.count_users' => 'count(LicenseesUsers.licensees_id)', 
+         ],
+        'order' => ['Subjects.name' => 'ASC'],
+        'contain' => ['Documents'],
+        'sortWhitelist' => ['id', 'name', 'count_documents','created','modified'],
+        'join' => [
+            'DocumentsSubjects' => [
+                'table' => 'documents_subjects',
+                'type' => 'LEFT',
+                'conditions' => [
+                    'DocumentsSubjects.subject_id = Subjects.id'
+                ],
+            ],
+        ],
+        'group' => 'Subjects.id'
+    ];
+    
+    
+     // Set pagination
+    $this->paginate = $where;
+
+    // Get data
+    $subjects = $this->paginate($this->Subjects, ['limit' => 100]);
 
         $this->set(compact('subjects'));
+    }
+    
+            public function pdfcompactview($id = null)
+    {
+		$prevcurrurl = $this->request->here(true);
+		$currurl = str_replace('/', 'º', $prevcurrurl);
+        $subject = $this->Subjects->get($id, [
+            'contain' => ['Documents']]);
+            
+		$this->viewBuilder()->options([
+            'pdfConfig' => [
+                'orientation' => 'portrait',
+                'filename' => 'Documents en ' . $subject->name . ' - llista compacta.pdf'
+            ]
+        ]);
+        $pdocuments = $this->Subjects->Documents
+			->find()
+			->contain(['Authorities' => ['Authors', 'AuthorTypes'], 'Levels', 'LendingStates', 'CatalogueStates', 'Lendings' => ['LendingStates', 'Users' => ['Groups']]])
+			->matching('Subjects', function (\Cake\ORM\Query $query) use ($subject) {
+				return $query->where([
+					'Subjects.id' => $subject->id
+				]);
+			})->order(['Documents.name' => 'ASC']);
+        $this->set(compact('subject', 'pdocuments', 'currurl'));
     }
 
     /**
@@ -32,13 +128,63 @@ class SubjectsController extends AppController
      * @return \Cake\Http\Response|void
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
-    public function view($id = null)
+     
+    public function compactview($id = null)
     {
-        $subject = $this->Subjects->get($id, [
+		$prevcurrurl = $this->request->here(true);
+		$currurl = str_replace('/', 'º', $prevcurrurl);
+		$subject = $this->Subjects->get($id, [
             'contain' => ['Documents']
         ]);
+        
+        $documentsQuery = $this->Subjects->Documents
+			->find()
+			->contain(['Authorities' => ['Authors', 'AuthorTypes'], 'Levels', 'LendingStates', 'CatalogueStates', 'Lendings' => ['LendingStates', 'Users' => ['Groups']]])
+			->matching('Subjects', function (\Cake\ORM\Query $query) use ($subject) {
+				return $query->where([
+					'Subjects.id' => $subject->id
+				]);
+			});
+		$paginationOptions = [
+			'limit' => 100,
+			'order' => [
+				'Documents.name' => 'ASC'
+			]
+		];
+		
 
-        $this->set('subject', $subject);
+		$pdocuments = $this->paginate($documentsQuery, $paginationOptions);
+
+        $this->set(compact('subject', 'currurl', 'pdocuments'));
+    }
+    
+    public function view($id = null)
+    {
+        $prevcurrurl = $this->request->here(true);
+		$currurl = str_replace('/', 'º', $prevcurrurl);
+		$subject = $this->Subjects->get($id, [
+            'contain' => ['Documents']
+        ]);
+        
+        $documentsQuery = $this->Subjects->Documents
+			->find()
+			->contain(['Authorities' => ['Authors', 'AuthorTypes'], 'PublicationPlaces' => ['Countries'], 'Levels', 'Collections', 'Lendings' => ['LendingStates', 'Users' => ['Groups'], 'SetLendingUsers', 'SetReturnUsers'], 'Languages', 'Cdus', 'Formats', 'Collections', 'Subjects', 'PublicationPlaces', 'Locations', 'CatalogueStates', 'ConservationStates', 'Publishers', 'LendingStates'])
+			->matching('Subjects', function (\Cake\ORM\Query $query) use ($subject) {
+				return $query->where([
+					'Subjects.id' => $subject->id
+				]);
+			});
+
+		$paginationOptions = [
+			'limit' => 100,
+			'order' => [
+				'Documents.name' => 'ASC'
+			]
+		];
+
+		$pdocuments = $this->paginate($documentsQuery, $paginationOptions);
+
+        $this->set(compact('subject', 'currurl', 'pdocuments'));
     }
 
     /**

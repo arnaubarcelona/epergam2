@@ -38,11 +38,13 @@ class DocumentsController extends AppController
      */
     public function view($id = null)
     {
+		$prevcurrurl = $this->request->here(true);
+		$currurl = str_replace('/', 'º', $prevcurrurl);
         $document = $this->Documents->get($id, [
-            'contain' => ['Cdus', 'Formats', 'Collections', 'PublicationPlaces', 'Locations', 'CatalogueStates', 'ConservationStates', 'Authorities', 'Languages', 'Levels', 'Publishers', 'Subjects', 'Lendings', 'LendingStates']
+            'contain' => ['Authorities' => ['Authors', 'AuthorTypes'], 'PublicationPlaces' => ['Countries'], 'Levels', 'Collections', 'Lendings' => ['LendingStates', 'Users' => ['Groups'], 'SetLendingUsers', 'SetReturnUsers'], 'Languages', 'Cdus', 'Formats', 'Collections', 'Subjects', 'PublicationPlaces', 'Locations', 'CatalogueStates', 'ConservationStates', 'Publishers', 'LendingStates']
         ]);
 
-        $this->set('document', $document);
+        $this->set(compact('document', 'currurl'));
     }
 
     /**
@@ -102,9 +104,9 @@ class DocumentsController extends AppController
         // Added by IV -- end
         
         $formats = $this->Documents->Formats->find('list');
-        $collections = $this->Documents->Collections->find('list');
+        $collections = $this->getCollectionListCount();
         $publicationPlaces = $this->Documents->PublicationPlaces->find('list');
-        $locations = $this->Documents->Locations->find('list');
+        $locations = $this->getLocationsListCount();
         $catalogueStates = $this->Documents->CatalogueStates->find('list');
         $conservationStates = $this->Documents->ConservationStates->find('list');
 
@@ -148,9 +150,9 @@ class DocumentsController extends AppController
         }
         // Added by IV -- end
 
-        $languages = $this->Documents->Languages->find('list');
+        $languages = $this->getDocLanguagesListCount();
         $levels = $this->Documents->Levels->find('list');
-        $publishers = $this->Documents->Publishers->find('list');
+        $publishers = $this->getDocPublishersListCount();
         $subjects = $this->Documents->Subjects->find('list');
         $lendingStates = $this->Documents->LendingStates->find('list');
         $this->set(compact('document', 'cdus', 'formats', 'collections', 'publicationPlaces', 'locations', 'catalogueStates', 'conservationStates', 'formattedCdus', 'formattedAuthorities', 'authorities', 'languages', 'levels', 'publishers', 'subjects', 'lendingStates'));
@@ -165,39 +167,111 @@ class DocumentsController extends AppController
      */
     public function edit($id = null)
     {
+		// Added by IV[14-03-2018]
+        $this->loadModel('Authorities');
+        $this->loadModel('AuthoritiesDocuments');
+        $formattedAuthorities = [];
+
         $document = $this->Documents->get($id, [
             'contain' => ['Authorities', 'Languages', 'Levels', 'Publishers', 'Subjects']
         ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
+        if ($this->request->is('post')) {
             $document = $this->Documents->patchEntity($document, $this->request->getData());
             if ($this->Documents->save($document)) {
-                if($document->catalogue_state_id != 2) {
-					$document->lending_state_id = 6; }
-				else {
-					$document->lending_state_id = 1;
-				}
-					if ($this->Documents->save($document)) {
+                // Save authorities documents
+                $document_id = $document->id;
+                $this->saveAuthoritiesDocuments($document_id, $this->request->getData('authority_ids'));
+
                 $this->Flash->success(__('The document has been saved.'));
-				}
+
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The document could not be saved. Please, try again.'));
         }
-        $cdus = $this->Documents->Cdus->find('list');
+
+        // Added by IV[15-03-2018]
+        $documents = $this->Documents->find();
+        $groupedCduIds = $documents->select([
+            'count' => $documents->func()->count('id'),
+            'id' => $documents->func()->max('cdu_id')
+        ])
+        ->group('cdu_id')
+        ->where(['cdu_id != ""'])
+        ->toArray();
+
+        $formattedCduIds = Hash::combine($groupedCduIds, '{n}.id', '{n}.count');
+        $cdus = $this->Documents->Cdus->find()->toArray();
+        if (!empty($cdus)) {
+            foreach ($cdus as $key => $cdu) {
+                $formattedCdus[$cdu['id']] = $cdu['name'];
+
+                if (!empty($cdu['description'])) {
+                    $formattedCdus[$cdu['id']] .= " {$cdu['description']}";
+
+                    if (isset($formattedCduIds[$cdu['id']])) {
+                        $formattedCdus[$cdu['id']] .= " ({$formattedCduIds[$cdu['id']]})";
+                    } else {
+                        $formattedCdus[$cdu['id']] .= " (0)";
+                    }
+                }
+            }
+        }
+        // Added by IV -- end
+        
         $formats = $this->Documents->Formats->find('list');
-        $collections = $this->Documents->Collections->find('list');
+        $collections = $this->getCollectionListCount();
         $publicationPlaces = $this->Documents->PublicationPlaces->find('list');
-        $locations = $this->Documents->Locations->find('list');
+        $locations = $this->getLocationsListCount();
         $catalogueStates = $this->Documents->CatalogueStates->find('list');
         $conservationStates = $this->Documents->ConservationStates->find('list');
-        $authorities = $this->Documents->Authorities->find('list');
-        $languages = $this->Documents->Languages->find('list');
+
+        // Added by IV[14-03-2018]
+        $authorities = $this->Authorities->find()
+            ->contain([
+                'Authors' => function ($q) {
+                    return $q->select(['id', 'name']);
+                },
+                'AuthorTypes' => function ($q) {
+                    return $q->select(['id', 'name']);
+                }
+            ])
+            ->toArray();
+
+        $authoritiesDocuments = $this->AuthoritiesDocuments->find();
+        $groupedauthoritiesDocumentsIds = $authoritiesDocuments->select([
+            'count' => $authoritiesDocuments->func()->count('id'),
+            'id' => $authoritiesDocuments->func()->max('authority_id')
+        ])
+        ->group('authority_id')
+        ->where(['authority_id != ""'])
+        ->toArray();
+
+        $formattedauthoritiesDocumentsIds = Hash::combine($groupedauthoritiesDocumentsIds, '{n}.id', '{n}.count');
+
+        if (!empty($authorities)) {
+            foreach ($authorities as $key => $authority) {
+                $formattedAuthorities[$authority['id']] = $authority['author']['name'];
+
+                if (!empty($authority['author_type']['name'])) {
+                    $formattedAuthorities[$authority['id']] .= " {$authority['author_type']['name']}";
+                }
+
+                if (isset($formattedauthoritiesDocumentsIds[$authority['id']])) {
+                    $formattedAuthorities[$authority['id']] .= " ({$formattedauthoritiesDocumentsIds[$authority['id']]})";
+                } else {
+                    $formattedAuthorities[$authority['id']] .= " (0)";
+                }
+            }
+        }
+        // Added by IV -- end
+
+        $languages = $this->getDocLanguagesListCount();
         $levels = $this->Documents->Levels->find('list');
-        $publishers = $this->Documents->Publishers->find('list');
+        $publishers = $this->getDocPublishersListCount();
         $subjects = $this->Documents->Subjects->find('list');
         $lendingStates = $this->Documents->LendingStates->find('list');
-        $this->set(compact('document', 'cdus', 'formats', 'collections', 'publicationPlaces', 'locations', 'catalogueStates', 'conservationStates', 'languages', 'levels', 'publishers', 'subjects', 'lendingStates'));
-    }
+        $this->set(compact('document', 'cdus', 'formats', 'collections', 'publicationPlaces', 'locations', 'catalogueStates', 'conservationStates', 'formattedCdus', 'formattedAuthorities', 'authorities', 'languages', 'levels', 'publishers', 'subjects', 'lendingStates'));
+		 }
 
     /**
      * Delete method
@@ -403,5 +477,103 @@ class DocumentsController extends AppController
 
         return $this->response->withType('application/json')
                 ->withStringBody(json_encode($response));
+    }
+
+    protected function getCollectionListCount()
+    {
+        $this->loadModel('Collections');
+
+        $query = $this->Collections->find();
+        $result = $query->select([
+                'Collections.id',
+                'Collections.name',
+                'total_docs' => $query->func()->count('Documents.id')
+            ])
+            ->leftJoinWith('Documents')
+            ->group(['Collections.id'])
+            ->toArray();
+
+        if (!empty($result)) {
+            $result = Hash::combine($result, '{n}.id', ['%s (%s)', '{n}.name', '{n}.total_docs']);
+        }
+        
+        return $result;
+    }
+
+    protected function getLocationsListCount()
+    {
+        $this->loadModel('Locations');
+
+        $query = $this->Locations->find();
+        $result = $query->select([
+                'Locations.id',
+                'Locations.name',
+                'total_docs' => $query->func()->count('Documents.id')
+            ])
+            ->leftJoinWith('Documents')
+            ->group(['Locations.id'])
+            ->toArray();
+
+        if (!empty($result)) {
+            $result = Hash::combine($result, '{n}.id', ['%s (%s)', '{n}.name', '{n}.total_docs']);
+        }
+
+        return $result;
+    }
+
+    protected function getDocLanguagesListCount()
+    {
+        $this->loadModel('Languages');
+
+        $query = $this->Languages->find();
+
+        $result = $query->select([
+                'Languages.id',
+                'Languages.name',
+                'total_docs' => $query->func()->count('dl.id')
+            ])
+            ->hydrate(false)
+            ->join([
+                'table' => 'documents_languages',
+                'alias' => 'dl',
+                'type' => 'LEFT',
+                'conditions' => 'dl.language_id = Languages.id',
+            ])
+            ->group(['Languages.id'])
+            ->toArray();
+
+        if (!empty($result)) {
+            $result = Hash::combine($result, '{n}.id', ['%s (%s)', '{n}.name', '{n}.total_docs']);
+        }
+
+        return $result;
+    }
+
+    protected function getDocPublishersListCount()
+    {
+        $this->loadModel('Publishers');
+
+        $query = $this->Publishers->find();
+
+        $result = $query->select([
+                'Publishers.id',
+                'Publishers.name',
+                'total_docs' => $query->func()->count('dp.id')
+            ])
+            ->hydrate(false)
+            ->join([
+                'table' => 'documents_publishers',
+                'alias' => 'dp',
+                'type' => 'LEFT',
+                'conditions' => 'dp.publisher_id = Publishers.id',
+            ])
+            ->group(['Publishers.id'])
+            ->toArray();
+
+        if (!empty($result)) {
+            $result = Hash::combine($result, '{n}.id', ['%s (%s)', '{n}.name', '{n}.total_docs']);
+        }
+
+        return $result;
     }
 }

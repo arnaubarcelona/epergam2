@@ -4,15 +4,7 @@
  * @var \App\Model\Entity\Publisher[]|\Cake\Collection\CollectionInterface $publishers
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Publisher'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Documents'), ['controller' => 'Documents', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Document'), ['controller' => 'Documents', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="publishers index large-9 medium-8 columns content">
+<div class="noudiv">
     <h3><?= __('Publishers') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
@@ -20,9 +12,6 @@
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('photo') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_dir') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_size') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_type') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
@@ -34,9 +23,6 @@
                 <td><?= $this->Number->format($publisher->id) ?></td>
                 <td><?= h($publisher->name) ?></td>
                 <td><?= h($publisher->photo) ?></td>
-                <td><?= h($publisher->photo_dir) ?></td>
-                <td><?= $this->Number->format($publisher->photo_size) ?></td>
-                <td><?= h($publisher->photo_type) ?></td>
                 <td><?= h($publisher->created) ?></td>
                 <td><?= h($publisher->modified) ?></td>
                 <td class="actions">

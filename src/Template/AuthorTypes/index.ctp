@@ -4,15 +4,7 @@
  * @var \App\Model\Entity\AuthorType[]|\Cake\Collection\CollectionInterface $authorTypes
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Author Type'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Authorities'), ['controller' => 'Authorities', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Authority'), ['controller' => 'Authorities', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="authorTypes index large-9 medium-8 columns content">
+<div class="noudiv">
     <h3><?= __('Author Types') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
@@ -20,9 +12,6 @@
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('photo') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_dir') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_size') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_type') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
@@ -34,9 +23,6 @@
                 <td><?= $this->Number->format($authorType->id) ?></td>
                 <td><?= h($authorType->name) ?></td>
                 <td><?= h($authorType->photo) ?></td>
-                <td><?= h($authorType->photo_dir) ?></td>
-                <td><?= $this->Number->format($authorType->photo_size) ?></td>
-                <td><?= h($authorType->photo_type) ?></td>
                 <td><?= h($authorType->created) ?></td>
                 <td><?= h($authorType->modified) ?></td>
                 <td class="actions">

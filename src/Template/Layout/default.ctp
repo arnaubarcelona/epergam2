@@ -3,7 +3,7 @@
 <html>
 <head>
     <?= $this->Html->charset() ?>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
         ePergam 2
     </title>
@@ -20,29 +20,132 @@
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
+
+<style>
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+</style>
+
 </head>
-<body>
-    <nav class="top-bar expanded" data-topbar role="navigation">
-        <ul class="title-area large-3 medium-4 columns">
-            <li class="name">
-                <img width="24px" height="24px" src="http://127.0.0.1/epergam2/webroot/img/icons/epergam.png"> <font style="font-size:1.0625rem;line-height:2.8125rem;margin:0;color:white;"><b>ePergam 2</b></a></font>
-            </li>
-        </ul>
-        <div class="top-bar-section">
-            <ul class="right">
-				<li> <?php $session = $this->request->session();
-				$user_data = $session->read('Auth.User');
-				if(!empty($user_data)){
-				echo $user_data['name'];
-				}?>
-            </ul>
-        </div>
-    </nav>
+<body style="padding-bottom: 20px;">  
+		<div id="mySidenav" class="sidenav">
+		  <ul>
+		  <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <li><a href="http://80.211.14.98/epergam2/pages/search"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/search.png">&emsp;Cerca</a>		  
+		  <li><a href="#"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/loan.png">&emsp;Préstecs</a>
+		  <ul>
+		  <li><a href="http://80.211.14.98/epergam2/lendings/index"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/lent.png">&emsp;Vigents</a>
+		  <li><a href="http://80.211.14.98/epergam2/lendings/doneindex"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/lentend.png">&emsp;Finalitzats</a>
+		  </ul>
+		  <li><a href="http://80.211.14.98/epergam2/documents/add"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/add.png">&emsp;Afegeix document</a>
+		  </ul>
+		</div>
+		
+		<div id="myRSidenav" class="rsidenav">
+		  <ul>
+		  <li><a href="javascript:void(0)" class="closebtn" onclick="closeRNav()">&times;</a>
+		  <span class="fadehide" style="color: white; font-size: 14px;"><b><?php $session = $this->request->session(); $user_data = $session->read('Auth.User')?><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/logged.png">&emsp;<?php echo $user_data['name']?></b></span>
+		  <li><a href="http://80.211.14.98/epergam2/users/logout"><img src="http://80.211.14.98/epergam2/webroot/img/icons/logout.png" width="24px" height="24px">&emsp;Surt</img></a>
+		  <li><a href="http://80.211.14.98/epergam2/users/pwd"><img src="http://80.211.14.98/epergam2/webroot/img/icons/pwd.png" width="24px" height="24px">&emsp;Canvia la contrasenya</img></a>
+		  </ul>
+		</div>
+		
+		<div id="myRRSidenav" class="rsidenav">
+		  <ul>
+		  <li><a href="javascript:void(0)" class="closebtn" onclick="closeRRNav()">&times;</a>
+		  <li><a href="http://80.211.14.98/epergam2/users/login"><img src="http://80.211.14.98/epergam2/webroot/img/icons/login.png" width="24px" height="24px">&emsp;Entra</img></a>
+		  </ul>
+		</div>
+
+		<!-- Use any element to open the sidenav -->
+	<div class="topbar">
+			<table class="barra" style="background: darkcyan;"><tr><td>
+		<span onclick="openNav()"><button class="resetbtn"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/epergam.png"><span class="fadeshow"> ePergam2</span></button></span>
+		</td><td style="color: white; font-weight: bold;"><center><div class="fadeshow"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/users.png"> Usuaris/es<?php echo $this->Form->create(null);
+							echo $this->Form->control('id', [
+								'id' => 'users',
+								'label' => '',
+								'type' => 'select',
+								'style'=>'width:200px; margin:0',
+								'class' => 'single_autocomplete',
+								'options' => $users,
+								'empty' => true,
+								'onchange' => 'viewuser()'
+							]);
+						echo $this->Form->end();?></div></td><td style="color: white; font-weight: bold;"><center><div class="fadeshow">
+						<img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/books.png"> Documents<?php echo $this->Form->create(null);
+							echo $this->Form->control('Document.id', [
+								'id' => 'docs',
+								'label' => '',
+								'type' => 'select',
+								'style'=>'width:200px;',
+								'class' => 'single_autocomplete',
+								'options' => $documents,
+								'empty' => true,
+								'onchange' => 'viewdoc()'
+							]);
+						echo $this->Form->end(); ?>
+						</div></td>
+						<td style="text-align:right;">
+			<?php $session = $this->request->session(); $user_data = $session->read('Auth.User')?>
+			<?php if(!empty($user_data)):?>
+			<span onclick="openRNav()"><button class="resetbtn">
+			<img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/logged.png"><span class="fadeshow"> <?php echo $user_data['name']?></span></span>
+			<?php else:?>
+			<span onclick="openRRNav()">
+			<button class="resetbtn">
+			<img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/notlogged.png"><span class="fadeshow"> Visitant</span>
+			</span>
+			<?php endif;?>
+		</td></tr></table>
+	</div>         
+  
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function openRNav() {
+    document.getElementById("myRSidenav").style.width = "250px";
+}
+
+function openRRNav() {
+    document.getElementById("myRRSidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+} 
+
+function closeRNav() {
+    document.getElementById("myRSidenav").style.width = "0";
+} 
+
+function closeRRNav() {
+    document.getElementById("myRRSidenav").style.width = "0";
+} 
+
+function viewuser() {
+  window.location = 'http://80.211.14.98/epergam2/users/view/' + document.getElementById("users").value; // JQuery:  $("#menu").val();
+}
+function viewdoc() {
+  window.location = 'http://80.211.14.98/epergam2/documents/view/' + document.getElementById("docs").value; // JQuery:  $("#menu").val();
+}
+	
+</script>
+        
     <?= $this->Flash->render() ?>
-    <div class="container clearfix">
+    <div>
         <?= $this->fetch('content') ?>
     </div>
-    <footer>
-    </footer>
 </body>
 </html>

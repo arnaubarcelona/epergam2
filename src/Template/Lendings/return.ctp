@@ -5,7 +5,7 @@
  */
 ?>
 
-<div class="lendings form large-2 medium-8 columns content">
+<div class="noudiv">
 	<br><br><br><br>
     <?= $this->Form->create($lending) ?>
     <center><?= $this->Form->button(__('Retorna')) ?>

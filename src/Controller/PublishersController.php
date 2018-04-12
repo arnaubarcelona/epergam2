@@ -50,11 +50,48 @@ class PublishersController extends AppController
     {
         $publisher = $this->Publishers->newEntity();
         if ($this->request->is('post')) {
-            $publisher = $this->Publishers->patchEntity($publisher, $this->request->getData());
+
+            if ($this->request->is('ajax')) {
+                $defaultSaveData = [
+                    'photo' => '',
+                    'photo_dir' => '',
+                    'photo_size' => 0,
+                    'photo_type' => '',
+                ];
+                $saveData = $this->request->getData();
+                $saveData = array_merge($saveData, $defaultSaveData);
+
+                $publisher = $this->Publishers->patchEntity(
+                    $publisher,
+                    $saveData,
+                    ['validate' => false]
+                );
+            } else {
+                $publisher = $this->Publishers->patchEntity($publisher, $this->request->getData());
+            }
+
+            
             if ($this->Publishers->save($publisher)) {
+                // Check for ajax
+                if ($this->request->is('ajax')) {
+                    return $this->response->withType('application/json')
+                        ->withStringBody(json_encode([
+                            'status' => 'success',
+                            'message' => __('The publisher has been saved.'),
+                            'data' => json_decode(json_encode($publisher), true)
+                        ]));
+                }
                 $this->Flash->success(__('The publisher has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
+            }
+            // Check for ajax
+            if ($this->request->is('ajax')) {
+                return $this->response->withType('application/json')
+                    ->withStringBody(json_encode([
+                        'status' => 'error',
+                        'message' => __('The publisher could not be saved. Please, try again.')
+                    ]));
             }
             $this->Flash->error(__('The publisher could not be saved. Please, try again.'));
         }
@@ -105,5 +142,26 @@ class PublishersController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function isPublisherAlreadyExists()
+    {
+        $response = false;
+
+        if ($this->request->is('ajax')) {
+            $name = $this->request->getData('name');
+
+            $publisher = $this->Publishers->find()
+                ->where(['name' => $name])
+                ->first();
+
+            if ($publisher) {
+                return $this->response->withStringBody(true);
+            }
+
+            $response = false;
+        }
+
+        return $this->response->withStringBody($response);
     }
 }
