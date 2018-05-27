@@ -49,4 +49,5 @@ class Application extends BaseApplication
 
         return $middlewareQueue;
     }
+    
 }

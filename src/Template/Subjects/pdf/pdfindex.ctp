@@ -4,7 +4,19 @@
  * @var \App\Model\Entity\Language[]|\Cake\Collection\CollectionInterface $subjects
  */
 ?>
-	
+	<table width="300px">
+		<tr>
+			<td style="background:white; width: 90px;">
+				<img width="75px" height="75px" src="http://80.211.14.98/epergam2/webroot/img/icons/logo.jpg"></img>
+			</td>
+			<td style="background:white; text-align: left;">
+				<b>Biblioteca Marta Mata</b><br>
+				Escola Orlandai<br>
+				08034 Barcelona
+			</td>
+		</tr>
+	</table>
+<br>
 <div class="languages index large-12 medium-8 columns content">
     <h3><?= __('Subjects') ?></h3>
     <div class="paginator">

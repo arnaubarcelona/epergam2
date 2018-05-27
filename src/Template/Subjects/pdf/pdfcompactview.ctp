@@ -1,4 +1,16 @@
-    <h3><?= __('Documents') ?> en <?= h($subject->name) ?></h3>
+<table width="300px">
+		<tr>
+			<td style="background:white; width: 90px;">
+				<img width="75px" height="75px" src="http://80.211.14.98/epergam2/webroot/img/icons/logo.jpg"></img>
+			</td>
+			<td style="background:white; text-align: left;">
+				<b>Biblioteca Marta Mata</b><br>
+				Escola Orlandai<br>
+				08034 Barcelona
+			</td>
+		</tr>
+	</table>
+<br>    <h3><?= __('Documents') ?> en <?= h($subject->name) ?></h3>
 	
 		<?php $nummm = 0 ?>
 <?php if (!empty($subject->documents)): ?>

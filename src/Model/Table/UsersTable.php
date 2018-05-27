@@ -124,6 +124,10 @@ class UsersTable extends Table
             ->scalar('photo_type')
             ->maxLength('photo_type', 255)
             ->allowEmpty('photo_type');
+            
+        $validator
+            ->date('lastmail')
+            ->allowEmpty('lastmail');
 
         return $validator;
     }

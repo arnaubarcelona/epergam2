@@ -5,6 +5,7 @@ margin-bottom: 20px;
 background-color: whitesmoke;
 border-collapse:collapse;
 }
+
 thead {
 background-color: khaki;
 text-align: left;
@@ -17,6 +18,7 @@ font-size: 10pt;
 border-collapse:collapse;
 }
 tr:nth-of-type(even) {
+page-break-inside:avoid;
 background-color: #e6e6e6;
 border-collapse:collapse;
 }
@@ -39,4 +41,33 @@ font-weight: normal;
 }
 img {
 vertical-align: middle;
+}
+table.labels{
+page-break-inside:avoid;
+width: 100%;
+margin-bottom: 0px;
+background-color: white;
+border-collapse:collapse;
+}
+table tr.labels {
+height: 100px;
+page-break-inside:avoid;
+font-size: 10pt;
+border-collapse:collapse;
+}
+table td.labels{
+text-align: center;
+vertical-align: middle;
+width: 100px;
+display:float;
+border:none;
+outline:none;
+}
+@font-face {
+    font-family: 'webfontregular';
+    src: url('../font/idautomationhc39m_code_39_barcode-webfont.woff2') format('woff2'),
+         url('../font/idautomationhc39m_code_39_barcode-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }

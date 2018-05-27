@@ -379,7 +379,11 @@ input[type="radio"] {
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-    height: auto;
+   -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance:textfield;
 }
 
 
@@ -2110,6 +2114,7 @@ th.show-for-print{display:table-cell !important}
   flex-direction: column;
   vertical-align: middle;
   border-collapse:collapse;
+  page-break-inside:avoid;
 }
 
 
@@ -2135,6 +2140,7 @@ background-color: khaki;
   white-space: normal;
   border-width: 0px;
   text-align: justify;
+  page-break-inside:avoid;
 }
 
 
@@ -2584,6 +2590,7 @@ color: cadetblue;
 }
 
 .noudiv {
+  padding: 20px;
   position: absolute;
   margin: auto;
   top: 14%;
@@ -2680,6 +2687,10 @@ th, td {
 }
 .fadehide {display: none;}
 .doscols {column-count: 2;}
+.quatrecols {column-count: 4;}
+img {
+vertical-align: middle;
+}
 
 @media screen and (max-width: 450px) {
     .fadeshow { display: none; }

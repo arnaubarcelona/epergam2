@@ -1,4 +1,4 @@
-<div class="lendings index large-9 medium-8 columns content">
+<div class="noudiv">
 <h3>Cerca</h3>
 <table class="responsive-table" style="width:600px">
 <tr><td><a href="http://80.211.14.98/epergam2/documents/index"><img src="http://80.211.14.98/epergam2/webroot/img/icons/index.png" width="24px" height="24px"> Documents</a></td>
@@ -14,6 +14,8 @@
 						'onchange' => 'viewdoc()'
 					]);
 echo $this->Form->end(); ?></td></tr>
+<?php $session = $this->request->session(); $user_data = $session->read('Auth.User')?>
+<?php if(!empty($user_data)):?>
 <tr><td><a href="http://80.211.14.98/epergam2/users/index"><img src="http://80.211.14.98/epergam2/webroot/img/icons/index.png" width="24px" height="24px"> Usuaris/es</a></td>
 <td colspan="2"><?php echo $this->Form->create(null);
 					echo $this->Form->control('User.id', [
@@ -27,7 +29,8 @@ echo $this->Form->end(); ?></td></tr>
 						'onchange' => 'viewuser()'
 					]);
 echo $this->Form->end(); ?></td></tr>
-<td><a href="http://80.211.14.98/epergam2/authors/index"><img src="http://80.211.14.98/epergam2/webroot/img/icons/index.png" width="24px" height="24px"> Autors/es</a></td>
+<?php endif;?>
+<tr><td><a href="http://80.211.14.98/epergam2/authors/index"><img src="http://80.211.14.98/epergam2/webroot/img/icons/index.png" width="24px" height="24px"> Autors/es</a></td>
 <td colspan="2"><?php echo $this->Form->create(null);
 					echo $this->Form->control('Author.id', [
 						'id' => 'autors',

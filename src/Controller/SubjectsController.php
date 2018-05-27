@@ -221,7 +221,7 @@ class SubjectsController extends AppController
             }
             $this->Flash->error(__('The subject could not be saved. Please, try again.'));
         }
-        $documents = $this->Subjects->Documents->find('list', ['limit' => 200]);
+        $documents = $this->Subjects->Documents->find('list');
         $this->set(compact('subject', 'documents'));
     }
 
@@ -246,8 +246,7 @@ class SubjectsController extends AppController
             }
             $this->Flash->error(__('The subject could not be saved. Please, try again.'));
         }
-        $documents = $this->Subjects->Documents->find('list', ['limit' => 200]);
-        $this->set(compact('subject', 'documents'));
+        $this->set(compact('subject'));
     }
 
     /**
@@ -269,23 +268,24 @@ class SubjectsController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
-    public function alreadyExists()
+    public function isSubjectAlreadyExists()
     {
-        $response = [
-            'status' => 'error',
-            'message' => 'Method not allowed'
-        ];
+        $response = false;
 
         if ($this->request->is('ajax')) {
             $name = $this->request->getData('name');
 
-            $subject = $this->Subjects->find()->where(['name' => $name]);
+            $subject = $this->Subjects->find()
+                ->where(['name' => $name])
+                ->first();
 
             if ($subject) {
                 return $this->response->withStringBody(true);
             }
+
+            $response = false;
         }
 
-        return $this->response->withStringBody(false);
+        return $this->response->withStringBody($response);
     }
 }

@@ -137,6 +137,10 @@
 		  
 		  <tr>
 			<td colspan="2">
+				<?php if (!empty($document->collection_id)): ?>
+				<img height="24" width="24" src="http://80.211.14.98/epergam2/webroot/img/icons/collection.png">
+				 <?php echo $document->collection->name; ?><br>
+				<?php endif;?>
 				<?php if (!empty($documents->publishers)): ?>
 				<img height="24" width="24" src="http://80.211.14.98/epergam2/webroot/img/icons/editorial.png">
 				<?php $pubs = array(); ?>
@@ -171,6 +175,16 @@
 					<?php if(substr($autor, 0, 10) == "Desconegut"): ?>
 					<?php $autor = $documents->name ?>
 					<?php endif; ?>
+					
+					
+					<?php $primer = true;?>
+					<?php foreach ($documents->authorities as $authority): ?>
+					<?php if($primer):?>
+					<?php $autor = $authority->author->name ?>
+					<?php $primer = false;?>
+					<?php endif;?>
+					<?php endforeach;?>
+					
 				<img height="24" width="24" src="http://80.211.14.98/epergam2/webroot/img/icons/cdu.png"> <a href="http://80.211.14.98/epergam2/cdus/view/<?= $documents->cdus->id ?>"><b><?= h($documents->cdus->name) ?> <?= mb_convert_case(mb_substr($autor, 0, 3), MB_CASE_UPPER, "UTF-8") ?></b> - <?= h($documents->cdus->description) ?></a>
 				<?php else: ?>
 				<img height="24" width="24" src="http://80.211.14.98/epergam2/webroot/img/icons/cdu.png"> [CDU desconeguda]
@@ -269,9 +283,10 @@
 					<?php if (!empty($documents->lendings)):?>
 					  <?php foreach ($documents->lendings as $lending): ?>
 						<?php if($lending->lending_state_id == 2 || $lending->lending_state_id == 3):?>
-							<img height="24" width="24" src="http://80.211.14.98/epergam2/<?php echo $lending->lending_state->photo_dir?>/<?php echo $lending->lending_state->photo?>"> <img height="24" width="24" src="http://80.211.14.98/epergam2/<?php echo $lending->user->group->photo_dir?>/<?php echo $lending->user->group->photo?>"> <a href="http://80.211.14.98/epergam2/lendings/return/<?php echo $documents->id?>/<?php echo $lending->id?>/<?php echo $currurl?>"><img height="24" width="24" src="http://80.211.14.98/epergam2/webroot/img/icons/return.png"></a> <?= $lending->date_taken->i18nFormat('d/M/YYYY')?><?php if(!empty($lending->date_real_return)):?> - <?= $lending->date_real_return->i18nFormat('d/M/YYYY')?><?php endif;?>: <a href="http://80.211.14.98/epergam2/users/view/<?= $lending->user->id ?>"><?= $lending->user->name?></a><br>
+							<img height="24" width="24" src="http://80.211.14.98/epergam2/<?php echo $lending->lending_state->photo_dir?>/<?php echo $lending->lending_state->photo?>"> <img height="24" width="24" src="http://80.211.14.98/epergam2/<?php echo $lending->user->group->photo_dir?>/<?php echo $lending->user->group->photo?>"> <a href="http://80.211.14.98/epergam2/lendings/return/<?php echo $documents->id?>/<?php echo $lending->id?>/<?php echo $currurl?>"><img height="24" width="24" src="http://80.211.14.98/epergam2/webroot/img/icons/return.png"></a> <?= $lending->date_taken->i18nFormat('d/M/YYYY')?><?php if(!empty($lending->date_real_return)):?> - <?= $lending->date_real_return->i18nFormat('d/M/YYYY')?><?php endif;?><?php $session = $this->request->session(); $user_data = $session->read('Auth.User')?>
+							<?php if(!empty($user_data)):?>: <a href="http://80.211.14.98/epergam2/users/view/<?= $lending->user->id ?>"><?= $lending->user->name?></a><?php endif;?><br>
 						<?php else:?>
-							<img height="24" width="24" src="http://80.211.14.98/epergam2/<?php echo $lending->lending_state->photo_dir?>/<?php echo $lending->lending_state->photo?>"> <img height="24" width="24" src="http://80.211.14.98/epergam2/<?php echo $lending->user->group->photo_dir?>/<?php echo $lending->user->group->photo?>"> <?= $lending->date_taken->i18nFormat('d/M/YYYY')?><?php if(!empty($lending->date_real_return)):?> - <?= $lending->date_real_return->i18nFormat('d/M/YYYY')?><?php endif;?>: <a href="http://80.211.14.98/epergam2/users/view/<?= $lending->user->id ?>"><?= $lending->user->name?></a><br>
+							<img height="24" width="24" src="http://80.211.14.98/epergam2/<?php echo $lending->lending_state->photo_dir?>/<?php echo $lending->lending_state->photo?>"> <img height="24" width="24" src="http://80.211.14.98/epergam2/<?php echo $lending->user->group->photo_dir?>/<?php echo $lending->user->group->photo?>"> <?= $lending->date_taken->i18nFormat('d/M/YYYY')?><?php if(!empty($lending->date_real_return)):?> - <?= $lending->date_real_return->i18nFormat('d/M/YYYY')?><?php endif;?><?php if(!empty($user_data)):?>: <a href="http://80.211.14.98/epergam2/users/view/<?= $lending->user->id ?>"><?= $lending->user->name?></a><?php endif;?><br>
 						<?php endif;?>
 					  <?php endforeach;?>
 					<?php else:?>
@@ -283,9 +298,9 @@
 					<?php if (!empty($documents->lendings)):?>
 					  <?php foreach ($documents->lendings as $lending): ?>			  
 						<?php if($lending->lending_state_id == 2 || $lending->lending_state_id == 3):?>
-							<br><img height="24" width="24" src="http://80.211.14.98/epergam2/<?php echo $lending->lending_state->photo_dir?>/<?php echo $lending->lending_state->photo?>"> <img height="24" width="24" src="http://80.211.14.98/epergam2/<?php echo $lending->user->group->photo_dir?>/<?php echo $lending->user->group->photo?>"> <a href="http://80.211.14.98/epergam2/lendings/return/<?php echo $documents->id?>/<?php echo $lending->id?>/<?php echo $currurl?>"><img height="24" width="24" src="http://80.211.14.98/epergam2/webroot/img/icons/return.png"></a> <?= $lending->date_taken->i18nFormat('d/M/YYYY')?><?php if(!empty($lending->date_real_return)):?> - <?= $lending->date_real_return->i18nFormat('d/M/YYYY')?><?php endif;?>: <a href="http://80.211.14.98/epergam2/users/view/<?= $lending->user->id ?>"><?= $lending->user->name?></a>
+							<br><img height="24" width="24" src="http://80.211.14.98/epergam2/<?php echo $lending->lending_state->photo_dir?>/<?php echo $lending->lending_state->photo?>"> <img height="24" width="24" src="http://80.211.14.98/epergam2/<?php echo $lending->user->group->photo_dir?>/<?php echo $lending->user->group->photo?>"> <a href="http://80.211.14.98/epergam2/lendings/return/<?php echo $documents->id?>/<?php echo $lending->id?>/<?php echo $currurl?>"><img height="24" width="24" src="http://80.211.14.98/epergam2/webroot/img/icons/return.png"></a> <?= $lending->date_taken->i18nFormat('d/M/YYYY')?><?php if(!empty($lending->date_real_return)):?> - <?= $lending->date_real_return->i18nFormat('d/M/YYYY')?><?php endif;?><?php if(!empty($user_data)):?>: <a href="http://80.211.14.98/epergam2/users/view/<?= $lending->user->id ?>"><?= $lending->user->name?></a><?php endif;?>
 						<?php else:?>
-							<br><img height="24" width="24" src="http://80.211.14.98/epergam2/<?php echo $lending->lending_state->photo_dir?>/<?php echo $lending->lending_state->photo?>"> <img height="24" width="24" src="http://80.211.14.98/epergam2/<?php echo $lending->user->group->photo_dir?>/<?php echo $lending->user->group->photo?>"> <?= $lending->date_taken->i18nFormat('d/M/YYYY')?><?php if(!empty($lending->date_real_return)):?> - <?= $lending->date_real_return->i18nFormat('d/M/YYYY')?><?php endif;?>: <a href="http://80.211.14.98/epergam2/users/view/<?= $lending->user->id ?>"><?= $lending->user->name?></a>
+							<br><img height="24" width="24" src="http://80.211.14.98/epergam2/<?php echo $lending->lending_state->photo_dir?>/<?php echo $lending->lending_state->photo?>"> <img height="24" width="24" src="http://80.211.14.98/epergam2/<?php echo $lending->user->group->photo_dir?>/<?php echo $lending->user->group->photo?>"> <?= $lending->date_taken->i18nFormat('d/M/YYYY')?><?php if(!empty($lending->date_real_return)):?> - <?= $lending->date_real_return->i18nFormat('d/M/YYYY')?><?php endif;?><?php if(!empty($user_data)):?>: <a href="http://80.211.14.98/epergam2/users/view/<?= $lending->user->id ?>"><?= $lending->user->name?></a><?php endif;?>
 						<?php endif;?>
 					  <?php endforeach;?>
 					<?php else:?>

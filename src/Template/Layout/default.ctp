@@ -38,6 +38,8 @@
 		<div id="mySidenav" class="sidenav">
 		  <ul>
 		  <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<li><a href="http://80.211.14.98/epergam2/documents/novetats"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/new.png">&emsp;Novetats</a>
+			<li><a href="http://80.211.14.98/epergam2/documents/populars"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/heart.png">&emsp;Els més prestats</a>
 		  <li><a href="http://80.211.14.98/epergam2/pages/search"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/search.png">&emsp;Cerca</a>		  
 		  <li><a href="#"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/loan.png">&emsp;Préstecs</a>
 		  <ul>
@@ -45,6 +47,8 @@
 		  <li><a href="http://80.211.14.98/epergam2/lendings/doneindex"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/lentend.png">&emsp;Finalitzats</a>
 		  </ul>
 		  <li><a href="http://80.211.14.98/epergam2/documents/add"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/add.png">&emsp;Afegeix document</a>
+		  <li><a href="http://80.211.14.98/epergam2/massives/location"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/move.png">&emsp;Canvi massiu d'ubicació</a>
+		  <li><a href="http://80.211.14.98/epergam2/massives/labels"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/labels.png">&emsp;Generació d'etiquetes</a>
 		  </ul>
 		</div>
 		
@@ -68,7 +72,10 @@
 	<div class="topbar">
 			<table class="barra" style="background: darkcyan;"><tr><td>
 		<span onclick="openNav()"><button class="resetbtn"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/epergam.png"><span class="fadeshow"> ePergam2</span></button></span>
-		</td><td style="color: white; font-weight: bold;"><center><div class="fadeshow"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/users.png"> Usuaris/es<?php echo $this->Form->create(null);
+		</td>		
+		<td style="color: white; font-weight: bold;"><center>
+			<?php if(!empty($user_data)):?>
+			<div class="fadeshow"><a style="color: white; font-weight: bold;" href="http://80.211.14.98/epergam2/users"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/search.png"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/users.png"> Usuaris/es</a><?php echo $this->Form->create(null);
 							echo $this->Form->control('id', [
 								'id' => 'users',
 								'label' => '',
@@ -79,15 +86,17 @@
 								'empty' => true,
 								'onchange' => 'viewuser()'
 							]);
-						echo $this->Form->end();?></div></td><td style="color: white; font-weight: bold;"><center><div class="fadeshow">
-						<img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/books.png"> Documents<?php echo $this->Form->create(null);
+						echo $this->Form->end();?></div></td><td style="color: white; font-weight: bold;"><center>
+		<?php endif;?>
+						<div class="fadeshow">
+						<a style="color: white; font-weight: bold;" href="http://80.211.14.98/epergam2/documents"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/search.png"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/books.png"> Documents</a><?php echo $this->Form->create(null);
 							echo $this->Form->control('Document.id', [
 								'id' => 'docs',
 								'label' => '',
 								'type' => 'select',
 								'style'=>'width:200px;',
 								'class' => 'single_autocomplete',
-								'options' => $documents,
+								'options' => $docs,
 								'empty' => true,
 								'onchange' => 'viewdoc()'
 							]);

@@ -59,7 +59,8 @@ class User extends Entity
         'modified' => true,
         'group' => true,
         'subscription_state' => true,
-        'lendings' => true
+        'lendings' => true,
+        'lastmail' => true
     ];
 
 	protected function _setPassword($value)

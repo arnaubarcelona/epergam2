@@ -98,10 +98,12 @@ class GroupsController extends AppController
     {
         $this->request->allowMethod(['post', 'delete']);
         $group = $this->Groups->get($id);
+	if(!empty($group->photo_dir)){
 		$delefolder = $group->photo_dir;
 		$dfolder = str_replace('webroot/','',$delefolder);
 		$delfolder = new Folder(WWW_ROOT . $dfolder);
 		$delfolder->delete();
+	}
         if ($this->Groups->delete($group)) {
             $this->Flash->success(__('The group has been deleted.'));
         } else {

@@ -1,6 +1,5 @@
 <?php
 namespace App\Controller;
-
 use App\Controller\AppController;
 use Cake\I18n\Time;
 
@@ -54,7 +53,7 @@ class LendingsController extends AppController
            'Lendings.modified'
          ],
          'conditions' => ['Lendings.lending_state_id !=' => 5, 'Groups.id' => $groupid],
-        'order' => ['Users.name' => 'ASC'],
+        'order' => ['Lendings.created' => 'DESC'],
         'contain' => ['Users' => ['Groups'], 'Documents', 'SetLendingUsers', 'SetReturnUsers', 'LendingStates'],
         'sortWhitelist' => ['id', 'name', 'group_name', 'date_taken', 'date_return', 'lending_state_id', 'document_id', 'document_name', 'set_lending_user_name', 'set_return_user_name', 'user_name', 'created','modified']
     ]);
@@ -63,11 +62,40 @@ class LendingsController extends AppController
 		
     }
      
-    public function index()
+    public function index($grupid = null)
     {
 		$prevcurrurl = $this->request->here(true);
 		$currurl = str_replace('/', 'º', $prevcurrurl);
-		
+	
+    
+    if(!empty($grupid)){
+    $where = [
+        'recursive'=>-1,
+        'fields' => [
+           'Lendings.id',
+           'Lendings.date_taken',
+           'Lendings.date_return',
+           'Lendings.date_real_return',
+           'lending_state_name' => 'LendingStates.name',
+           'Lendings.lending_state_id',
+           'document_id' => 'Documents.id',
+           'document_name' => 'Documents.name',
+           'set_lending_user_name' => 'SetLendingUsers.name',
+           'set_return_user_name' => 'SetReturnUsers.name',
+           'user_name' => 'Users.name',
+           'user_id' => 'Users.id',
+           'group_name' => 'Groups.name',
+           'group_id' => 'Groups.id',
+           'lastmail' => 'Users.lastmail',
+           'Lendings.created',
+           'Lendings.modified'
+         ],
+        'conditions' => ['Lendings.lending_state_id !=' => 5, 'AND' => ['Groups.id' => $grupid]],
+        'contain' => ['Users' => ['Groups'], 'Documents', 'SetLendingUsers', 'SetReturnUsers', 'LendingStates'],
+        'sortWhitelist' => ['id', 'name', 'group_name', 'date_taken', 'date_return', 'lending_state_id', 'lastmail', 'document_id', 'document_name', 'set_lending_user_name', 'set_return_user_name', 'user_name', 'created','modified'],
+    ];
+	}
+	else{
 		 $where = [
         'recursive'=>-1,
         'fields' => [
@@ -85,15 +113,15 @@ class LendingsController extends AppController
            'user_id' => 'Users.id',
            'group_name' => 'Groups.name',
            'group_id' => 'Groups.id',
+           'lastmail' => 'Users.lastmail',
            'Lendings.created',
            'Lendings.modified'
          ],
          'conditions' => ['Lendings.lending_state_id !=' => 5],
-        'order' => ['Documents.name' => 'ASC'],
         'contain' => ['Users' => ['Groups'], 'Documents', 'SetLendingUsers', 'SetReturnUsers', 'LendingStates'],
-        'sortWhitelist' => ['id', 'name', 'group_name', 'date_taken', 'date_return', 'lending_state_id', 'document_id', 'document_name', 'set_lending_user_name', 'set_return_user_name', 'user_name', 'created','modified'],
+        'sortWhitelist' => ['id', 'name', 'group_name', 'date_taken', 'date_return', 'lastmail', 'lending_state_id', 'document_id', 'document_name', 'set_lending_user_name', 'set_return_user_name', 'user_name', 'created','modified'],
     ];
-    
+	}
     
      // Set pagination
     $this->paginate = $where;
@@ -107,12 +135,13 @@ class LendingsController extends AppController
 		
     }
     
-    public function doneindex()
+    public function doneindex($grupid = null)
     {
 		
 		$prevcurrurl = $this->request->here(true);
 		$currurl = str_replace('/', 'º', $prevcurrurl);
 		
+		if(!empty($grupid)){
 		 $where = [
         'recursive'=>-1,
         'fields' => [
@@ -128,23 +157,52 @@ class LendingsController extends AppController
            'set_return_user_name' => 'SetReturnUsers.name',
            'user_name' => 'Users.name',
            'user_id' => 'Users.id',
+           'grup_id' => 'Groups.id',
+           'Lendings.created',
+           'Lendings.modified'
+         ],
+         'conditions' => ['Lendings.lending_state_id' => 5, 'AND' => ['Groups.id' => $grupid]],
+        'order' => ['Documents.name' => 'ASC'],
+        'contain' => ['Users' => ['Groups'], 'Documents', 'SetLendingUsers', 'SetReturnUsers', 'LendingStates'],
+        'sortWhitelist' => ['id', 'name', 'date_taken', 'date_return', 'lending_state_id', 'document_id', 'document_name', 'set_lending_user_name', 'set_return_user_name', 'user_name', 'created','modified'],
+    ];
+		}
+		else{
+		$where = [
+        'recursive'=>-1,
+        'fields' => [
+           'Lendings.id',
+           'Lendings.date_taken',
+           'Lendings.date_return',
+           'Lendings.date_real_return',
+           'lending_state_name' => 'LendingStates.name',
+           'Lendings.lending_state_id',
+           'document_id' => 'Documents.id',
+           'document_name' => 'Documents.name',
+           'set_lending_user_name' => 'SetLendingUsers.name',
+           'set_return_user_name' => 'SetReturnUsers.name',
+           'user_name' => 'Users.name',
+           'user_id' => 'Users.id',
+           'grup_id' => 'Groups.id',
            'Lendings.created',
            'Lendings.modified'
          ],
          'conditions' => ['Lendings.lending_state_id' => 5],
         'order' => ['Documents.name' => 'ASC'],
-        'contain' => ['Users', 'Documents', 'SetLendingUsers', 'SetReturnUsers', 'LendingStates'],
+        'contain' => ['Users' => ['Groups'], 'Documents', 'SetLendingUsers', 'SetReturnUsers', 'LendingStates'],
         'sortWhitelist' => ['id', 'name', 'date_taken', 'date_return', 'lending_state_id', 'document_id', 'document_name', 'set_lending_user_name', 'set_return_user_name', 'user_name', 'created','modified'],
     ];
+		}
     
     
      // Set pagination
     $this->paginate = $where;
-
+	$gr = $this->LoadModel('Groups');
+    $groups = $gr->find('list');
     // Get data
     $lendings = $this->paginate($this->Lendings, ['limit' => 100]);
 
-        $this->set(compact('lendings', 'currurl'));
+        $this->set(compact('lendings', 'currurl', 'groups'));
 		
     }
     /**
@@ -269,11 +327,11 @@ class LendingsController extends AppController
         elseif ($document->lending_state_id == 2){$this->Flash->error(__('Aquest document ja es troba en préstec.'));
 							$newreferer = $referer;
 							$ref = str_replace('º','/',$referer);
-							return $this->redirect('../../../../'.$ref);}
+							return $this->redirect('http://80.211.14.98/epergam2/documents/view/' . $document->id);}
         elseif ($document->lending_state_id == 3){$this->Flash->error(__('Aquest document ja es troba en préstec.'));
 							$newreferer = $referer;
 							$ref = str_replace('º','/',$referer);
-							return $this->redirect('../../../../'.$ref);}
+							return $this->redirect('http://80.211.14.98/epergam2/documents/view/' . $document->id);}
         elseif ($document->lending_state_id == 4){$this->Flash->error(__('Aquest document no es pot prestar perquè està reservat.'));
 							$newreferer = $referer;
 							$ref = str_replace('º','/',$referer);
@@ -402,5 +460,5 @@ class LendingsController extends AppController
 		return $this->redirect(['controller' => 'Users', 'action' => 'login']);
 		
 		}
-}
+	}
 }

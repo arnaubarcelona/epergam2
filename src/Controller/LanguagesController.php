@@ -270,10 +270,12 @@ class LanguagesController extends AppController
 		if($this->Auth->user('group_id') == 12){
 		$this->request->allowMethod(['post', 'delete']);
 		$language = $this->Languages->get($id);
+		if(!empty($language->photo_dir)){
 		$delefolder = $language->photo_dir;
 		$dfolder = str_replace('webroot/','',$delefolder);
 		$delfolder = new Folder(WWW_ROOT . $dfolder);
 		$delfolder->delete();
+		}
         if ($this->Languages->delete($language)) {
             $this->Flash->success(__('The language has been deleted.'));
         } else {

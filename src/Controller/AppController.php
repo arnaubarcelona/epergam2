@@ -13,7 +13,7 @@
  * @license   https://opensource.org/licenses/mit-license.php MIT License
  */
 namespace App\Controller;
-
+use Cake\Mailer\Email;
 use Cake\Controller\Controller;
 use Cake\Event\Event;
 use Cake\View\Helper\SessionHelper;
@@ -46,25 +46,28 @@ class AppController extends Controller
     if (!preg_match('/login|logout/i', $url)){
         $this->request->session()->write('lastUrl', $url);
     }
-    $us = $this->LoadModel('Users');
-		$users = $us->find('list',
-		['keyField' => 'id',
+		$us = $this->LoadModel('Users');
+		$users = $us->find('list', [
+		'fields' => ['Users.id', 'Users.name'],
+		'keyField' => 'id',
 		'valueField' => 'name']);
-		$docs = $this->LoadModel('Documents'); 
-		$documents = $docs->find('list',
-		['keyField' => 'id',
+		$documents = $this->LoadModel('Documents'); 
+		$docs = $documents->find('list',
+		['fields' => ['Documents.id', 'Documents.name'],
+		'keyField' => 'id',
 		'valueField' => 'fullname']);
 		$subs = $this->LoadModel('Subjects'); 
-		$subjects = $subs->find('list');
+		$subjects = $subs->find('list',
+		['fields' => ['Subjects.id', 'Subjects.name']]);
 		$langs = $this->LoadModel('Languages'); 
-		$languages = $langs->find('list');
+		$languages = $langs->find('list',
+		['fields' => ['Languages.id', 'Languages.name']]);
 		$auths = $this->LoadModel('Authors'); 
-		$authors = $auths->find('list');
-    $this->set(compact('users', 'documents', 'authors', 'subjects', 'languages'));
+		$authors = $auths->find('list',
+		['fields' => ['Authors.id', 'Authors.name']]);
+    $this->set(compact('users', 'docs', 'authors', 'subjects', 'languages'));
 }
-
-   
-    public function initialize()
+	public function initialize()
     {
         parent::initialize();
 
@@ -89,8 +92,9 @@ class AppController extends Controller
 		]);
 		// Allow the display action so our PagesController
 		// continues to work. Also enable the read only actions.
-		$this->Auth->allow(['display', 'view', 'index', 'compactview', 'pdfcompactview', 'pdfindex', 'doneindex']);
+		$this->Auth->allow(['display', 'view', 'index', 'compactview', 'pdfcompactview', 'pdfindex', 'doneindex', 'novetats', 'populars']);
 		}
+		
 		
         /*
          * Enable the following components for recommended CakePHP security settings.

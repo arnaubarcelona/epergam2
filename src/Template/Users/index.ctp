@@ -6,7 +6,7 @@
 ?>
 
 <div class="noudiv">
-    <h3><?= __('Users') ?> <a href="http://80.211.14.98/epergam2/users/add"><img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/add.png"></a></h3>
+    <h3><?= __('Users') ?> <a href="http://80.211.14.98/epergam2/users/add"> <img width="24px" height="24px" src="http://80.211.14.98/epergam2/webroot/img/icons/add.png"></a></h3>
         <div class="paginator">
 		<table class="responsive-table">
 		<tr>

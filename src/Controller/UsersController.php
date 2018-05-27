@@ -1,7 +1,8 @@
 <?php
 namespace App\Controller;
-
+use Cake\Mailer\Email;
 use App\Controller\AppController;
+use Cake\I18n\Time;
 
 /**
  * Users Controller
@@ -79,28 +80,53 @@ class UsersController extends AppController
 				return $query->where([
 					'Lendings.user_id' => $user->id
 				]);
-			});
+			})
+			->order(['Lendings.lending_state_id' => 'ASC']);
 
 		$paginationOptions = [
-			'limit' => 100,
-			'order' => [
-				'lending_state_id' => 'DESC'
-			]
+			'limit' => 100
 		];
 
 		$pdocuments = $this->paginate($documentsQuery, $paginationOptions);
 
         $this->set(compact('user', 'currurl', 'pdocuments'));
         
-	//	$prevcurrurl = $this->request->here(true);
-	//	$currurl = str_replace('/', 'º', $prevcurrurl);
-    //     $user = $this->Users->get($id, [
-    //        'contain' => ['Lendings' => ['Documents']]
-    //    ]);
+    }
+    
+    public function pdfviewall($id = null)
+    {
+		
+		$prevcurrurl = $this->request->here(true);
+		$currurl = str_replace('/', 'º', $prevcurrurl);
+		$user = $this->Users->get($id, [
+            'contain' => ['Lendings' => ['Documents']]
+        ]);
+        
+        $this->viewBuilder()->options([
+            'pdfConfig' => [
+                'orientation' => 'portrait',
+                'filename' => 'Historial de préstec - ' . $user->name . '.pdf'
+            ]
+        ]);
+        
+        $documentsQuery = $this->Users->Lendings->Documents
+			->find()
+			->contain(['Authorities' => ['Authors', 'AuthorTypes'], 'PublicationPlaces' => ['Countries'], 'Levels', 'Collections', 'Lendings' => ['LendingStates', 'Users' => ['Groups'], 'SetLendingUsers', 'SetReturnUsers'], 'Languages', 'Cdus', 'Formats', 'Collections', 'Subjects', 'PublicationPlaces', 'Locations', 'CatalogueStates', 'ConservationStates', 'Publishers', 'LendingStates'])
+			->matching('Lendings', function (\Cake\ORM\Query $query) use ($user) {
+				return $query->where([
+					'Lendings.user_id' => $user->id
+				]);
+			})
+			->order(['Lendings.lending_state_id' => 'ASC']);
 
-    //    $this->set('user', $user);
+		$paginationOptions = [
+			'limit' => 100
+		];
 
-    //    $this->set(compact('user', 'currurl'));
+		$pdocuments = $this->paginate($documentsQuery, $paginationOptions);
+
+        $this->set(compact('user', 'currurl', 'pdocuments'));
+        
     }
 
     /**
@@ -207,4 +233,90 @@ class UsersController extends AppController
 		return $this->redirect(['controller' => 'Users', 'action' => 'login']);
 		}
 	}
+	public function avisaPrestec($userid)
+	{
+		
+		$user = $this->Users->get($userid, [
+            'contain' => ['Lendings' => ['Documents']]
+        ]);
+        
+        $documentsQuery = $this->Users->Lendings->Documents
+			->find()
+			->contain(['Authorities' => ['Authors', 'AuthorTypes'], 'PublicationPlaces' => ['Countries'], 'Levels', 'Collections', 'Lendings' => ['LendingStates', 'Users' => ['Groups'], 'SetLendingUsers', 'SetReturnUsers'], 'Languages', 'Cdus', 'Formats', 'Collections', 'Subjects', 'PublicationPlaces', 'Locations', 'CatalogueStates', 'ConservationStates', 'Publishers', 'LendingStates'])
+			->matching('Lendings', function (\Cake\ORM\Query $query) use ($user) {
+				return $query->where([
+					'AND' => ['Lendings.user_id' => $user->id], ['Lendings.lending_state_id' => 3]
+				]);
+			})
+			->order(['Lendings.lending_state_id' => 'ASC']);
+
+		$paginationOptions = [
+			'limit' => 100
+		];
+
+		$pdocuments = $this->paginate($documentsQuery, $paginationOptions);
+		
+		if(!empty($user->mail1) && !empty($user->mail2)){		
+			$email = new Email('default');
+			$email->from(['orlandai.biblioteca@gmail.com' => 'Biblioteca Marta Mata (Escola Orlandai)'])
+				->to($user->mail1)
+				->addTo($user->mail2)
+				->subject('Avís de cortesia: préstec vençut')
+				->template('avisaPrestec')
+				->emailFormat('html')
+				->viewVars(compact('user', 'pdocuments'));
+			if($email->send()){
+				$now = Time::now();
+				$user = $this->Users->patchEntity($user, $this->request->getData());
+				$user->lastmail = $now;
+				$this->Users->save($user);
+				$this->Flash->success(__('El correu s\'ha enviat correctament.'));
+				return $this->redirect($this->referer());
+			} else {
+				$this->Flash->error(__('El correu no s\'ha pogut enviar.'));
+			}
+		}
+		elseif(!empty($user->mail1)){		
+			$email = new Email('default');
+			$email->from(['orlandai.biblioteca@gmail.com' => 'Biblioteca Marta Mata (Escola Orlandai)'])
+				->to($user->mail1)
+				->subject('Avís de cortesia: préstec vençut')
+				->template('avisaPrestec')
+				->emailFormat('html')
+				->viewVars(compact('user', 'pdocuments'));
+			if($email->send()){
+				$now = Time::now();
+				$user = $this->Users->patchEntity($user, $this->request->getData());
+				$user->lastmail = $now;
+				$this->Users->save($user);
+				$this->Flash->success(__('El correu s\'ha enviat correctament.'));
+				return $this->redirect($this->referer());
+			} else {
+				$this->Flash->error(__('El correu no s\'ha pogut enviar.'));
+			}
+		}
+		elseif(!empty($user->mail2)){		
+			$email = new Email('default');
+			$email->from(['orlandai.biblioteca@gmail.com' => 'Biblioteca Marta Mata (Escola Orlandai)'])
+				->to($user->mail2)
+				->subject('Avís de cortesia: préstec vençut')
+				->template('avisaPrestec')
+				->emailFormat('html')
+				->viewVars(compact('user', 'pdocuments'));
+			if($email->send()){
+				$now = Time::now();
+				$user = $this->Users->patchEntity($user, $this->request->getData());
+				$user->lastmail = $now;
+				$this->Users->save($user);
+				$this->Flash->success(__('El correu s\'ha enviat correctament.'));
+				return $this->redirect($this->referer());
+			} else {
+				$this->Flash->error(__('El correu no s\'ha pogut enviar.'));
+			}
+		}
+		else{
+			$this->Flash->error(__('No consta cap adreça electrònica.'));
+			return $this->redirect($this->referer());
+			}
+}
 }

@@ -97,10 +97,12 @@ class CatalogueStatesController extends AppController
     {
         $this->request->allowMethod(['post', 'delete']);
 		$catalogueState = $this->CatalogueStates->get($id);
+		if(!empty($catalogueState->photo_dir)){
 		$delefolder = $catalogueState->photo_dir;
 		$dfolder = str_replace('webroot/','',$delefolder);
 		$delfolder = new Folder(WWW_ROOT . $dfolder);
 		$delfolder->delete();
+		}
         $catalogueState = $this->CatalogueStates->get($id);
         if ($this->CatalogueStates->delete($catalogueState)) {
             $this->Flash->success(__('The catalogue state has been deleted.'));

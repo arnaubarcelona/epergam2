@@ -10,8 +10,6 @@
         <legend><?= __('Edit Subject') ?></legend>
         <?php
             echo $this->Form->control('name');
-            echo $this->Form->control('photo', ['type' => 'file']);
-            echo $this->Form->control('documents._ids', ['options' => $documents]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

@@ -97,10 +97,12 @@ class SubscriptionStatesController extends AppController
     {
         $this->request->allowMethod(['post', 'delete']);
 		$subscriptionState = $this->SubscriptionStates->get($id);
+		if(!empty($subscription->photo_dir)){
 		$delefolder = $subscriptionState->photo_dir;
 		$dfolder = str_replace('webroot/','',$delefolder);
 		$delfolder = new Folder(WWW_ROOT . $dfolder);
 		$delfolder->delete();
+		}
         $subscriptionState = $this->SubscriptionStates->get($id);
         if ($this->SubscriptionStates->delete($subscriptionState)) {
             $this->Flash->success(__('The subscription state has been deleted.'));

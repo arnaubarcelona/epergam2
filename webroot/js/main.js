@@ -25,23 +25,6 @@ $(document).ready(function () {
 
     $('.single_autocomplete').select2();
 
-    $('.multi_subject_documents').select2({
-        tags: true,
-        tokenSeparators: [';'],
-        createTag: function (params) {
-            return {
-                id: params.term,
-                text: params.term,
-                // add indicator flag
-                isNew : true
-            };
-        }
-    }).on("select2:select", function(e) {
-        if(e.params.data.isNew) {
-            // Add new subjects if not exists
-            checkSubjectExists(e.params.data, e.target);
-        }
-    });
 
     $('.add_location').select2({
         tags: true,
@@ -55,12 +38,12 @@ $(document).ready(function () {
         }
     }).on("select2:select", function(e) {
         if(e.params.data.isNew) {
-            // Add new locations if not exists
+            // Add new publication_place if not exists
             checkLocationExists(e.params.data, e.target);
         }
     });
     
-    $('.add_publicationPlace').select2({
+    $('.add_publication_place').select2({
         tags: true,
         createTag: function (params) {
             return {
@@ -72,7 +55,7 @@ $(document).ready(function () {
         }
     }).on("select2:select", function(e) {
         if(e.params.data.isNew) {
-            // Add new locations if not exists
+            // Add new publicacion_place if not exists
             checkPublicationPlaceExists(e.params.data, e.target);
         }
     });
@@ -129,6 +112,24 @@ $(document).ready(function () {
             checkPublisherExists(e.params.data, e.target);
         }
     });
+    
+    $('.check_subjects').select2({
+        tags: true,
+        tokenSeparators: [';'],
+        createTag: function (params) {
+            return {
+                id: params.term,
+                text: params.term,
+                // add indicator flag
+                isNew : true
+            };
+        }
+    }).on("select2:select", function(e) {
+        if(e.params.data.isNew) {
+            // Check subject exists
+            checkSubjectExists(e.params.data, e.target);
+        }
+    });
 });
 
 function checkAuthorTypesExists(data, targetObj)
@@ -172,7 +173,7 @@ function checkAuthorTypesExists(data, targetObj)
                         });
                     } else {
                         // Remove last element from dropdown
-                        $(targetObj).find('option[data-select2-tag="true"]').last().remove();
+                        $(targetObj).find('[data-select2-tag="true"]').last().remove();
                     }
                 } else {
                     authorId = result.author["id"];
@@ -194,7 +195,7 @@ function checkAuthorTypesExists(data, targetObj)
                         });
                     } else {
                         // Remove last element from dropdown
-                        $(targetObj).find('option[data-select2-tag="true"]').last().remove();
+                        $(targetObj).find('[data-select2-tag="true"]').last().remove();
                     }
                 } else {
                     authorityTypeId = result.author_type["id"];
@@ -210,7 +211,7 @@ function checkAuthorTypesExists(data, targetObj)
                     var canAddAuthorities = true;
 
                     if (showAuthoritiesMsg) {
-                        canAddAuthorities = confirm(result.author["name"] + " no es troba a la llista amb l'autoria " + result.author_type["name"] + ", voleu que s'hi afegeixi?");
+                        canAddAuthorities = confirm(result.author["name"] + " no consta a la llista com a " + result.author_type["name"] + ", voleu que hi consti?");
                     }
 
                     if (canAddAuthorities) {
@@ -223,7 +224,7 @@ function checkAuthorTypesExists(data, targetObj)
                         });
                     } else {
                         // Remove last element from dropdown
-                        $(targetObj).find('option[data-select2-tag="true"]').last().remove();
+                        $(targetObj).find('[data-select2-tag="true"]').last().remove();
                     }
                 }
             }
@@ -280,101 +281,6 @@ function addNewAuthorities(authorId, authorTypeId, callBack)
     });
 }
 
-function checkSubjectExists(data, targetObj)
-{
-    var subjectExists = false;
-
-    if (data.text != '') {
-        $.ajax({
-            url: app_path + "subjects/alreadyExists",
-            type: 'post',
-            data: {
-                'name': data.text
-            },
-            success: function (result) {
-                if (result) {
-                    if (confirm(data.text + " no es troba a la llista de matèries, voleu que s'hi afegeixi?") == true) {
-                        addSubject(data, targetObj, function (result) {
-                            $(targetObj).find('option[data-select2-tag="true"]').last().val(result.data.id);
-                        });
-                    } else {
-                        // Remove last element from dropdown
-                        $(targetObj).find('option[data-select2-tag="true"]').last().remove();
-                    }
-                } else {
-                    $(targetObj).find('option[data-select2-tag="true"]').last().remove();
-                }
-            }
-        });
-    } else {
-        $(targetObj).find('option[data-select2-tag="true"]').last().remove();
-    }
-}
-
-function addSubject(data, targetObj, callBack)
-{
-    if (data.text != '') {
-        $.ajax({
-            url: app_path + "subjects/add",
-            type: 'post',
-            data: {
-                'name': data.text
-            }
-        }).done(function(result) {
-            callBack(result);
-        }).fail(function() {
-            callBack(result);
-        });
-    }
-}
-
-function checkPublicationPlaceExists(data, targetObj)
-{
-    if (data.text != '') {
-        $.ajax({
-            url: app_path + "publicationPlaces/isPublicationPlaceAlreadyExists",
-            type: 'post',
-            data: {
-                'name': data.text
-            },
-            success: function (result) {
-                if (!result) {
-                    if (confirm(data.text + " no es troba a la llista de llocs d'edició, voleu que s'hi afegeixi?") == true) {
-                        addPublicationPlace(data, targetObj, function (result) {
-                            $(targetObj).find('option[data-select2-tag="true"]').last().val(result.data.id);
-                        });
-                    } else {
-                        // Remove last element from dropdown
-                        $(targetObj).find('option[data-select2-tag="true"]').last().remove();
-                    }
-                } else {
-                    $(targetObj).find('option[data-select2-tag="true"]').last().remove();
-                }
-            }
-        });
-    } else {
-        $(targetObj).find('option[data-select2-tag="true"]').last().remove();
-    }
-}
-
-function addPublicationPlace(data, targetObj, callBack)
-{
-    if (data.text != '') {
-        $.ajax({
-            url: app_path + "publicationPlaces/add",
-            type: 'post',
-            data: {
-                'name': data.text
-            }
-        }).done(function(result) {
-            callBack(result);
-        }).fail(function() {
-            callBack(result);
-        });
-    }
-}
-
-
 function checkLocationExists(data, targetObj)
 {
     if (data.text != '') {
@@ -388,19 +294,19 @@ function checkLocationExists(data, targetObj)
                 if (!result) {
                     if (confirm(data.text + " no es troba a la llista d'ubicacions, voleu que s'hi afegeixi?") == true) {
                         addLocation(data, targetObj, function (result) {
-                            $(targetObj).find('option[data-select2-tag="true"]').last().val(result.data.id);
+                            $(targetObj).find('[data-select2-tag="true"]').replaceWith($('<option selected>', { value : result.data.id }).text(data.text).val(result.data.id));
                         });
                     } else {
                         // Remove last element from dropdown
-                        $(targetObj).find('option[data-select2-tag="true"]').last().remove();
+                        $(targetObj).find('[data-select2-tag="true"]').last().remove();
                     }
                 } else {
-                    $(targetObj).find('option[data-select2-tag="true"]').last().remove();
+                    $(targetObj).find('[data-select2-tag="true"]').last().remove();
                 }
             }
         });
     } else {
-        $(targetObj).find('option[data-select2-tag="true"]').last().remove();
+        $(targetObj).find('[data-select2-tag="true"]').last().remove();
     }
 }
 
@@ -421,6 +327,57 @@ function addLocation(data, targetObj, callBack)
     }
 }
 
+
+function checkPublicationPlaceExists(data, targetObj)
+{
+    if (data.text != '') {
+        $.ajax({
+            url: app_path + "publication-places/isPublicationPlaceAlreadyExists",
+            type: 'post',
+            data: {
+                'name': data.text
+            },
+            success: function (result) {
+                if (!result) {
+                    if (confirm(data.text + " no es troba a la llista de llocs d'edició, voleu que s'hi afegeixi?") == true) {
+                        addPublicationPlace(data, targetObj, function (result) {
+                            $(targetObj).find('[data-select2-tag="true"]').replaceWith($('<option selected>', { value : result.data.id }).text(data.text).val(result.data.id));
+                        });
+                    } else {
+                        // Remove last element from dropdown
+                        $(targetObj).find('[data-select2-tag="true"]').last().remove();
+                    }
+                } else {
+                    $(targetObj).find('[data-select2-tag="true"]').last().remove();
+                }
+            }
+        });
+    } else {
+        $(targetObj).find('[data-select2-tag="true"]').last().remove();
+    }
+}
+
+function addPublicationPlace(data, targetObj, callBack)
+{
+    if (data.text != '') {
+        $.ajax({
+            url: app_path + "publication_places/add",
+            type: 'post',
+            data: {
+                'name': data.text
+            }
+        }).done(function(result) {
+            callBack(result);
+        }).fail(function() {
+            callBack(result);
+        });
+    }
+}
+
+
+
+
+
 function checkCollectionExists(data, targetObj)
 {
     if (data.text != '') {
@@ -434,19 +391,19 @@ function checkCollectionExists(data, targetObj)
                 if (!result) {
                     if (confirm(data.text + " no es troba a la llista de col·leccions, voleu que s'hi afegeixi?") == true) {
                         addCollection(data, targetObj, function (result) {
-                            $(targetObj).find('option[data-select2-tag="true"]').last().val(result.data.id);
+                            $(targetObj).find('[data-select2-tag="true"]').replaceWith($('<option selected>', { value : result.data.id }).text(data.text).val(result.data.id));
                         });
                     } else {
                         // Remove last element from dropdown
-                        $(targetObj).find('option[data-select2-tag="true"]').last().remove();
+                        $(targetObj).find('[data-select2-tag="true"]').last().remove();
                     }
                 } else {
-                    $(targetObj).find('option[data-select2-tag="true"]').last().remove();
+                    $(targetObj).find('[data-select2-tag="true"]').last().remove();
                 }
             }
         });
     } else {
-        $(targetObj).find('option[data-select2-tag="true"]').last().remove();
+        $(targetObj).find('[data-select2-tag="true"]').last().remove();
     }
 }
 
@@ -480,19 +437,19 @@ function checkLanguageExists(data, targetObj)
                 if (!result) {
                     if (confirm(data.text + " no es troba a la llista de llengües, voleu que s'hi afegeixi?") == true) {
                         addLanguage(data, targetObj, function (result) {
-                            $(targetObj).find('option[data-select2-tag="true"]').last().val(result.data.id);
+                            $(targetObj).find('[data-select2-tag="true"]').replaceWith($('<option selected>', { value : result.data.id }).text(data.text).val(result.data.id));
                         });
                     } else {
                         // Remove last element from dropdown
-                        $(targetObj).find('option[data-select2-tag="true"]').last().remove();
+                        $(targetObj).find('[data-select2-tag="true"]').last().remove();
                     }
                 } else {
-                    $(targetObj).find('option[data-select2-tag="true"]').last().remove();
+                    $(targetObj).find('[data-select2-tag="true"]').last().remove();
                 }
             }
         });
     } else {
-        $(targetObj).find('option[data-select2-tag="true"]').last().remove();
+        $(targetObj).find('[data-select2-tag="true"]').last().remove();
     }
 }
 
@@ -526,19 +483,19 @@ function checkPublisherExists(data, targetObj)
                 if (!result) {
                     if (confirm(data.text + " no es troba a la llista d'editorials, voleu que s'hi afegeixi?") == true) {
                         addPublisher(data, targetObj, function (result) {
-                            $(targetObj).find('option[data-select2-tag="true"]').last().val(result.data.id);
+                            $(targetObj).find('[data-select2-tag="true"]').replaceWith($('<option selected>', { value : result.data.id }).text(data.text).val(result.data.id));
                         });
                     } else {
                         // Remove last element from dropdown
-                        $(targetObj).find('option[data-select2-tag="true"]').last().remove();
+                        $(targetObj).find('[data-select2-tag="true"]').last().remove();
                     }
                 } else {
-                    $(targetObj).find('option[data-select2-tag="true"]').last().remove();
+                    $(targetObj).find('[data-select2-tag="true"]').last().remove();
                 }
             }
         });
     } else {
-        $(targetObj).find('option[data-select2-tag="true"]').last().remove();
+        $(targetObj).find('[data-select2-tag="true"]').last().remove();
     }
 }
 
@@ -547,6 +504,52 @@ function addPublisher(data, targetObj, callBack)
     if (data.text != '') {
         $.ajax({
             url: app_path + "publishers/add",
+            type: 'post',
+            data: {
+                'name': data.text
+            }
+        }).done(function(result) {
+            callBack(result);
+        }).fail(function() {
+            callBack(result);
+        });
+    }
+}
+
+function checkSubjectExists(data, targetObj)
+{
+    if (data.text != '') {
+        $.ajax({
+            url: app_path + "subjects/isSubjectAlreadyExists",
+            type: 'post',
+            data: {
+                'name': data.text
+            },
+            success: function (result) {
+                if (!result) {
+                    if (confirm(data.text + " no es troba a la llista de matèries, voleu afegir-la?") == true) {
+                        addSubject(data, targetObj, function (result) {
+                            $(targetObj).find('[data-select2-tag="true"]').replaceWith($('<option selected>', { value : result.data.id }).text(data.text).val(result.data.id));
+                        });
+                    } else {
+                        // Remove last element from dropdown
+                        $(targetObj).find('[data-select2-tag="true"]').last().remove();
+                    }
+                } else {
+                    $(targetObj).find('[data-select2-tag="true"]').last().remove();
+                }
+            }
+        });
+    } else {
+        $(targetObj).find('[data-select2-tag="true"]').last().remove();
+    }
+}
+
+function addSubject(data, targetObj, callBack)
+{
+    if (data.text != '') {
+        $.ajax({
+            url: app_path + "subjects/add",
             type: 'post',
             data: {
                 'name': data.text

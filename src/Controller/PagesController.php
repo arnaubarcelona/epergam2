@@ -42,18 +42,23 @@ class PagesController extends AppController
     {
 		$us = $this->LoadModel('Users');
 		$users = $us->find('list',
-		['keyField' => 'id',
+		['fields' => ['Users.id', 'Users.name'],
+		'keyField' => 'id',
 		'valueField' => 'name']);
 		$docs = $this->LoadModel('Documents'); 
 		$documents = $docs->find('list',
-		['keyField' => 'id',
+		['fields' => ['Documents.id', 'Documents.name'],
+		'keyField' => 'id',
 		'valueField' => 'fullname']);
 		$subs = $this->LoadModel('Subjects'); 
-		$subjects = $subs->find('list');
+		$subjects = $subs->find('list',
+		['fields' => ['Subjects.id', 'Subjects.name']]);
 		$langs = $this->LoadModel('Languages'); 
-		$languages = $langs->find('list');
+		$languages = $langs->find('list',
+		['fields' => ['Languages.id', 'Languages.name']]);
 		$auths = $this->LoadModel('Authors'); 
-		$authors = $auths->find('list');
+		$authors = $auths->find('list',
+		['fields' => ['Authors.id', 'Authors.name']]);
         $count = count($path);
         if (!$count) {
             return $this->redirect('/');

@@ -4,6 +4,7 @@ namespace App\Controller;
 use App\Controller\AppController;
 use Cake\Filesystem\Folder;
 use Cake\Utility\Hash;
+
 /**
  * Documents Controller
  *
@@ -19,29 +20,166 @@ class DocumentsController extends AppController
      *
      * @return \Cake\Http\Response|void
      */
+
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['Cdus', 'Formats', 'Collections', 'PublicationPlaces', 'Locations', 'CatalogueStates', 'ConservationStates', 'LendingStates']
-        ];
-        $documents = $this->paginate($this->Documents);
+		$prevcurrurl = $this->request->here(true);
+		$currurl = str_replace('/', 'º', $prevcurrurl);
+		   $where = [
+				'recursive'=>-1,
+				'fields' => [
+				   'Documents.id',
+				   'Documents.created',
+				   'Documents.modified',
+				   'Documents.name',
+				   'Documents.photo',
+				   'Documents.catalogue_state_id',
+				   'Documents.lending_state_id',
+				   'Documents.photo_dir',
+				   'LendingStates.id',
+				   'LendingStates.photo',
+				   'LendingStates.photo_dir',
+				   'CatalogueStates.id',
+				   'CatalogueStates.photo',
+				   'CatalogueStates.photo_dir',
+				   //'Authorities__count_documents' => 'count(AuthoritiesDocuments.authority_id)',
+				   'count_documents' => 'count(Lendings.document_id)'
+				   // 'Licensees.count_users' => 'count(LicenseesUsers.licensees_id)', 
+				 ],
+				'contain' => ['Authorities' => ['sort' => ['AuthorTypes.id' => 'ASC'], 'Authors', 'AuthorTypes'], 'PublicationPlaces' => ['Countries'], 'Levels', 'Collections', 'Lendings' => ['LendingStates', 'Users' => ['Groups'], 'SetLendingUsers', 'SetReturnUsers'], 'Languages', 'Cdus', 'Formats', 'Collections', 'Subjects', 'PublicationPlaces', 'Locations', 'CatalogueStates', 'ConservationStates', 'Publishers', 'LendingStates'],
+				'sortWhitelist' => ['id', 'name', 'count_documents', 'lending_state_id', 'created','modified'],
+				'join' => [
+					'Lendings' => [
+						'table' => 'lendings',
+						'type' => 'LEFT',
+						'conditions' => [
+							'Lendings.document_id = Documents.id'
+						],
+					],
+				],
+				'group' => 'Documents.id'
+			];
 
-        $this->set(compact('documents'));
-    }
+     // Set pagination
+    $this->paginate = $where;
 
-    /**
-     * View method
-     *
-     * @param string|null $id Document id.
-     * @return \Cake\Http\Response|void
-     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
-     */
+    // Get data
+    $documents = $this->paginate($this->Documents, ['limit' => 100]);
+		
+        $this->set(compact('documents', 'currurl'));
+		
+	}
+	
+	public function populars()
+    {
+		$prevcurrurl = $this->request->here(true);
+		$currurl = str_replace('/', 'º', $prevcurrurl);
+		   $where = [
+				'recursive'=>-1,
+				'fields' => [
+				   'Documents.id',
+				   'Documents.created',
+				   'Documents.modified',
+				   'Documents.name',
+				   'Documents.photo',
+				   'Documents.catalogue_state_id',
+				   'Documents.lending_state_id',
+				   'Documents.photo_dir',
+				   'LendingStates.id',
+				   'LendingStates.photo',
+				   'LendingStates.photo_dir',
+				   'CatalogueStates.id',
+				   'CatalogueStates.photo',
+				   'CatalogueStates.photo_dir',
+				   'Formats.photo',
+				   'Formats.photo_dir',
+				   //'Authorities__count_documents' => 'count(AuthoritiesDocuments.authority_id)',
+				   'count_documents' => 'count(Lendings.document_id)'
+				   // 'Licensees.count_users' => 'count(LicenseesUsers.licensees_id)', 
+				 ],
+				'order' => ['count_documents' => 'DESC'],
+				'contain' => ['Authorities' => ['sort' => ['AuthorTypes.id' => 'ASC'], 'Authors', 'AuthorTypes'], 'PublicationPlaces' => ['Countries'], 'Levels', 'Collections', 'Lendings' => ['LendingStates', 'Users' => ['Groups'], 'SetLendingUsers', 'SetReturnUsers'], 'Languages', 'Cdus', 'Formats', 'Collections', 'Subjects', 'PublicationPlaces', 'Locations', 'CatalogueStates', 'ConservationStates', 'Publishers', 'LendingStates'],
+				'sortWhitelist' => ['id', 'name', 'count_documents', 'lending_state_id', 'created','modified'],
+				'join' => [
+					'Lendings' => [
+						'table' => 'lendings',
+						'type' => 'LEFT',
+						'conditions' => [
+							'Lendings.document_id = Documents.id'
+						],
+					],
+				],
+				'group' => 'Documents.id'
+			];
+
+     // Set pagination
+    $this->paginate = $where;
+
+    // Get data
+    $documents = $this->paginate($this->Documents, ['limit' => 44]);
+		
+        $this->set(compact('documents', 'currurl'));
+		
+	}
+	
+	public function novetats()
+    {
+		$prevcurrurl = $this->request->here(true);
+		$currurl = str_replace('/', 'º', $prevcurrurl);
+		   $where = [
+				'recursive'=>-1,
+				'fields' => [
+				   'Documents.id',
+				   'Documents.created',
+				   'Documents.modified',
+				   'Documents.name',
+				   'Documents.photo',
+				   'Documents.catalogue_state_id',
+				   'Documents.lending_state_id',
+				   'Documents.photo_dir',
+				   'LendingStates.id',
+				   'LendingStates.photo',
+				   'LendingStates.photo_dir',
+				   'CatalogueStates.id',
+				   'CatalogueStates.photo',
+				   'CatalogueStates.photo_dir',
+				   'Formats.photo',
+				   'Formats.photo_dir',
+				   //'Authorities__count_documents' => 'count(AuthoritiesDocuments.authority_id)',
+				   //'count_documents' => 'count(Lendings.document_id)'
+				   // 'Licensees.count_users' => 'count(LicenseesUsers.licensees_id)', 
+				 ],
+				'order' => ['created' => 'DESC'],
+				'contain' => ['Authorities' => ['sort' => ['AuthorTypes.id' => 'ASC'], 'Authors', 'AuthorTypes'], 'PublicationPlaces' => ['Countries'], 'Levels', 'Collections', 'Lendings' => ['LendingStates', 'Users' => ['Groups'], 'SetLendingUsers', 'SetReturnUsers'], 'Languages', 'Cdus', 'Formats', 'Collections', 'Subjects', 'PublicationPlaces', 'Locations', 'CatalogueStates', 'ConservationStates', 'Publishers', 'LendingStates'],
+				'sortWhitelist' => ['id', 'name', 'count_documents', 'lending_state_id', 'created','modified'],
+				//'join' => [
+				//	'Lendings' => [
+				//		'table' => 'lendings',
+				//		'type' => 'LEFT',
+				//		'conditions' => [
+				//			'Lendings.document_id = Documents.id'
+				//		],
+				//	],
+				//],
+				'group' => 'Documents.id'
+			];
+
+     // Set pagination
+    $this->paginate = $where;
+
+    // Get data
+    $documents = $this->paginate($this->Documents, ['limit' => 44]);
+		
+        $this->set(compact('documents', 'currurl'));
+		
+	}
+	
     public function view($id = null)
     {
 		$prevcurrurl = $this->request->here(true);
 		$currurl = str_replace('/', 'º', $prevcurrurl);
         $document = $this->Documents->get($id, [
-            'contain' => ['Authorities' => ['Authors', 'AuthorTypes'], 'PublicationPlaces' => ['Countries'], 'Levels', 'Collections', 'Lendings' => ['LendingStates', 'Users' => ['Groups'], 'SetLendingUsers', 'SetReturnUsers'], 'Languages', 'Cdus', 'Formats', 'Collections', 'Subjects', 'PublicationPlaces', 'Locations', 'CatalogueStates', 'ConservationStates', 'Publishers', 'LendingStates']
+            'contain' => ['Authorities' => ['sort' => ['AuthorTypes.id' => 'ASC'], 'Authors', 'AuthorTypes'], 'PublicationPlaces' => ['Countries'], 'Levels', 'Collections', 'Lendings' => ['sort' => ['Lendings.lending_state_id' => 'ASC'], 'LendingStates', 'Users' => ['Groups'], 'SetLendingUsers', 'SetReturnUsers'], 'Languages', 'Cdus', 'Formats', 'Collections', 'Subjects', 'PublicationPlaces', 'Locations', 'CatalogueStates', 'ConservationStates', 'Publishers', 'LendingStates']
         ]);
 
         $this->set(compact('document', 'currurl'));
@@ -165,67 +303,30 @@ class DocumentsController extends AppController
      * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function edit($id = null)
+        public function edit($id = null)
     {
-		// Added by IV[14-03-2018]
-        $this->loadModel('Authorities');
-        $this->loadModel('AuthoritiesDocuments');
-        $formattedAuthorities = [];
-
         $document = $this->Documents->get($id, [
             'contain' => ['Authorities', 'Languages', 'Levels', 'Publishers', 'Subjects']
         ]);
-        if ($this->request->is('post')) {
+        $selectedAuthorieties = Hash::extract($document, 'authorities.{n}[_joinData]._joinData.authority_id');
+        if ($this->request->is(['patch', 'post', 'put'])) {
             $document = $this->Documents->patchEntity($document, $this->request->getData());
             if ($this->Documents->save($document)) {
-                // Save authorities documents
-                $document_id = $document->id;
-                $this->saveAuthoritiesDocuments($document_id, $this->request->getData('authority_ids'));
-
+                if($document->catalogue_state_id != 2) {
+					$document->lending_state_id = 6; }
+				else {
+					$document->lending_state_id = 1;
+				}
+					if ($this->Documents->save($document)) {
                 $this->Flash->success(__('The document has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
+				}
+                return $this->redirect(['controller' => 'Documents', 'action' => 'view', $id]);
             }
             $this->Flash->error(__('The document could not be saved. Please, try again.'));
         }
-
-        // Added by IV[15-03-2018]
-        $documents = $this->Documents->find();
-        $groupedCduIds = $documents->select([
-            'count' => $documents->func()->count('id'),
-            'id' => $documents->func()->max('cdu_id')
-        ])
-        ->group('cdu_id')
-        ->where(['cdu_id != ""'])
-        ->toArray();
-
-        $formattedCduIds = Hash::combine($groupedCduIds, '{n}.id', '{n}.count');
-        $cdus = $this->Documents->Cdus->find()->toArray();
-        if (!empty($cdus)) {
-            foreach ($cdus as $key => $cdu) {
-                $formattedCdus[$cdu['id']] = $cdu['name'];
-
-                if (!empty($cdu['description'])) {
-                    $formattedCdus[$cdu['id']] .= " {$cdu['description']}";
-
-                    if (isset($formattedCduIds[$cdu['id']])) {
-                        $formattedCdus[$cdu['id']] .= " ({$formattedCduIds[$cdu['id']]})";
-                    } else {
-                        $formattedCdus[$cdu['id']] .= " (0)";
-                    }
-                }
-            }
-        }
-        // Added by IV -- end
-        
-        $formats = $this->Documents->Formats->find('list');
-        $collections = $this->getCollectionListCount();
-        $publicationPlaces = $this->Documents->PublicationPlaces->find('list');
-        $locations = $this->getLocationsListCount();
-        $catalogueStates = $this->Documents->CatalogueStates->find('list');
-        $conservationStates = $this->Documents->ConservationStates->find('list');
-
-        // Added by IV[14-03-2018]
+        $this->loadModel('Authorities');
+        $this->loadModel('AuthoritiesDocuments');
+        $formattedAuthorities = [];
         $authorities = $this->Authorities->find()
             ->contain([
                 'Authors' => function ($q) {
@@ -236,7 +337,6 @@ class DocumentsController extends AppController
                 }
             ])
             ->toArray();
-
         $authoritiesDocuments = $this->AuthoritiesDocuments->find();
         $groupedauthoritiesDocumentsIds = $authoritiesDocuments->select([
             'count' => $authoritiesDocuments->func()->count('id'),
@@ -245,17 +345,13 @@ class DocumentsController extends AppController
         ->group('authority_id')
         ->where(['authority_id != ""'])
         ->toArray();
-
         $formattedauthoritiesDocumentsIds = Hash::combine($groupedauthoritiesDocumentsIds, '{n}.id', '{n}.count');
-
         if (!empty($authorities)) {
             foreach ($authorities as $key => $authority) {
                 $formattedAuthorities[$authority['id']] = $authority['author']['name'];
-
                 if (!empty($authority['author_type']['name'])) {
                     $formattedAuthorities[$authority['id']] .= " {$authority['author_type']['name']}";
                 }
-
                 if (isset($formattedauthoritiesDocumentsIds[$authority['id']])) {
                     $formattedAuthorities[$authority['id']] .= " ({$formattedauthoritiesDocumentsIds[$authority['id']]})";
                 } else {
@@ -263,15 +359,42 @@ class DocumentsController extends AppController
                 }
             }
         }
-        // Added by IV -- end
-
+        $documents = $this->Documents->find();
+        $groupedCduIds = $documents->select([
+            'count' => $documents->func()->count('id'),
+            'id' => $documents->func()->max('cdu_id')
+        ])
+        ->group('cdu_id')
+        ->where(['cdu_id != ""'])
+        ->toArray();
+        $formattedCduIds = Hash::combine($groupedCduIds, '{n}.id', '{n}.count');
+        $cdus = $this->Documents->Cdus->find()->toArray();
+        if (!empty($cdus)) {
+            foreach ($cdus as $key => $cdu) {
+                $formattedCdus[$cdu['id']] = $cdu['name'];
+                if (!empty($cdu['description'])) {
+                    $formattedCdus[$cdu['id']] .= " {$cdu['description']}";
+                    if (isset($formattedCduIds[$cdu['id']])) {
+                        $formattedCdus[$cdu['id']] .= " ({$formattedCduIds[$cdu['id']]})";
+                    } else {
+                        $formattedCdus[$cdu['id']] .= " (0)";
+                    }
+                }
+            }
+        }
+        $formats = $this->Documents->Formats->find('list');
+        $collections = $this->Documents->Collections->find('list');
+        $publicationPlaces = $this->Documents->PublicationPlaces->find('list');
+        $locations = $this->Documents->Locations->find('list');
+        $catalogueStates = $this->Documents->CatalogueStates->find('list');
+        $conservationStates = $this->Documents->ConservationStates->find('list');
+        $subjects = $this->getDocSubjectsListCount();
+        $lendingStates = $this->Documents->LendingStates->find('list');
         $languages = $this->getDocLanguagesListCount();
         $levels = $this->Documents->Levels->find('list');
         $publishers = $this->getDocPublishersListCount();
-        $subjects = $this->Documents->Subjects->find('list');
-        $lendingStates = $this->Documents->LendingStates->find('list');
-        $this->set(compact('document', 'cdus', 'formats', 'collections', 'publicationPlaces', 'locations', 'catalogueStates', 'conservationStates', 'formattedCdus', 'formattedAuthorities', 'authorities', 'languages', 'levels', 'publishers', 'subjects', 'lendingStates'));
-		 }
+        $this->set(compact('document', 'formattedCdus', 'formats', 'collections', 'publicationPlaces', 'locations', 'catalogueStates', 'conservationStates', 'languages', 'levels', 'publishers', 'subjects', 'lendingStates', 'formattedAuthorities', 'selectedAuthorieties'));
+    }
 
     /**
      * Delete method
@@ -284,10 +407,12 @@ class DocumentsController extends AppController
     {
 		$this->request->allowMethod(['post', 'delete']);
 		$document = $this->Documents->get($id);
+		if(!empty($document->photo_dir)){
 		$delefolder = $document->photo_dir;
 		$dfolder = str_replace('webroot/','',$delefolder);
 		$delfolder = new Folder(WWW_ROOT . $dfolder);
 		$delfolder->delete();
+		}
 		$document = $this->Documents->get($id);
         if ($this->Documents->delete($document)) {
             $this->Flash->success(__('The document has been deleted.'));
@@ -540,6 +665,34 @@ class DocumentsController extends AppController
                 'conditions' => 'dl.language_id = Languages.id',
             ])
             ->group(['Languages.id'])
+            ->toArray();
+
+        if (!empty($result)) {
+            $result = Hash::combine($result, '{n}.id', ['%s (%s)', '{n}.name', '{n}.total_docs']);
+        }
+
+        return $result;
+    }
+    
+    protected function getDocSubjectsListCount()
+    {
+        $this->loadModel('Subjects');
+
+        $query = $this->Subjects->find();
+
+        $result = $query->select([
+                'Subjects.id',
+                'Subjects.name',
+                'total_docs' => $query->func()->count('ds.id')
+            ])
+            ->hydrate(false)
+            ->join([
+                'table' => 'documents_subjects',
+                'alias' => 'ds',
+                'type' => 'LEFT',
+                'conditions' => 'ds.subject_id = Subjects.id',
+            ])
+            ->group(['Subjects.id'])
             ->toArray();
 
         if (!empty($result)) {
